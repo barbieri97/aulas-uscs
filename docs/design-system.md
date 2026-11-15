@@ -134,6 +134,7 @@ Ficam em `aulas/components/` e são **auto-importados**: basta escrever a tag no
 | `<Citacao>` | a palavra de outra pessoa, dentro de um slide com mais coisas |
 | `<Pessoa>` | quem é essa gente que a aula cita |
 | `<LinhaDoTempo>` | sequência com marcos — história ou processo |
+| `<Fala>` + `<Acao>` | roteiro de aplicação: o que o aplicador **diz** (literal, com `quando` opcional) e o que ele **faz** |
 | `<Fonte>` | o crédito no pé do slide — em letra branca, sobre a faixa azul |
 
 ## Utilitários

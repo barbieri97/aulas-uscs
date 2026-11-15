@@ -186,4 +186,12 @@ export const componentes = {
   Fonte: {
     atributos: {},
   },
+  Fala: {
+    atributos: {
+      quando: texto,
+    },
+  },
+  Acao: {
+    atributos: {},
+  },
 }

@@ -26,6 +26,7 @@ itens:
   - { tema: Histórico, desc: de Spearman às atualizações de 2023 }
   - { tema: A teoria CHC, desc: "três estratos, 16 capacidades amplas" }
   - { tema: WISC-IV, desc: "estrutura e orientações de aplicação" }
+  - { tema: Os subtestes, desc: "falas, regras e cuidados de cada um" }
 atual: 1
 ---
 
@@ -1194,6 +1195,14 @@ Palavras) exigem mais julgamento: compare a resposta com os exemplos do manual e
 houver um equivalente, aplique o critério geral do subteste.
 O exemplo das frutas é o item 3 de Semelhanças (maçã e banana).
 -->
+
+---
+layout: secao
+numero: "05"
+kicker: Parte 5
+title: Os <span class="ds-em">subtestes</span>
+note: Na ordem padrão de aplicação — o que mede, as regras, as falas e os cuidados.
+---
 
 ---
 layout: default

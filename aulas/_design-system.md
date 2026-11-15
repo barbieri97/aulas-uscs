@@ -250,6 +250,32 @@ A citação de dentro do slide. Para uma frase ocupando a tela inteira, use o la
 layout: default
 ---
 
+# `<Acao>` e `<Fala>`
+
+<Acao>
+
+Coloque o material diante da criança e aponte o primeiro quadro.
+
+</Acao>
+
+<Fala>
+
+Esta é a fala do aplicador, **palavra por palavra**, como está no manual.
+
+</Fala>
+
+<Fala quando="se a criança errar">
+
+O atributo `quando` diz em que situação a fala entra.
+
+</Fala>
+
+<!-- Situação: o roteiro de aplicação de um teste — alterne o que se faz e o que se diz, na ordem do manual. -->
+
+---
+layout: default
+---
+
 # `<Pessoa>` e `<LinhaDoTempo>`
 
 <div class="ds-grid">
