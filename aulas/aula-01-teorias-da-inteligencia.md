@@ -2841,6 +2841,175 @@ o escore sem refletir o raciocínio.
 layout: default
 ---
 
+# 9 · Compreensão (CO)
+
+A criança responde a perguntas sobre **princípios gerais** e **situações sociais** — por que as
+coisas são como são e o que fazer em certas situações.
+
+<Grade :cols="2">
+<Cartao rotulo="ICV · principal" titulo="O que mede">
+
+Raciocínio e conceituação verbal, compreensão e expressão verbal, uso da experiência passada e
+conhecimento de **padrões de comportamento**: julgamento, maturidade e **senso comum**.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gc · inteligência cristalizada" destaque>
+
+Predomina o **Gc** — o conhecimento prático e social que a criança acumulou com a cultura e a
+convivência.
+
+</Cartao>
+</Grade>
+
+<!--
+21 itens.
+Uma resposta correta não garante que a criança agiria assim: Compreensão mede o conhecimento das
+convenções sociais, não o comportamento. Desempenho alto em CO com problemas de comportamento é
+um dado clínico, não uma contradição.
+Na interpretação (Pessotto & Bartholomeu): VC e CO altos com SM baixo sugerem conhecimento
+verbal preservado e dificuldade de abstração.
+-->
+
+---
+layout: default
+---
+
+# Compreensão · regras
+
+| | |
+|---|---|
+| **material** | Manual e Protocolo de Registro |
+| **início** | 6–8 anos: item 1 · 9–11: item 3 · 12–16: item 5 · suspeita de déficit: item 1 |
+| **sequência inversa** | 9–16 anos sem pontuação máxima em um dos dois primeiros itens: volte até **2 pontos em dois itens seguidos** |
+| **interrupção** | após **4 zeros consecutivos** |
+| **tempo** | sem limite |
+| **pontuação** | 2, 1 ou 0 · máximo de **42** pontos |
+
+<Fonte>Itens com * têm vários conceitos gerais: 2 pontos exigem pelo menos dois conceitos diferentes.</Fonte>
+
+<!--
+O item 1 (†) ensina a tarefa: se a resposta não vale 2 pontos, o aplicador diz a resposta-modelo
+do manual. Depois disso, nenhuma ajuda.
+Cada item tem um ou mais "conceitos gerais" — as ideias principais que a resposta precisa
+conter. Os exemplos de resposta do manual estão agrupados por conceito.
+-->
+
+---
+layout: default
+---
+
+# Compreensão · falas
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="apresentação">
+
+Agora eu vou fazer algumas perguntas e eu quero que você responda.
+
+</Fala>
+
+<Acao>
+
+Ir ao item de entrada da idade e ler cada pergunta **literalmente**, em voz alta. Pode repetir,
+sem mudar o enunciado.
+
+</Acao>
+
+<Fala quando="resposta vaga ou (Q)">
+
+Explique o que você quer dizer. · Fale um pouco mais sobre isso.
+
+</Fala>
+
+<Fala quando="criança insegura">
+
+Isso! · Continue.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="item * · só um conceito">
+
+Que outros (motivos para, vantagens de, problemas em relação a…)?
+
+</Fala>
+
+<Fala quando="item * · repetiu o mesmo conceito">
+
+Diga outros (motivos para, vantagens de, problemas em relação a…).
+
+</Fala>
+
+<Acao>
+
+Item 1 (†) sem 2 pontos: dizer a resposta-modelo do manual. Depois disso, nenhuma ajuda.
+
+</Acao>
+
+<Nota tipo="alerta" titulo="Resposta errada">
+
+Se a primeira resposta é **claramente incorreta**, **não** peça um segundo conceito.
+
+</Nota>
+
+</div>
+</Grade>
+
+<!--
+O "Isso!" e o "Continue" estimulam a criança insegura a falar — não são feedback de acerto.
+Usar com a mesma frequência em respostas boas e ruins.
+A pergunta pelo segundo conceito se adapta ao item: "Que outros motivos…", "Que outras
+vantagens…", "Que outros problemas…".
+-->
+
+---
+layout: default
+---
+
+# Compreensão · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="conceito" titulo="O que pesa" destaque>
+
+O **grau de generalização**: a resposta precisa envolver o conceito geral do item. Itens com *
+exigem **dois conceitos distintos** para 2 pontos.
+
+</Cartao>
+<Cartao rotulo="segundo conceito" titulo="Repetiu? 1 ponto">
+
+Se as respostas pedidas depois do inquérito repetem o **mesmo conceito** da primeira, o item vale
+**1 ponto**.
+
+</Cartao>
+<Cartao rotulo="várias respostas" titulo="A melhor vale">
+
+Comentário extra não conta. Vale a **melhor** resposta — salvo se vier uma **absurda** junto:
+aí, 0.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="info" titulo="Exemplo fora do teste">
+
+*Por que usar cinto de segurança?* → "para não se machucar" (proteção) e "porque é lei" (norma)
+são **dois conceitos**; "para não se ferir" só repete o primeiro.
+
+</Nota>
+
+<!--
+Os exemplos de resposta do manual não são exaustivos: respostas atípicas se avaliam pelos
+Princípios Gerais.
+Itens com um só conceito: 2 e 1 ponto dependem da qualidade com que a resposta expressa esse
+conceito.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
