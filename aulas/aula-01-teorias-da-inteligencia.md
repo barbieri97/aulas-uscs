@@ -1483,6 +1483,178 @@ Pinte na grade o que a criança montou até o tempo acabar, na perspectiva do ap
 layout: default
 ---
 
+# 2 · Semelhanças (SM)
+
+O aplicador diz **duas palavras** que representam objetos ou conceitos comuns; a criança diz de
+que modo elas são parecidas.
+
+<Grade :cols="2">
+<Cartao rotulo="ICV · principal" titulo="O que mede">
+
+Raciocínio verbal e **formação de conceitos**. Envolve compreensão oral, memória, distinguir o
+essencial do não essencial e expressão verbal.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gc · inteligência cristalizada" destaque>
+
+Predomina o **Gc** — mas, das provas verbais, é a que **mais exige Gf**: é preciso abstrair a
+relação entre as palavras.
+
+</Cartao>
+</Grade>
+
+<!--
+23 itens, 11 novos. Os itens de 1 ponto caíram de cinco para dois, e cada idade ganhou um item
+de entrada. Um item de exemplo garante que a criança entendeu a tarefa antes de valer ponto.
+Na interpretação (Pessotto & Bartholomeu): ICV médio com SM bem abaixo de Vocabulário e
+Compreensão sugere dificuldade no processamento mais abstrato (Gf), não no conhecimento
+verbal — vale conferir se o padrão se repete em IMO e IVP.
+-->
+
+---
+layout: default
+---
+
+# Semelhanças · regras
+
+| | |
+|---|---|
+| **material** | Manual e Protocolo de Registro — nada para mostrar à criança |
+| **início** | sempre o **item de exemplo**; depois 6–8 anos: item 1 · 9–11: item 3 · 12–16: item 5 · suspeita de déficit: item 1 |
+| **sequência inversa** | 9–16 anos sem pontuação máxima em um dos dois primeiros itens: volte até **2 pontos em dois itens seguidos** |
+| **interrupção** | após **5 zeros consecutivos** |
+| **tempo** | sem limite |
+| **pontuação** | itens 1–2: 1 ou 0 · itens 3–23: 2, 1 ou 0 · máximo de 44 pontos |
+
+<Fonte>Pode repetir o item quantas vezes julgar necessário — mas sem mudar o enunciado.</Fonte>
+
+<!--
+O exemplo não conta ponto. Os itens 1 e 2 (marcados com † no manual) servem para ensinar a
+tarefa: neles o aplicador corrige a resposta errada. Do item 3 em diante, nenhuma ajuda.
+-->
+
+---
+layout: default
+---
+
+# Semelhanças · falas
+
+<Acao>
+
+Apresentar o subteste, dizendo:
+
+</Acao>
+
+<Fala>
+
+Agora eu vou dizer duas palavras e você deve dizer o que elas têm em comum.
+
+</Fala>
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="exemplo">
+
+O que têm em comum [palavra] e [palavra]? De que modo são parecidos?
+
+</Fala>
+
+<Fala quando="itens 1–2 (†)">
+
+O que têm em comum [palavra] e [palavra]?
+
+</Fala>
+
+<Fala quando="itens 3–23 · ler literalmente">
+
+O que (a) [palavra] e (a) [palavra] têm em comum?
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="exemplo e itens 1–2 · resposta correta">
+
+Vamos fazer outro.
+
+</Fala>
+
+<Acao>
+
+Resposta incorreta ou ausência de resposta (só no exemplo e nos itens 1–2): dizer a resposta
+que o manual dá para o item e passar ao item seguinte apropriado.
+
+</Acao>
+
+<Fala quando="resposta vaga ou marcada com (Q)">
+
+Explique o que você quer dizer. · Fale um pouco mais sobre isso.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Fazer a pergunta lentamente, introduzindo as palavras-estímulo.
+Depois do exemplo, ir ao item de entrada da idade — com acerto ou erro.
+A resposta de correção do exemplo e dos itens 1–2 vem pronta no manual: ela ensina o tipo de
+resposta esperada (a categoria que une as duas palavras). Do item 3 em diante não há correção.
+-->
+
+---
+layout: default
+---
+
+# Semelhanças · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="2 pontos" titulo="Categoria" destaque>
+
+Uma classificação **abrangente e pertinente** aos dois: *violão e piano* → "instrumentos
+musicais".
+
+</Cartao>
+<Cartao rotulo="1 ponto" titulo="Propriedade">
+
+Uma propriedade comum, mas **secundária** ("os dois fazem som"), ou uma categoria menos
+pertinente ("são objetos da casa").
+
+</Cartao>
+<Cartao rotulo="0 ponto" titulo="Irrelevante">
+
+Algo **geral demais**, uma **diferença** entre os dois, ou uma resposta que vale para cada
+palavra **separada** e não para o par.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Várias respostas">
+
+Comentário que claramente não faz parte da resposta não conta; vale a **melhor** resposta —
+exceto se vier junto uma resposta **absurda**, que revela não entender o conceito: aí zera.
+
+</Nota>
+
+<Fonte>O par violão e piano é um exemplo nosso, fora do teste. O que pesa é o grau de abstração: categoria > função/propriedade > descrição.</Fonte>
+
+<!--
+Os exemplos de resposta do manual não são uma lista exaustiva: respostas atípicas se avaliam
+pelos Princípios Gerais de Avaliação.
+Uma abordagem concreta ("os dois são de madeira") ainda exige perceber algo comum aos dois
+(crédito parcial ou nulo); já
+"o violão tem cordas e o piano tem teclas" fala de cada um separadamente e vale 0, mesmo sendo
+verdadeiro.
+Itens 1–2 valem 1 ou 0 — ensinam a tarefa; o aplicador corrige o erro. Depois deles, nenhuma
+ajuda além do inquérito.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
