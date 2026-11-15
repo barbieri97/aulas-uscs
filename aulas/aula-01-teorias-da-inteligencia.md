@@ -2,7 +2,6 @@
 theme: none
 title: Aula 01 · Teorias da inteligência
 info: Do fator g ao modelo Cattell-Horn-Carroll — e como as teorias chegam ao WISC
-date: "2026-11-16"
 download: true
 author: Pós-graduação USCS
 colorSchema: light
@@ -10,7 +9,7 @@ layout: capa
 kicker: Pós-graduação
 titulo: Teorias da <span class="ds-em">inteligência</span>
 subtitle: Do fator <strong>g</strong> ao modelo CHC — e como as teorias chegam ao WISC
-meta: Aula 01 · Avaliação da inteligência e funções cognitivas
+meta: Aula 01 · Avaliação psicológica e neuropsicologia
 ---
 
 <!--

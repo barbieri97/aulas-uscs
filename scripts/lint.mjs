@@ -36,7 +36,6 @@ const CAMPOS_RESERVADOS = [
 ]
 
 const RE_ARQUIVO_AULA = /^aula-\d{2,}-[a-z0-9]+(-[a-z0-9]+)*\.md$/
-const RE_DATA = /^\d{4}-\d{2}-\d{2}$/
 const RE_ASSET = /(?<![\w.@])\/[\w\-./]+\.(?:png|jpe?g|gif|svg|webp|avif|mp4|webm|pdf)/gi
 const RE_TAG_COMPONENTE = /<([A-Z][A-Za-z0-9]*)/g
 
@@ -103,11 +102,12 @@ async function lintDeck (file) {
     if (!RE_ARQUIVO_AULA.test(nome)) {
       aviso('o nome foge do padrão aula-NN-slug-em-minusculas.md (o nome do arquivo vira a URL)')
     }
-    for (const campo of ['title', 'info', 'date']) {
+    for (const campo of ['title', 'info']) {
       if (!head[campo]) erro(`falta \`${campo}:\` no headmatter — a página inicial do site lê esse campo`, 1)
     }
-    if (head.date && !RE_DATA.test(String(head.date))) {
-      erro(`\`date: ${head.date}\` não está em YYYY-MM-DD (use aspas: date: "2026-03-12")`, 1)
+    // As aulas se repetem em várias turmas: data não faz sentido e não aparece em lugar nenhum.
+    if (head.date !== undefined) {
+      aviso('`date:` não é usado — as aulas não têm data (repetem-se em várias turmas). Apague o campo', 1)
     }
     if (head.download === undefined) {
       aviso('falta `download: true` no headmatter — é o padrão do repositório para a aula ficar disponível para baixar em PDF', 1)

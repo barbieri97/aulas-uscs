@@ -37,7 +37,7 @@ const CAMPOS_DO_SLIDEV = new Set([
 /** No primeiro slide, o bloco também é headmatter: as chaves de configuração do deck valem. */
 const CAMPOS_DE_HEADMATTER = new Set([
   ...Object.keys(getDefaultConfig()),
-  'keywords', 'defaults', 'date', 'titleTemplate',
+  'keywords', 'defaults', 'titleTemplate', 'date', // `date` tem aviso próprio em lint.mjs
 ])
 
 // ------------------------------------------------------------------ tipos

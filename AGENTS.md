@@ -4,8 +4,7 @@ Instruções para agentes de IA (este é o único arquivo de instruções do rep
 existe `CLAUDE.md`; qualquer agente deve ler este `AGENTS.md`).
 
 Decks [Slidev](https://sli.dev/) das aulas de pós-graduação na **USCS** (Universidade de
-São Caetano do Sul): teorias da inteligência, escalas Wechsler (WISC) e funções
-cognitivas. **Uma aula por arquivo `.md`** em `aulas/`, publicadas no GitHub Pages, cada uma
+São Caetano do Sul) em avaliação psicológica e neuropsicologia. **Uma aula por arquivo `.md`** em `aulas/`, publicadas no GitHub Pages, cada uma
 na sua própria URL. Conteúdo em português.
 
 Não há tema npm (`theme: none`): o visual vem de um design system local que reproduz o
@@ -109,7 +108,7 @@ um componente — a exceção honesta é o desenho que só existe naquele slide.
 | Tema | `theme: none` + design system local; ou um pacote npm, ver `docs/temas.md` |
 | Idioma | conteúdo em português |
 | Imagens | `aulas/public/` — **não** na raiz do repo (veja "Por que `aulas/public/`" abaixo) |
-| Headmatter | além de `theme`/`title`, cada aula traz `info:` (ementa de uma linha) e `date:` (`YYYY-MM-DD`, entre aspas) — os dois alimentam a landing page |
+| Headmatter | além de `theme`/`title`, cada aula traz `info:` (ementa de uma linha) — os dois alimentam a landing page. **Sem `date:`**: as aulas se repetem em várias turmas, então não têm data (o lint avisa se aparecer) |
 | Download | `download: true` no headmatter, em toda aula — deixa o deck disponível para baixar em PDF direto da apresentação publicada |
 | Identidade do curso | `site.config.json` na raiz (`title`, `institution`, `description`, `intro`) — o único lugar com o nome da disciplina |
 | Fonte | Poppins vem do pacote `@fontsource/poppins` (importado em `aulas/styles/index.css`): o deck e o PDF não dependem do Google Fonts |

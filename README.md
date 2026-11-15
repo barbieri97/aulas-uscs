@@ -1,7 +1,6 @@
 # Aulas USCS em Slidev
 
-As aulas de pós-graduação na USCS — teorias da inteligência, escalas Wechsler (WISC) e funções
-cognitivas — escritas em [Slidev](https://sli.dev/) e publicadas no GitHub Pages, **uma aula
+As aulas de pós-graduação na USCS em avaliação psicológica e neuropsicologia, escritas em [Slidev](https://sli.dev/) e publicadas no GitHub Pages, **uma aula
 por arquivo** em [`aulas/`](aulas/), cada uma na sua própria URL.
 
 ```
@@ -37,7 +36,8 @@ só existe depois do `npm run build` — é o build que dá a cada deck o seu `-
 
 **Para criar uma aula nova:** copie `aulas/aula-01-teorias-da-inteligencia.md`, renomeie para
 `aula-NN-titulo-em-slug.md`, edite, commit, push. O workflow builda e publica sozinho — o
-índice se atualiza a partir do `title` / `info` / `date` do topo do arquivo. O nome do arquivo
+índice se atualiza a partir do `title` / `info` do topo do arquivo. As aulas não têm data:
+elas se repetem a cada turma. O nome do arquivo
 vira a URL.
 
 Toda aula traz `download: true` no headmatter — é o padrão do repositório para deixar o deck
@@ -148,7 +148,7 @@ nome do repositório não aparece em lugar nenhum do código.
 
 `scripts/build-site.mjs`:
 
-1. lê o topo (headmatter) de cada `aulas/*.md` para pegar título, ementa e data;
+1. lê o topo (headmatter) de cada `aulas/*.md` para pegar título e ementa;
 2. roda `scripts/lint.mjs` em todos — erro aqui aborta o build;
 3. roda **um `slidev build` por aula**, cada uma com o seu `--base` e `--router-mode hash`
    (necessário porque o Pages serve tudo sob `/<repo>/` e só tem um `404.html`, na raiz);

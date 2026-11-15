@@ -20,6 +20,7 @@ test('o lint falha (código != 0) num deck quebrado', () => {
 const esperados = [
   // headmatter
   ['erro', /colorSchema: "dark"` não é um valor aceito/],
+  ['aviso', /`date:` não é usado — as aulas não têm data/],
   // campo com nome errado, com sugestão
   ['aviso', /não tem o campo `subtitulo`.*você quis dizer `subtitle`/],
   // YAML: vírgula sem aspas parte o texto

@@ -2,8 +2,8 @@
 theme: none
 title: Aula quebrada de propósito
 info: Deck usado só pelo teste do lint (npm test) — cada slide tem um erro conhecido
-date: "2026-11-16"
 download: true
+date: "2026-01-01"
 colorSchema: dark
 layout: capa
 subtitulo: campo com nome errado

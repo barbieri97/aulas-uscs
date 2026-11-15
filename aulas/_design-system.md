@@ -2,7 +2,6 @@
 theme: none
 title: Design system USCS — catálogo
 info: Um slide por layout e por componente, com a situação de uso nas notas
-date: "2026-11-16"
 colorSchema: light
 layout: capa
 kicker: Deck de bancada
