@@ -25,7 +25,7 @@ itens:
   - { tema: O que é inteligência, desc: a definição de consenso }
   - { tema: Histórico, desc: de Spearman às atualizações de 2023 }
   - { tema: A teoria CHC, desc: "três estratos, 16 capacidades amplas" }
-  - { tema: WISC-IV, desc: "aplicação, correção e interpretação" }
+  - { tema: WISC-IV, desc: "estrutura e orientações de aplicação" }
 atual: 1
 ---
 
@@ -669,6 +669,533 @@ IMO = Índice de Memória Operacional. IVP = Índice de Velocidade de Processame
 -->
 
 ---
+layout: secao
+numero: "03"
+kicker: Parte 3
+title: O <span class="ds-em">WISC-IV</span>
+note: "Estrutura da escala: índices e subtestes."
+---
+
+---
+layout: default
+---
+
+# O que é o WISC-IV
+
+<Termo palavra="WISC-IV" origem="Manual do WISC-IV, cap. 1">
+
+Escala Wechsler de Inteligência para Crianças, 4ª edição: instrumento clínico de **aplicação
+individual** que avalia a **capacidade intelectual** e o **processo de resolução de
+problemas** de crianças de **6 anos e 0 meses a 16 anos e 11 meses**.
+
+</Termo>
+
+Fruto de dez anos de pesquisa com o WISC-III, a revisão quis:
+
+<div class="ds-grid">
+<div>
+
+- atualizar a base teórica
+- reforçar a utilidade clínica
+
+</div>
+<div>
+
+- ampliar os estudos de desenvolvimento
+- aperfeiçoar as propriedades psicométricas
+
+</div>
+</div>
+
+---
+layout: default
+---
+
+# Quatro índices e o QI Total
+
+<Grade :cols="2">
+<Cartao rotulo="ICV" titulo="Compreensão Verbal">
+
+Habilidades verbais: **raciocínio, compreensão e conceituação**.
+
+</Cartao>
+<Cartao rotulo="IOP" titulo="Organização Perceptual">
+
+Raciocínio e organização a partir de **estímulos visuais**.
+
+</Cartao>
+<Cartao rotulo="IMO" titulo="Memória Operacional">
+
+**Atenção, concentração** e memória operacional.
+
+</Cartao>
+<Cartao rotulo="IVP" titulo="Velocidade de Processamento">
+
+**Agilidade mental** e processamento grafomotor.
+
+</Cartao>
+</Grade>
+
+<Nota>
+
+Os **10 subtestes principais** dos quatro índices formam juntos o QI Total.
+
+</Nota>
+
+<!--
+ICV = Índice de Compreensão Verbal. IOP = Índice de Organização Perceptual.
+IMO = Índice de Memória Operacional. IVP = Índice de Velocidade de Processamento.
+QIT = QI Total. Os índices e o QIT são os "pontos compostos" do WISC-IV.
+Grafomotor: relativo ao movimento da escrita e do desenho com lápis.
+-->
+
+---
+layout: default
+---
+
+# Os 15 subtestes
+
+| índice | principais | suplementares |
+|---|---|---|
+| **ICV** | Semelhanças (SM) · Vocabulário (VC) · Compreensão (CO) | Informação (IN) · Raciocínio com Palavras (RP) |
+| **IOP** | Cubos (CB) · Conceitos Figurativos (CN) · Raciocínio Matricial (RM) | Completar Figuras (CF) |
+| **IMO** | Dígitos (DG) · Sequência de Números e Letras (SNL) | Aritmética (AR) |
+| **IVP** | Código (CD) · Procurar Símbolos (PS) | Cancelamento (CA) |
+
+<Nota titulo="Principal × suplementar">
+
+Os **principais** dão a pontuação composta. Os **suplementares** ampliam as habilidades
+avaliadas, trazem informação clínica e podem **substituir** um principal.
+
+</Nota>
+
+<!--
+10 principais + 5 suplementares. Cada subteste será visto em detalhe na sua própria aula.
+-->
+
+---
+layout: default
+---
+
+# O que a teoria mudou
+
+Revisões recentes das escalas Wechsler (WAIS-III, WPPSI-III) reforçaram três capacidades
+— as mesmas que pesam no CHC:
+
+<Grade :cols="3">
+<Cartao rotulo="Gf" titulo="Raciocínio fluido">
+
+Três subtestes **novos**: Raciocínio Matricial, Conceitos Figurativos e Raciocínio com
+Palavras.
+
+</Cartao>
+<Cartao rotulo="Gsm" titulo="Memória de trabalho">
+
+Entra **Sequência de Números e Letras**; Aritmética é revista; Dígitos ganha escores
+separados para **ordem direta e inversa**.
+
+</Cartao>
+<Cartao rotulo="Gs" titulo="Velocidade de processamento">
+
+Ligada ao desenvolvimento neurológico e ao aprendizado. Entra **Cancelamento**.
+
+</Cartao>
+</Grade>
+
+<!--
+WAIS-III = escala Wechsler para adultos. WPPSI-III = escala Wechsler pré-escolar.
+A memória de trabalho é mais exigida na ordem inversa de Dígitos do que na direta — por isso
+os escores de processo distintos (DIOD e DIOI).
+Uma velocidade de processamento rápida reduz a demanda de memória de trabalho e facilita o
+raciocínio (Kail & Salthouse, 1994).
+-->
+
+---
+layout: default
+---
+
+# Do WISC-III ao WISC-IV
+
+<Grade :cols="3">
+<Cartao rotulo="saem 3" titulo="Excluídos">
+
+Arranjo de Figuras, Armar Objetos e Labirintos — para **reduzir o peso do tempo** no
+desempenho.
+
+</Cartao>
+<Cartao rotulo="ficam 10" titulo="Mantidos">
+
+Cubos, Semelhanças, Dígitos, Código, Vocabulário, Compreensão, Procurar Símbolos, Completar
+Figuras, Informação e Aritmética — **todos revistos**.
+
+</Cartao>
+<Cartao rotulo="entram 5" titulo="Novos" destaque>
+
+Conceitos Figurativos, Sequência de Números e Letras, Raciocínio Matricial, Cancelamento e
+Raciocínio com Palavras.
+
+</Cartao>
+</Grade>
+
+<Fonte>Menos tempo também em Cubos (bônus só nos 6 últimos itens) e em Aritmética (sem bônus por tempo).</Fonte>
+
+<!--
+Escores de processo: CUSB = Cubos sem bônus de tempo. DIOD = Dígitos Ordem Direta.
+DIOI = Dígitos Ordem Inversa. CAA = Cancelamento Aleatório. CAE = Cancelamento Estruturado.
+Eles detalham o desempenho, mas não entram no cálculo dos índices.
+-->
+
+---
+layout: secao
+numero: "04"
+kicker: Parte 4
+title: <span class="ds-em">Aplicação</span>
+note: Orientações gerais, válidas para todos os subtestes.
+---
+
+---
+layout: default
+---
+
+# Para que serve e quem aplica
+
+<Grade :cols="2">
+<Cartao rotulo="usos" titulo="Para que serve">
+
+Identificar **talentos e deficiências intelectuais**; dar base a decisões clínicas e
+pedagógicas; compor a **bateria neuropsicológica**, junto com outros testes.
+
+</Cartao>
+<Cartao rotulo="responsabilidade" titulo="Quem aplica">
+
+Profissional **treinado** e com experiência com crianças. Resultados analisados por
+**psicólogo**. Materiais guardados: não se mostram nem se entregam cópias de protocolos.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Deficiência intelectual">
+
+Um desempenho baixo no WISC-IV é **necessário, mas não conclusivo**: o diagnóstico exige
+também prejuízo no comportamento adaptativo.
+
+</Nota>
+
+<!--
+Os resultados podem e devem ser discutidos com a criança e os responsáveis — o que não se
+faz é mostrar o protocolo ou entregar cópias, o que comprometeria a validade do instrumento.
+-->
+
+---
+layout: default
+---
+
+# Situações especiais
+
+<Grade :cols="3">
+<Cartao rotulo="reavaliação" titulo="Efeito de prática">
+
+Intervalo de **1 a 2 anos** para os subtestes perceptuais e de **~1 ano** para os verbais. Em
+prazo curto, trocar por subtestes não usados antes.
+
+</Cartao>
+<Cartao rotulo="necessidades especiais" titulo="Limitações">
+
+Motora: priorizar ICV e IMO; PS ou CA no lugar de Código. Linguagem: ênfase no IOP.
+
+</Cartao>
+<Cartao rotulo="idioma" titulo="Outra língua">
+
+Intérprete ou versão bilíngue, com **cautela nos subtestes verbais**.
+
+</Cartao>
+</Grade>
+
+<Nota titulo="Sempre">
+
+Toda adaptação (tradução, substituição, ordem) é **anotada no Protocolo de Registro** e pesa
+na interpretação.
+
+</Nota>
+
+<!--
+O efeito de prática pesa mais nos subtestes de Organização Perceptual e Velocidade de
+Processamento.
+Na deficiência motora, os subtestes de IOP sem manipulação (Conceitos Figurativos, Raciocínio
+Matricial, Completar Figuras) podem ser considerados.
+-->
+
+---
+layout: default
+---
+
+# Os materiais
+
+<div class="ds-grid">
+<div>
+
+**No kit**
+
+- Manual Técnico
+- Manual de Instruções para Aplicação e Avaliação
+- Protocolo de Registro
+- Protocolos de Resposta 1 (Código e Procurar Símbolos) e 2 (Cancelamento)
+- Livro de Estímulos e Jogo de Cubos
+- Crivos de correção: Código, Procurar Símbolos, Cancelamento
+
+</div>
+<div>
+
+**Fora do kit**
+
+- Lápis nº 2 **sem borracha**
+- Cronômetro
+- Prancheta
+
+</div>
+</div>
+
+<!--
+A prancheta esconde o Protocolo de Registro, que traz respostas de alguns subtestes.
+O mesmo cuidado vale para o Manual.
+-->
+
+---
+layout: default
+---
+
+# O ambiente e a mesa
+
+- Sala **iluminada e silenciosa**, sem interrupções; criança **de costas para a janela**
+- Mesa e cadeira do tamanho da criança, com os pés no chão
+- Caixa e materiais **fora da vista**, mas à mão — numa cadeira ao lado
+- Livro de Estímulos fechado, com a **espiral voltada para a criança**
+- Protocolo na prancheta; cronômetro **discreto**, sem parecer misterioso
+- Na sala, **só o aplicador e a criança**
+
+<Fonte>Aplicadores destros deixam os materiais à direita; canhotos, do lado oposto.</Fonte>
+
+<!--
+Avisar a criança que as respostas serão anotadas reduz a ansiedade diante do registro.
+Se um adulto precisar ficar, deve sentar ao fundo, fora do campo de visão, e não falar com a
+criança.
+-->
+
+---
+layout: default
+---
+
+# Rapport
+
+<Grade :cols="2">
+<Cartao rotulo="faça" titulo="O que ajuda" destaque>
+
+- "Sim, é um teste, mas bem diferente daqueles da escola"
+- Elogiar o **esforço**: "você é esforçado"
+- "Este foi difícil, mas o próximo poderá ser mais fácil"
+- "Faça da melhor maneira que puder"
+
+</Cartao>
+<Cartao rotulo="evite" titulo="O que atrapalha">
+
+- A expressão **"teste de inteligência"**
+- Dizer "certo" ou "bom" depois de cada resposta
+- Familiarização longa demais antes de começar
+- Intervalo **no meio** de um subteste
+
+</Cartao>
+</Grade>
+
+<!--
+Rapport: a relação de confiança e cooperação entre aplicador e criança.
+As frases de transição podem mudar; os itens e as instruções dos subtestes, nunca.
+Se a criança pedir que o aplicador resolva: "Quero ver o quanto você é capaz de fazer bem
+feito, por você mesmo".
+-->
+
+---
+layout: default
+---
+
+# A ordem padrão
+
+| | principais | | | | suplementares |
+|---|---|---|---|---|---|
+| **1** | Cubos | **6** | Vocabulário | **11** | *Completar Figuras* |
+| **2** | Semelhanças | **7** | Sequência de Números e Letras | **12** | *Cancelamento* |
+| **3** | Dígitos | **8** | Raciocínio Matricial | **13** | *Informação* |
+| **4** | Conceitos Figurativos | **9** | Compreensão | **14** | *Aritmética* |
+| **5** | Código | **10** | Procurar Símbolos | **15** | *Raciocínio com Palavras* |
+
+<Fonte>Mude a ordem só por motivo clínico. Tudo numa sessão — ou a segunda em até uma semana.</Fonte>
+
+<!--
+A ordem alterna os tipos de tarefa para manter o interesse e reduzir o cansaço.
+Em itálico, os suplementares: vêm sempre depois dos dez principais.
+Mesmo quando um suplementar substitui um principal, ele é aplicado na sua posição na ordem
+(ex.: Completar Figuras no lugar de Conceitos Figurativos entra depois de Procurar Símbolos).
+Não se recomenda suspender os subtestes de IMO e IVP depois de começados.
+-->
+
+---
+layout: default
+---
+
+# Substituições
+
+| principal | pode ser substituído por |
+|---|---|
+| Semelhanças · Vocabulário · Compreensão | Informação ou Raciocínio com Palavras |
+| Cubos · Conceitos Figurativos · Raciocínio Matricial | Completar Figuras |
+| Dígitos · Sequência de Números e Letras | Aritmética |
+| Código · Procurar Símbolos | Cancelamento |
+
+<Nota tipo="alerta" titulo="Limites">
+
+**Uma substituição por índice** e, para o QI Total, **no máximo duas**. Aplique Aritmética e
+Cancelamento de rotina.
+
+</Nota>
+
+<!--
+A substituição se justifica por necessidade clínica (ex.: dificuldade motora) ou por
+invalidação de um subteste — nunca por preferência do aplicador.
+Ex.: Informação pode entrar no lugar de Vocabulário OU de Compreensão, não dos dois.
+Aplicar Aritmética e Cancelamento de rotina garante um substituto se um subteste de IMO ou
+IVP for invalidado (IMO e IVP têm só dois principais cada).
+-->
+
+---
+layout: default
+---
+
+# Início, sequência inversa e interrupção
+
+<Grade :cols="3">
+<Cartao rotulo="início" titulo="Item de entrada">
+
+Depende da **idade**. Com suspeita de deficiência, começa no item dos 6 anos — exceto Código e
+Procurar Símbolos.
+
+</Cartao>
+<Cartao rotulo="sequência inversa" titulo="Voltar">
+
+Sem pontuação máxima num dos **2 primeiros itens**, volte até acertar **2 seguidos**. Os
+anteriores ganham crédito total.
+
+</Cartao>
+<Cartao rotulo="interrupção" titulo="Parar">
+
+Após um número de **zeros seguidos** que varia por subteste. Nada depois do ponto de
+interrupção é pontuado.
+
+</Cartao>
+</Grade>
+
+<Fonte>Ex.: Cubos começa no item 1 (6–7 anos) ou no item 3 (8–16) e para após 3 zeros seguidos. Cada subteste traz suas regras no Protocolo.</Fonte>
+
+<!--
+Pontuação máxima: o maior número de pontos possível num item (2 num item de 0-1-2).
+Em Dígitos e Sequência de Números e Letras, a interrupção exige zero em TODAS as tentativas
+de um mesmo item, não zeros em itens diferentes.
+Exemplos e itens de treino não entram no total de pontos brutos.
+Na dúvida sobre interromper, aplique mais alguns itens — os pontos além do critério não
+contam.
+-->
+
+---
+layout: default
+---
+
+# Tempo, treino e repetição
+
+<Grade :cols="2">
+<Cartao rotulo="tempo" titulo="Cronômetro">
+
+Sem limite: **10 a 30 s** são orientação — depois, "Vamos tentar um outro". Com limite: conta
+da **última palavra da instrução** até o fim da resposta. Bônus por tempo só em Cubos, Código A
+e Cancelamento.
+
+</Cartao>
+<Cartao rotulo="repetição" titulo="Treino e repetição">
+
+Ajuda e feedback **só onde o manual permite**. **Dígitos e SNL não repetem**: "Faça como lhe
+parecer melhor". Nos demais, repita quantas vezes a criança pedir.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Excesso de ajuda">
+
+Ajudar além do previsto quebra a padronização e pode **invalidar** o resultado.
+
+</Nota>
+
+<!--
+Repetir a instrução não para o cronômetro: o tempo já a inclui.
+Resposta completada depois do tempo esgotado não recebe crédito.
+Se a criança disse "não sei" e depois acertou itens mais difíceis, pode-se voltar ao item —
+exceto em subtestes com tempo, Dígitos e SNL.
+SNL = Sequência de Números e Letras.
+-->
+
+---
+layout: default
+---
+
+# Inquérito e registro
+
+| símbolo | significa | | símbolo | significa |
+|---|---|---|---|---|
+| **Q** | inquérito | | **NS** | disse que não sabia |
+| **A** | alerta (frase de auxílio) | | **NR** | não respondeu |
+| **R** | repetição | | **AC** | apontou corretamente |
+| **C** | criança corrigiu a resposta | | **AE** | apontou erroneamente |
+
+<Nota titulo="Inquérito">
+
+Só para resposta **vaga ou incompleta**: "O que você quis dizer?", "Fale mais sobre isso".
+Nunca para salvar uma resposta errada.
+
+</Nota>
+
+<!--
+Anote tudo: a resposta, as perguntas feitas e as respostas não verbais (apontar).
+Itens que pedem inquérito estão marcados com (Q) ou asterisco no manual e no Protocolo.
+Frase de auxílio: relembra a tarefa (ex.: em Conceitos Figurativos, uma figura por fileira).
+Se a criança der duas respostas sem dizer qual vale: "Você disse ... e você disse ... Com
+qual das duas você quer ficar?" — anote C.
+-->
+
+---
+layout: default
+---
+
+# Princípios de pontuação
+
+- Vale o **conteúdo**, não a elegância nem o tamanho da resposta
+- **Nunca** penalizar erro de gramática, pronúncia ou articulação
+- Várias respostas: pontue a **melhor** — "são pequenas, são frutas, têm casca" vale 2
+- A criança se corrigiu: vale a **última** resposta (dentro do tempo)
+
+<Nota tipo="alerta" titulo="Fraca ≠ incorreta">
+
+"O que é um guarda-chuva?" → "Coloca sobre a cabeça" (1 ponto). Se, no inquérito, vem
+"plástico", a resposta é fraca e **mantém o ponto**. Se vem "é um chapéu", revela um conceito
+errado e **zera**.
+
+</Nota>
+
+<Fonte>Pontos brutos, ponderados e compostos: na aula de correção.</Fonte>
+
+<!--
+Os subtestes verbais (Semelhanças, Vocabulário, Compreensão, Informação, Raciocínio com
+Palavras) exigem mais julgamento: compare a resposta com os exemplos do manual e, se não
+houver um equivalente, aplique o critério geral do subteste.
+O exemplo das frutas é o item 3 de Semelhanças (maçã e banana).
+-->
+
+---
 layout: default
 ---
 
@@ -689,6 +1216,9 @@ layout: default
 - Schneider, W. J., & McGrew, K. S. (2018). The Cattell-Horn-Carroll theory of cognitive
   abilities. In D. P. Flanagan & E. M. McDonough (Eds.), *Contemporary intellectual
   assessment* (4th ed., pp. 73–163). Guilford.
+- Wechsler, D. (2013). *WISC-IV: Escala Wechsler de Inteligência para Crianças — Manual de
+  instruções para aplicação e avaliação* (4ª ed.; adaptação brasileira de Rueda et al.).
+  Casa do Psicólogo.
 
 </div>
 
@@ -699,7 +1229,8 @@ pontos:
   - "Do <strong>g</strong> de Spearman ao CHC: um século discutindo se a inteligência é uma ou várias"
   - "O <strong>CHC</strong> organiza a inteligência em três estratos: g, 16 capacidades amplas e mais de 90 específicas"
   - "<strong>Gf</strong>, <strong>Gc</strong> e <strong>Gsm</strong> são os pilares — e a base dos índices do WISC-IV"
-proximo: "WISC-IV: aplicação"
+  - "O <strong>WISC-IV</strong>: 4 índices e o QIT, 10 subtestes principais e 5 suplementares, aplicação padronizada"
+proximo: "WISC-IV: os subtestes"
 ---
 
 ---
