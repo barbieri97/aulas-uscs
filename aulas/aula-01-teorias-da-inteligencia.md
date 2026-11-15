@@ -2445,6 +2445,234 @@ Definir uma forma relacionada da palavra (o substantivo no lugar do verbo) vale 
 layout: default
 ---
 
+# 7 · Sequência de Números e Letras (SNL)
+
+O aplicador lê uma sequência misturada de números e letras; a criança repete os **números em
+ordem crescente** e depois as **letras em ordem alfabética**.
+
+<Grade :cols="2">
+<Cartao rotulo="IMO · principal · novo" titulo="O que mede">
+
+Sequenciamento, processamento mental, atenção, memória auditiva de curto prazo, imagem
+visoespacial e velocidade de processamento.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gsm + Gf" destaque>
+
+**Memória de trabalho** em estado puro: guardar a sequência (**Gsm**) enquanto a reorganiza
+segundo duas regras ao mesmo tempo (**Gf**).
+
+</Cartao>
+</Grade>
+
+<!--
+Subteste novo no WISC-IV, adaptado do WAIS-III (baseado em Gold et al., 1997). 10 itens, cada um
+com 3 tentativas.
+É mais exigente que Dígitos Ordem Inversa: além de guardar, a criança precisa separar duas
+categorias (números e letras) e ordenar cada uma.
+Na interpretação: comparar com Dígitos — SNL bem abaixo de DIOD pode indicar que a dificuldade
+está na manipulação (memória de trabalho), não na retenção simples.
+-->
+
+---
+layout: default
+---
+
+# Sequência de Números e Letras · regras
+
+| | |
+|---|---|
+| **material** | Manual e Protocolo de Registro |
+| **início** | 6–7 anos: **itens de qualificação**, exemplo e item 1 · 8–16 anos: exemplo e item 1 · suspeita de déficit: qualificação |
+| **qualificação** | contar **até 3** e dizer o alfabeto **até C** — sem isso, o subteste não é aplicado |
+| **interrupção** | falhou na qualificação, ou **0 nas três tentativas de um mesmo item** |
+| **tentativas** | três por item — aplique **as três** |
+| **pontuação** | 1 ou 0 por tentativa · item vale até 3 · máximo de **30** pontos |
+
+<Fonte>Vale a resposta com letras antes dos números, desde que cada grupo esteja na ordem certa.</Fonte>
+
+<!--
+Na qualificação, circular S ou N no Protocolo. Se a criança não passa: interromper SNL e aplicar
+Aritmética para obter o IMO e o QIT.
+No exemplo, a resposta errada é corrigida na hora e a tentativa é reaplicada. O subteste segue
+mesmo que a criança erre as duas tentativas do exemplo.
+Intervenções marcadas com * no manual (itens 1, 4 e 5): anotar I no Protocolo. Só no item 1 a
+resposta dada depois da intervenção recebe crédito; nos itens 4 e 5, não.
+-->
+
+---
+layout: default
+---
+
+# Sequência de Números e Letras · falas (1/2)
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="6–7 anos · contagem">
+
+Vamos fazer uma coisa diferente. Conte até 5 em voz alta para eu ouvir.
+
+</Fala>
+
+<Fala quando="alfabeto">
+
+Agora diga as letras do alfabeto para mim.
+
+</Fala>
+
+<Fala quando="se não entender · pausa entre os elementos">
+
+Conte assim: 1… 2… · Assim: A… B… — Agora é a sua vez.
+
+</Fala>
+
+<Fala quando="exemplo · tentativa 2">
+
+Vamos fazer outro. [sequência]
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="exemplo · tentativa 1">
+
+Agora eu vou dizer um grupo de números e letras. Quando eu terminar, quero que você repita
+primeiro os números, em ordem, começando pelo número mais baixo. Depois você diz as letras em
+ordem alfabética. Por exemplo, se eu disser A-1, você deve dizer 1-A. Primeiro você diz o
+número, depois a letra. Vamos treinar. [sequência]
+
+</Fala>
+
+<Fala quando="exemplo · resposta incorreta">
+
+Não é bem isso. Eu disse [sequência], assim, você deveria dizer [resposta]. Primeiro você diz o
+número, depois a letra. Vamos tentar outra vez. [sequência]
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Contou até 3 → alfabeto. Disse até C → exemplo e itens. Falhou em qualquer um → interromper e
+aplicar Aritmética para obter o IMO e o QIT.
+[sequência] = as sequências do exemplo, que estão no Manual e no Protocolo.
+Depois de cada tentativa do exemplo, seguir adiante qualquer que seja a resposta: tentativa 1 →
+tentativa 2 → item 1.
+-->
+
+---
+layout: default
+---
+
+# Sequência de Números e Letras · falas (2/2)
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="itens 1–2">
+
+Agora que nós já treinamos, vamos fazer mais alguns. Não esqueça: diga os números primeiro, em
+ordem crescente. Depois diga as letras em ordem alfabética.
+
+</Fala>
+
+<Fala quando="itens 3–10">
+
+Agora vamos fazer alguns com mais números e letras. Se eu disser 2-C-3, você deve dizer: 2-3-C.
+Diga primeiro os números, em ordem crescente, e depois as letras, em ordem alfabética.
+
+</Fala>
+
+<Fala quando="pedido de repetição">
+
+Diga o que você acha que eu disse.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="* item 1 · não disse o número primeiro">
+
+Lembre que você precisa dizer os números primeiro, em ordem crescente. Depois diga as letras em
+ordem alfabética. Vamos fazer outro.
+
+</Fala>
+
+<Fala quando="* item 4 · não pôs as letras em ordem">
+
+Lembre-se de dizer as letras em ordem.
+
+</Fala>
+
+<Fala quando="* item 5 · não pôs os números em ordem">
+
+Lembre-se de falar os números em ordem.
+
+</Fala>
+
+<Acao>
+
+Anotar **I** no Protocolo a cada intervenção.
+
+</Acao>
+
+</div>
+</Grade>
+
+<!--
+As intervenções (*) só valem nas tentativas e respostas exatas que o manual indica: item 1,
+tentativa 1; item 4, tentativa 2; item 5, tentativa 1. Fora delas, nenhuma ajuda.
+Só no item 1 a resposta dada depois da intervenção pode receber crédito.
+-->
+
+---
+layout: default
+---
+
+# Sequência de Números e Letras · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="ritmo" titulo="Um por segundo" destaque>
+
+Leia **literalmente**, **um número ou letra por segundo**, baixando levemente a voz no último
+elemento. Depois, pausa.
+
+</Cartao>
+<Cartao rotulo="repetição" titulo="Nunca repita">
+
+Nenhuma tentativa é repetida. Se a criança pedir: **"Diga o que você acha que eu disse."**
+
+</Cartao>
+<Cartao rotulo="intervenção" titulo="Só onde há asterisco">
+
+Intervenha **apenas** nas respostas marcadas com * nos itens 1, 4 e 5, e anote **I**. Depois da
+intervenção, só o item 1 dá crédito.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Antes de começar">
+
+Com **6–7 anos**, a qualificação é obrigatória. Quem não conta até 3 ou não diz o alfabeto até C
+**não faz SNL** — o IMO sai com Aritmética.
+
+</Nota>
+
+<!--
+Como em Dígitos: agrupar elementos ou variar a entonação muda a tarefa.
+Basta dar uma das respostas corretas listadas para receber crédito (números antes ou letras
+antes).
+Evitar que a criança veja o Protocolo: as sequências estão impressas nele.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
