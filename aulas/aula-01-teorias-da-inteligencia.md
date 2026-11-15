@@ -1826,6 +1826,175 @@ DIOD e DIOI separados permitem comparar retenção (direta) e manipulação (inv
 layout: default
 ---
 
+# 4 · Conceitos Figurativos (CN)
+
+O aplicador mostra **duas ou três fileiras** de figuras; a criança escolhe **uma de cada
+fileira** para formar um grupo com uma característica em comum.
+
+<Grade :cols="2">
+<Cartao rotulo="IOP · principal · novo" titulo="O que mede">
+
+**Raciocínio abstrato** e **categorial**: encontrar o conceito que une figuras diferentes,
+sem precisar verbalizá-lo.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gf + Gv" destaque>
+
+Raciocínio fluido (**Gf**) — indução de um conceito — apoiado no processamento visual
+(**Gv**) para reconhecer as figuras.
+
+</Cartao>
+</Grade>
+
+<!--
+Subteste novo no WISC-IV, um dos três que reforçam o raciocínio fluido. 28 itens: 1–12 com duas
+fileiras, 13–28 com três.
+É a versão não verbal de Semelhanças: em vez de dizer o que duas palavras têm em comum, a criança
+mostra o que figuras têm em comum. Como a resposta pode ser só apontar, a demanda de expressão
+verbal é baixa — útil para crianças com dificuldade de linguagem.
+-->
+
+---
+layout: default
+---
+
+# Conceitos Figurativos · regras
+
+| | |
+|---|---|
+| **material** | Livro de Estímulos e Protocolo de Registro |
+| **início** | sempre os **exemplos A e B**; depois 6–8 anos: item 1 · 9–11: item 5 · 12–16: item 7 · suspeita de déficit: item 1 |
+| **sequência inversa** | 9–16 anos sem pontuação máxima em um dos dois primeiros itens: volte até acertar **dois itens seguidos** |
+| **interrupção** | após **5 zeros consecutivos** |
+| **tempo** | sem limite |
+| **pontuação** | 1 ponto só se acertar a figura de **todas** as fileiras · máximo de 28 pontos |
+
+<Fonte>A criança pode apontar, nomear ou dizer o número das figuras. Ajuda só nos exemplos A e B.</Fonte>
+
+<!--
+No Protocolo, circular os números das figuras escolhidas; as respostas certas estão impressas em
+verde. Sem resposta ou "não sei": circular NR.
+Resposta correta dada depois de uma frase de auxílio permitida vale 1 ponto.
+-->
+
+---
+layout: default
+---
+
+# Conceitos Figurativos · falas
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**Exemplo A.** Abrir o Livro no exemplo A e percorrer cada fileira com o dedo indicador:
+
+</Acao>
+
+<Fala>
+
+Olhe isto aqui *(1ª fileira)*. Olhe isto aqui *(2ª fileira)*. Escolha uma figura daqui *(1ª)*
+que combine com uma figura daqui *(2ª)*.
+
+</Fala>
+
+<Fala quando="resposta correta">
+
+Por que elas combinam? → Elas combinam porque [as duas são …]. Vamos fazer outro.
+
+</Fala>
+
+<Fala quando="resposta incorreta · apontando as figuras certas">
+
+Esta [figura] combina com este(a) [figura] aqui. [As duas são …]. Vamos fazer outro.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="itens 1–12 · duas fileiras">
+
+Escolha uma figura daqui *(1ª)* que combine com uma figura daqui *(2ª)*.
+
+</Fala>
+
+<Fala quando="itens 13–28 · três fileiras">
+
+Escolha uma figura daqui *(1ª)* que combine com uma figura daqui *(2ª)* e com uma figura daqui
+*(3ª)*.
+
+</Fala>
+
+<Fala quando="frase de auxílio · faltou fileira ou escolheu duas na mesma">
+
+Escolha uma figura de cada fileira: uma aqui, uma aqui *(e uma aqui)*.
+
+</Fala>
+
+<Fala quando="mais de uma combinação">
+
+Você deve dar só uma resposta. Escolha a melhor.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Em todas as falas, cada "daqui" vem com o dedo indicador percorrendo a fileira correspondente.
+Exemplo B: as mesmas falas, sem o "Olhe isto aqui". Depois dele, item de entrada da idade.
+No exemplo A, se a criança acerta mas não explica, o aplicador dá a explicação do mesmo jeito.
+As instruções dos itens podem ser abreviadas ou omitidas quando a criança já entendeu a tarefa.
+Se a criança perguntar o nome de uma figura, diga somente o nome.
+-->
+
+---
+layout: default
+---
+
+# Conceitos Figurativos · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="auxílio" titulo="Sempre que preciso" destaque>
+
+As frases de auxílio podem ser ditas **sempre que necessário**, em qualquer item — e a resposta
+certa dada depois delas vale ponto.
+
+</Cartao>
+<Cartao rotulo="nomes" titulo="Só o nome">
+
+Se a criança pergunta o que é uma figura, diga **só o nome**. Se o nome que ela dá deixa
+dúvida: **"Mostre com o dedo qual é a figura que você escolheu."**
+
+</Cartao>
+<Cartao rotulo="exemplos" titulo="O único ensino">
+
+A explicação do "porquê" só existe nos **exemplos A e B**. Nos itens, nada de "por que elas
+combinam?".
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Tudo ou nada">
+
+Acertar uma fileira e errar outra vale **0**. Registre as figuras escolhidas de **cada** fileira
+— é o que mostra se a criança achou um conceito, ainda que errado.
+
+</Nota>
+
+<!--
+A frase de auxílio relembra a regra da tarefa (uma por fileira, uma só resposta) — não ajuda a
+achar o conceito. Por isso é permitida em todos os itens.
+Observar: a criança escolhe por semelhança perceptual (cor, forma) ou por categoria (função,
+classe)? É o que distingue o raciocínio concreto do abstrato na análise qualitativa.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
