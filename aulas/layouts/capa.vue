@@ -7,7 +7,7 @@
   layout: capa
   kicker: Pós-graduação          # a pílula (padrão: "Pós-graduação")
   subtitle: A pergunta que a aula responde.
-  meta: Prof.ª Fulana · 12 de março de 2026
+  meta: Aula 03 · Avaliação psicológica e neuropsicologia
   titulo: Teorias da <span class="ds-em">inteligência</span>   # opcional
   ---
 

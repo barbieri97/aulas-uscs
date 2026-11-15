@@ -27,14 +27,6 @@ const slidevBin = binOf('@slidev/cli', 'slidev')
 
 const escapeHtml = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
 
-/** "2026-08-11" -> "11 de agosto de 2026". Datas inválidas/ausentes viram ''. */
-function formatDate (value) {
-  if (!value) return ''
-  const date = value instanceof Date ? value : new Date(`${value}T12:00:00`)
-  if (Number.isNaN(date.getTime())) return String(value)
-  return new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' }).format(date)
-}
-
 /**
  * Os tokens do design system, para a landing usar as mesmas cores dos slides.
  *
@@ -68,7 +60,6 @@ const decks = deckFiles().map((path) => {
     slug,
     title: head.title ?? slug,
     info: head.info ?? '',
-    date: head.date ?? '',
   }
 })
 
@@ -110,7 +101,6 @@ const cards = decks.map((deck, i) => `
           <span class="body">
             <span class="title">${escapeHtml(deck.title)}</span>
             ${deck.info ? `<span class="info">${escapeHtml(deck.info)}</span>` : ''}
-            ${deck.date ? `<span class="date">${escapeHtml(formatDate(deck.date))}</span>` : ''}
           </span>
           <span class="go" aria-hidden="true">→</span>
         </a>
@@ -119,7 +109,7 @@ const cards = decks.map((deck, i) => `
 // Landing estática e self-contained, pintada com os tokens do design system (ver tokensCss()).
 // Os textos de identidade vêm de site.config.json; só o `intro` aceita HTML (você o escreve).
 const pageTitle = [site.title, site.institution].filter(Boolean).join(' · ')
-const kicker = [site.institution, new Date().getFullYear()].filter(Boolean).join(' · ')
+const kicker = site.institution ?? ''
 
 const indexHtml = `<!doctype html>
 <html lang="pt-BR">
@@ -170,7 +160,6 @@ ${tokensCss()}
   .body { display: grid; gap: .18rem; flex: 1; min-width: 0; }
   .title { font-weight: 700; font-size: 1.06rem; }
   .info { color: var(--ds-muted); font-size: .92rem; }
-  .date { color: var(--ds-muted); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; }
   .go { color: var(--ds-muted); font-size: 1.25rem; }
   .card a:hover .go { color: var(--ds-accent); }
   footer { margin-top: 3rem; color: var(--ds-muted); font-size: .82rem; }

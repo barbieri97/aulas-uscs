@@ -8,11 +8,18 @@
 //
 // Erro (✗) aborta o build; aviso (!) não. A régua é essa: erro é o que quebra o deck ou
 // publica uma aula sem imagem; aviso é o que só desarruma a convenção do repositório.
+//
+// Se o design system tiver um aulas/contratos.mjs, cada slide também é conferido contra o
+// contrato do seu layout (campos obrigatórios, tipos, valores aceitos, nomes digitados
+// errado) e cada <Componente> contra o contrato dele — ver scripts/contratos.mjs.
 import { existsSync, readFileSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
-import { basename, join, relative } from 'node:path'
+import { basename, join, relative, resolve } from 'node:path'
 import { parse } from '@slidev/parser'
+import { carregarContratos, checarComponentes, checarContratoContraVue, checarHeadmatter, checarSlide } from './contratos.mjs'
 import { allDeckFiles, knownNames, layoutsDir, publicDir, root, vueNames } from './lib.mjs'
+
+const contratos = await carregarContratos()
 
 /**
  * Campos que o Slidev consome no frontmatter e NÃO repassa como prop para o layout.
@@ -29,7 +36,6 @@ const CAMPOS_RESERVADOS = [
 ]
 
 const RE_ARQUIVO_AULA = /^aula-\d{2,}-[a-z0-9]+(-[a-z0-9]+)*\.md$/
-const RE_DATA = /^\d{4}-\d{2}-\d{2}$/
 const RE_ASSET = /(?<![\w.@])\/[\w\-./]+\.(?:png|jpe?g|gif|svg|webp|avif|mp4|webm|pdf)/gi
 const RE_TAG_COMPONENTE = /<([A-Z][A-Za-z0-9]*)/g
 
@@ -96,16 +102,19 @@ async function lintDeck (file) {
     if (!RE_ARQUIVO_AULA.test(nome)) {
       aviso('o nome foge do padrão aula-NN-slug-em-minusculas.md (o nome do arquivo vira a URL)')
     }
-    for (const campo of ['title', 'info', 'date']) {
+    for (const campo of ['title', 'info']) {
       if (!head[campo]) erro(`falta \`${campo}:\` no headmatter — a página inicial do site lê esse campo`, 1)
     }
-    if (head.date && !RE_DATA.test(String(head.date))) {
-      erro(`\`date: ${head.date}\` não está em YYYY-MM-DD (use aspas: date: "2026-03-12")`, 1)
+    // As aulas se repetem em várias turmas: data não faz sentido e não aparece em lugar nenhum.
+    if (head.date !== undefined) {
+      aviso('`date:` não é usado — as aulas não têm data (repetem-se em várias turmas). Apague o campo', 1)
     }
     if (head.download === undefined) {
       aviso('falta `download: true` no headmatter — é o padrão do repositório para a aula ficar disponível para baixar em PDF', 1)
     }
   }
+
+  if (contratos) checarHeadmatter(head, contratos, erro)
 
   // --- tema: o que dá para validar depende dele existir --------------------------------
   const { layouts, components, temaResolvido } = knownNames(head.theme)
@@ -122,6 +131,13 @@ async function lintDeck (file) {
 
     if (fm.layout && !layouts.has(fm.layout) && temaResolvido) {
       erro(`${onde}: layout \`${fm.layout}\` não existe — nem no Slidev, nem no tema, nem em aulas/layouts/`, linha)
+    }
+
+    // O contrato do layout e dos componentes (aulas/contratos.mjs), se houver.
+    if (contratos) {
+      const ctx = { indice: slide.index, total: deck.slides.length, bancada, erro, aviso, linha, onde, conteudo }
+      checarSlide(slide, contratos, ctx)
+      checarComponentes(conteudo, contratos, ctx)
     }
 
     // `src:` é o campo com que o Slidev importa OUTRO .md no lugar deste slide. Apontá-lo
@@ -157,7 +173,7 @@ async function lintDeck (file) {
 
 const alvos = process.argv.slice(2)
 const arquivos = alvos.length
-  ? alvos.map((a) => join(root, a.replace(/^\.[\\/]/, '')))
+  ? alvos.map((a) => resolve(root, a))
   : allDeckFiles()
 
 if (!arquivos.length) {
@@ -168,7 +184,17 @@ if (!arquivos.length) {
 let erros = 0
 let avisos = 0
 
-// Checagem do design system, não de um deck: roda uma vez, antes dos arquivos.
+// Checagens do design system, não de um deck: rodam uma vez, antes dos arquivos.
+if (contratos) {
+  const problemas = checarContratoContraVue(contratos)
+  if (problemas.length) console.log('\n  aulas/contratos.mjs')
+  for (const { nivel, msg } of problemas) {
+    console.log(`    ${nivel === 'erro' ? '✗' : '!'} ${msg}`)
+    if (nivel === 'erro') erros++
+    else avisos++
+  }
+}
+
 for (const { nome, campo } of layoutsComPropReservada()) {
   console.log(`\n  aulas/layouts/${nome}.vue`)
   console.log(`    ✗ aulas/layouts/${nome}.vue  a prop \`${campo}\` nunca chega: é campo reservado do Slidev.`)

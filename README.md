@@ -1,7 +1,6 @@
 # Aulas USCS em Slidev
 
-As aulas de pós-graduação na USCS — teorias da inteligência, escalas Wechsler (WISC) e funções
-cognitivas — escritas em [Slidev](https://sli.dev/) e publicadas no GitHub Pages, **uma aula
+As aulas de pós-graduação na USCS em avaliação psicológica e neuropsicologia, escritas em [Slidev](https://sli.dev/) e publicadas no GitHub Pages, **uma aula
 por arquivo** em [`aulas/`](aulas/), cada uma na sua própria URL.
 
 ```
@@ -26,7 +25,8 @@ npm install                                   # uma vez
 npm run dev                                   # abre a primeira aula com hot reload
 npm run dev -- 01                             # abre a aula cujo nome contém "01"
 npm run ref                                   # catálogo de layouts e componentes
-npm run lint                                  # valida os decks
+npm run lint                                  # valida os decks contra o contrato dos layouts
+npm test                                      # testa o próprio lint
 npm run build                                 # gera dist/ igual ao que vai pro ar
 ```
 
@@ -36,7 +36,8 @@ só existe depois do `npm run build` — é o build que dá a cada deck o seu `-
 
 **Para criar uma aula nova:** copie `aulas/aula-01-teorias-da-inteligencia.md`, renomeie para
 `aula-NN-titulo-em-slug.md`, edite, commit, push. O workflow builda e publica sozinho — o
-índice se atualiza a partir do `title` / `info` / `date` do topo do arquivo. O nome do arquivo
+índice se atualiza a partir do `title` / `info` do topo do arquivo. As aulas não têm data:
+elas se repetem a cada turma. O nome do arquivo
 vira a URL.
 
 Toda aula traz `download: true` no headmatter — é o padrão do repositório para deixar o deck
@@ -55,6 +56,7 @@ Resumo das convenções — e as instruções para agentes de IA — em [`AGENTS
 aulas/
 ├── aula-01-teorias-da-inteligencia.md   a aula modelo
 ├── _design-system.md             o catálogo (o `_` mantém fora do site)
+├── contratos.mjs                 o que cada layout e componente aceita (lido pelo lint)
 ├── styles/                       tokens.css · base.css · utilities.css (+ Poppins)
 ├── layouts/                      capa · secao · destaque · roteiro · figura · fecho · redes · encerramento
 ├── components/                   Nota · Grade · Cartao · Numero · Termo · Citacao · Pessoa · LinhaDoTempo · Fonte
@@ -62,7 +64,7 @@ aulas/
 ├── lib/asset.ts                  resolve caminho de imagem contra a base do site
 └── public/                       imagens (`/foto.svg` no markdown) e os fundos uscs-*.jpg
 docs/                             design-system.md · temas.md
-scripts/                          dev.mjs · lint.mjs · build-site.mjs · lib.mjs
+scripts/                          dev.mjs · lint.mjs · contratos.mjs · build-site.mjs · lib.mjs · testes/
 site.config.json                  a identidade do curso
 ```
 
@@ -146,7 +148,7 @@ nome do repositório não aparece em lugar nenhum do código.
 
 `scripts/build-site.mjs`:
 
-1. lê o topo (headmatter) de cada `aulas/*.md` para pegar título, ementa e data;
+1. lê o topo (headmatter) de cada `aulas/*.md` para pegar título e ementa;
 2. roda `scripts/lint.mjs` em todos — erro aqui aborta o build;
 3. roda **um `slidev build` por aula**, cada uma com o seu `--base` e `--router-mode hash`
    (necessário porque o Pages serve tudo sob `/<repo>/` e só tem um `404.html`, na raiz);

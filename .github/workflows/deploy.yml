@@ -32,6 +32,15 @@ jobs:
 
       - run: npm ci
 
+      # Antes de qualquer passo lento: aula quebrada para aqui e nada é publicado.
+      # O lint confere cada slide contra aulas/contratos.mjs (campo obrigatório, valor
+      # aceito, atributo de componente…); o teste confere que o próprio lint funciona.
+      - name: Verificar as aulas (lint)
+        run: npm run lint
+
+      - name: Testar o lint
+        run: npm test
+
       # `npm ci` já baixa o binário do Chromium (script `install` do playwright-chromium);
       # falta a lib do sistema operacional pra ele rodar headless. Sem isso o `slidev build`
       # quebra na hora de gerar o PDF de `download: true`.

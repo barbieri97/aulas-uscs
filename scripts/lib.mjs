@@ -62,7 +62,7 @@ export function binOf (pkg, bin) {
  *
  * Todos os campos são opcionais; sem o arquivo, o site sai com títulos genéricos.
  *   title       — o <h1> e o <title> da landing
- *   institution — o kicker acima do título (o ano é acrescentado automaticamente)
+ *   institution — o kicker acima do título
  *   description — a meta description
  *   intro       — o parágrafo abaixo do título; HTML permitido (é você que escreve)
  */
@@ -82,7 +82,7 @@ export function siteConfig () {
 
 /**
  * O headmatter: o primeiro bloco `---` do arquivo, que é ao mesmo tempo a configuração
- * do deck e o frontmatter do primeiro slide. É de onde a landing tira título, ementa e data.
+ * do deck e o frontmatter do primeiro slide. É de onde a landing tira título e ementa.
  */
 export function readHeadmatter (file) {
   const src = readFileSync(file, 'utf-8').replace(/^﻿/, '')
