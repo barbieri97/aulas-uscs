@@ -3010,6 +3010,237 @@ conceito.
 layout: default
 ---
 
+# 10 · Procurar Símbolos (PS)
+
+A criança olha o **grupo de estímulo** e marca **SIM** ou **NÃO** conforme algum desses símbolos
+apareça no **grupo de busca**, em **120 segundos**.
+
+<Grade :cols="2">
+<Cartao rotulo="IVP · principal" titulo="O que mede">
+
+Velocidade de processamento, memória visual de curto prazo, coordenação visomotora,
+flexibilidade cognitiva, discriminação visual e concentração.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gs · velocidade de processamento" destaque>
+
+Predomina o **Gs**, com tempo de decisão (**Gt**), processamento visual (**Gv**) e habilidade
+psicomotora (**Gp**) — mas com menos peso grafomotor que Código.
+
+</Cartao>
+</Grade>
+
+<!--
+Duas formas: Procurar Símbolos A (6–7 anos: 1 símbolo de estímulo, 3 de busca) e B (8–16 anos:
+2 de estímulo, 5 de busca).
+Também envolve compreensão auditiva, organização perceptual, planejamento e aprendizagem.
+Comparar com Código: as duas pedem velocidade, mas Código exige copiar símbolos e PS só riscar
+uma caixa. PS médio com Código baixo aponta o componente grafomotor; os dois baixos, a
+velocidade de processamento em si.
+-->
+
+---
+layout: default
+---
+
+# Procurar Símbolos · regras
+
+| | |
+|---|---|
+| **material** | Protocolo de Respostas 1, Crivo de Correção, Protocolo de Registro, lápis nº 2 **sem borracha**, cronômetro |
+| **início** | 6–7 anos: exemplos, treino e itens do **PS A** · 8–16 anos: do **PS B** · suspeita de déficit: forma da **idade cronológica** |
+| **interrupção** | após **120 segundos** |
+| **tempo** | aciona na última palavra da instrução; para ao completar ou aos 120 s — **registre o tempo** |
+| **pontuação** | **acertos − erros** (negativo vira 0) · A: máximo de 45 · B: máximo de 60 |
+
+<Fonte>Os dois itens de treino são sempre aplicados. Itens em branco não contam nem como acerto, nem como erro.</Fonte>
+
+<!--
+PS A começa na página 3 do Protocolo de Respostas 1; PS B na página 7. Só a página do exemplo
+fica visível.
+No fim de cada página do Protocolo de Respostas, anotar C (corretas) e I (incorretas); somar no
+Protocolo de Registro.
+SIM e NÃO marcados juntos, sem correção clara: errado. Correção espontânea clara (um X sobre a
+primeira marca): vale a resposta final.
+Quem não completa no tempo tem o tempo registrado como 120 s.
+-->
+
+---
+layout: default
+---
+
+# Procurar Símbolos · falas (1/2) — exemplos e treino
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="1º exemplo · há um igual">
+
+Olhe estas formas. Esta forma que está aqui *(estímulo)* é igual a esta forma que está aqui
+*(o igual na busca)*, assim eu vou marcar a caixa SIM desta maneira. *(riscar SIM)*
+
+</Fala>
+
+<Fala quando="2º exemplo · não há igual">
+
+Agora olhe estas formas. Esta forma que está aqui não é igual a nenhuma destas formas que estão
+aqui *(busca)*, assim eu vou marcar a caixa NÃO desta maneira. *(riscar NÃO)*
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="resumo">
+
+Você deve marcar a caixa SIM se a forma que está aqui for igual a uma destas formas que estão
+aqui, e deve marcar NÃO se não for igual a nenhuma das formas que estão aqui. Você entendeu?
+
+</Fala>
+
+<Fala quando="treino · dar o lápis sem borracha">
+
+Agora, faça estes. Pode começar.
+
+</Fala>
+
+<Fala quando="treino · resposta correta">
+
+Isso mesmo. · Está certo. — Agora você já sabe como fazer.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Protocolo aberto na página do exemplo (A: p. 3 · B: p. 7), só ela à vista; passar o dedo
+pelo exemplo ao falar. "Olhe bem isto aqui" aponta o estímulo.
+No PS B, o plural: "Uma destas formas (grupo de estímulo) é igual a uma das formas que estão
+aqui (grupo de busca). Esta forma que está aqui (o símbolo) é igual a esta forma que está aqui…"
+e "Nenhuma destas formas que estão aqui é igual a estas formas que estão aqui…". Na correção do
+treino 2: "Aqui nós temos estas formas."
+Não passar aos itens de teste enquanto a criança não entender. Se ficar claro que não vai
+entender, interromper PS e aplicar Cancelamento para obter o IVP e o QIT.
+-->
+
+---
+layout: default
+---
+
+# Procurar Símbolos · falas (2/2) — treino e itens
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="treino 1 · marcou NÃO">
+
+Não é bem assim. Olhe bem isto aqui. Aqui nós temos esta forma. Agora olhe bem aqui *(o igual)*.
+Aqui nós temos a mesma forma. As formas são iguais, então você deve marcar SIM.
+
+</Fala>
+
+<Fala quando="treino 2 · marcou SIM">
+
+Não é bem assim. Olhe bem isto aqui. Aqui nós temos esta forma. Agora olhe bem aqui *(busca)*.
+Nenhuma destas formas é igual, então você deve marcar NÃO.
+
+</Fala>
+
+<Fala quando="aos 120 segundos">
+
+Pare.
+
+</Fala>
+
+</div>
+<div>
+
+<Acao>
+
+Abrir o Protocolo nas primeiras páginas de teste e dizer:
+
+</Acao>
+
+<Fala>
+
+Quando eu disser "Pode começar", faça estes da mesma maneira. Comece aqui *(1º item da página
+à esquerda)*, e continue na ordem, sem pular nenhum. Trabalhe o mais depressa possível, sem
+errar. Quando terminar a primeira página, continue na segunda página e depois na página seguinte
+*(mostrar rapidamente as páginas seguintes)*. Pronto?
+
+</Fala>
+
+<Fala quando="acionar o cronômetro">
+
+Pode começar.
+
+</Fala>
+
+<Fala quando="itens · fim da página · virar para a criança">
+
+Continue trabalhando o mais depressa possível.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Itens de teste: A nas páginas 4–6 do Protocolo de Respostas 1 (abrir em 4–5); B nas páginas
+8–11 (abrir em 8–9).
+Aos 120 s (ou ao terminar): registrar o tempo no Protocolo de Registro, fechar o Protocolo de
+Respostas e tirá-lo da vista. Com 6–7 anos, não aplicar o PS B.
+Antes do "Pode começar", dar mais explicações se necessário. Depois, nenhuma ajuda além de
+lembrar a ordem e de continuar trabalhando.
+-->
+
+---
+layout: default
+---
+
+# Procurar Símbolos · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="erros" titulo="Sem borracha" destaque>
+
+Pergunta sobre erro: **"Não tem problema. Continue trabalhando o mais depressa possível."**
+Corrigir por conta própria pode, deixando clara a resposta final.
+
+</Cartao>
+<Cartao rotulo="ordem" titulo="Pulou ou voltou">
+
+**"Faça na ordem. Não pule nenhum."** Apontar o próximo: **"Faça este agora."** Depois disso,
+só lembrar de continuar.
+
+</Cartao>
+<Cartao rotulo="página" titulo="Virar por ela">
+
+Chegou ao fim da página antes do tempo? **Vire a página** para a criança — o cronômetro não
+para.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Erro custa ponto">
+
+O escore é **acertos menos erros**: a criança que marca no chute perde pontos. Por isso a
+instrução pede **"o mais depressa possível, sem errar"**.
+
+</Nota>
+
+<!--
+Não desestimular as correções espontâneas, a menos que sejam tão frequentes que prejudiquem o
+desempenho.
+Observar a estratégia: compara símbolo a símbolo, volta muito ao estímulo, marca sem olhar?
+Muitos erros com muita velocidade sugerem impulsividade; poucos itens com quase nenhum erro,
+lentidão ou perfeccionismo.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
