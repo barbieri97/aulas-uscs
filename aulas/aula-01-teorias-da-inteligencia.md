@@ -3241,6 +3241,184 @@ lentidão ou perfeccionismo.
 layout: default
 ---
 
+# 11 · Completar Figuras (CF)
+
+A criança olha uma figura e **aponta ou nomeia** a parte importante que está faltando, em até
+**20 segundos** por item.
+
+<Grade :cols="2">
+<Cartao rotulo="IOP · suplementar" titulo="O que mede">
+
+Percepção e organização visual, concentração e **reconhecimento visual dos detalhes
+essenciais** de objetos.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gf + Gv" destaque>
+
+Processamento visual (**Gv**) para analisar a figura e raciocínio (**Gf**) para decidir **o que
+é essencial** e deveria estar ali.
+
+</Cartao>
+</Grade>
+
+<!--
+38 itens. Os critérios de pontuação foram revistos para não penalizar quem tem vocabulário
+pobre: muitas respostas valem se a criança apontar o lugar certo.
+Substitui Cubos, Conceitos Figurativos ou Raciocínio Matricial no IOP. Como dispensa as mãos (a
+criança pode só apontar), ajuda na deficiência motora.
+Também depende de conhecimento de mundo: é preciso saber como o objeto completo é.
+-->
+
+---
+layout: default
+---
+
+# Completar Figuras · regras
+
+| | |
+|---|---|
+| **material** | Livro de Estímulos, Protocolo de Registro, cronômetro |
+| **início** | sempre o **exemplo**; depois 6–8 anos: item 1 · 9–11: item 5 · 12–16: item 10 · suspeita de déficit: item 1 |
+| **sequência inversa** | 9–16 anos sem acerto em um dos dois primeiros itens: volte até acertar **dois itens seguidos** |
+| **interrupção** | após **6 zeros consecutivos** |
+| **tempo** | **20 s** por item — aciona na última palavra; para quando a criança responde |
+| **pontuação** | 1 ou 0 · máximo de **38** pontos |
+
+<Fonte>Respostas só apontadas: registre AC (apontou corretamente) ou AE (apontou erroneamente).</Fonte>
+
+<!--
+Os itens 1 e 2 (†) ensinam a tarefa: resposta errada ou ausente → o aplicador aponta e diz o que
+falta. Depois deles, nenhuma ajuda.
+A criança que não sabe o nome exato pode descrever com as próprias palavras ("o buraco por onde
+sai a água") — vale 1 ponto.
+-->
+
+---
+layout: default
+---
+
+# Completar Figuras · falas
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="apresentação">
+
+Eu vou mostrar algumas figuras. Em cada figura, falta uma parte. Olhe cada figura com atenção e
+diga o que está faltando.
+
+</Fala>
+
+<Fala quando="exemplo · Livro aberto">
+
+Olhe esta figura. Que parte importante está faltando? → *se acertar:* Isso mesmo. O/A
+[resposta da criança] está faltando.
+
+</Fala>
+
+<Fala quando="exemplo e itens 1–2 · erro ou sem resposta · apontando">
+
+Está vendo, falta [a parte].
+
+</Fala>
+
+<Fala quando="todos os itens">
+
+Olhe esta figura. Que parte está faltando?
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="resposta ambígua · sempre que preciso">
+
+Mostre o que você quer dizer para mim.
+
+</Fala>
+
+<Fala quando="resposta verbal que pede apontar">
+
+Mostre-me onde estaria o que você quer dizer.
+
+</Fala>
+
+<Fala quando="nomeou o objeto · só uma vez">
+
+Sim, mas o que está faltando?
+
+</Fala>
+
+<Fala quando="parte fora da página · só uma vez">
+
+Falta uma parte na figura. O que está faltando?
+
+</Fala>
+
+<Fala quando="parte não essencial · só uma vez">
+
+Sim, mas qual é a parte mais importante que está faltando?
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+As três últimas frases são ditas apenas UMA VEZ em todo o subteste (cada uma). Se a criança
+acerta depois delas, vale 1 ponto.
+"Mostre o que você quer dizer" pode ser usado sempre que necessário.
+As instruções podem ser abreviadas quando a criança entendeu a tarefa. Não dar a resposta
+correta depois dos itens de ensino (1–2).
+Sem resposta em 20 s ou resposta errada antes disso: passar ao próximo item.
+-->
+
+---
+layout: default
+---
+
+# Completar Figuras · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="só uma vez" titulo="Três frases contadas" destaque>
+
+"O que está faltando?", "Falta uma parte na figura" e "a parte mais importante" — cada uma
+**uma única vez** no subteste. Marque quando usar.
+
+</Cartao>
+<Cartao rotulo="apontar" titulo="Algumas exigem o dedo">
+
+Certas respostas verbais só valem **se a criança apontar** o lugar certo. Sem apontar, peça:
+**"Mostre-me onde estaria…"**
+
+</Cartao>
+<Cartao rotulo="tempo" titulo="20 segundos">
+
+O tempo é **curto e rígido**: resposta depois dos 20 s vale 0. Cronômetro discreto, mas sempre
+ligado.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Apontou certo, disse errado">
+
+Se a criança aponta o lugar certo mas a fala mostra que ela pensava em **outra coisa**, o item
+vale **0** — a verbalização compromete a resposta.
+
+</Nota>
+
+<!--
+Os exemplos de resposta do manual (Tabela 18) têm duas colunas: as que valem 1 ponto apontando
+ou não, e as que só valem com o apontar correto (marcadas com †).
+Os exemplos não são exaustivos: dar crédito às respostas equivalentes.
+Observar: a criança se prende a detalhes irrelevantes? Responde rápido e errado (impulsividade)
+ou não responde (perfeccionismo, insegurança)?
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
