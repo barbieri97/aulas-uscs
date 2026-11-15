@@ -3652,6 +3652,166 @@ investigação.
 layout: default
 ---
 
+# 13 · Informação (IN)
+
+A criança responde a perguntas de **conhecimentos gerais** — fatos do mundo que se aprendem na
+escola e no ambiente.
+
+<Grade :cols="2">
+<Cartao rotulo="ICV · suplementar" titulo="O que mede">
+
+Capacidade de **adquirir, reter e recuperar** conhecimento factual. Envolve memória de longo
+prazo, percepção auditiva, compreensão e expressão verbal.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gc + Gkn" destaque>
+
+Inteligência cristalizada (**Gc**) e conhecimento de domínio específico (**Gkn**) — o que a
+cultura e a escola depositaram.
+
+</Cartao>
+</Grade>
+
+<!--
+33 itens.
+Muito sensível à escolarização, ao ambiente cultural e à curiosidade intelectual. Pode
+substituir Semelhanças, Vocabulário ou Compreensão no ICV.
+Um desempenho baixo pode refletir pouca oportunidade de aprender, não pouca capacidade — por
+isso a história escolar e social da criança pesa na interpretação.
+-->
+
+---
+layout: default
+---
+
+# Informação · regras
+
+| | |
+|---|---|
+| **material** | Manual e Protocolo de Registro |
+| **início** | 6–8 anos: item 5 · 9–11: item 10 · 12–16: item 12 · suspeita de déficit: item 5 |
+| **sequência inversa** | errou **qualquer um** dos dois primeiros itens (6–16 anos): volte até acertar **dois itens seguidos** |
+| **interrupção** | após **5 zeros consecutivos** |
+| **tempo** | sem limite |
+| **pontuação** | 1 ou 0 · máximo de **33** pontos |
+
+<Fonte>Pode repetir o item quantas vezes julgar necessário — sem mudar o enunciado.</Fonte>
+
+<!--
+Os itens 1 e 2 (†) ensinam a tarefa: resposta errada → o aplicador corrige, dizendo a resposta.
+Como nenhuma idade começa neles, só aparecem pela sequência inversa (ou na suspeita de déficit,
+que começa no item 5 e pode voltar).
+Itens com asterisco (*) pedem um inquérito específico, descrito no manual.
+-->
+
+---
+layout: default
+---
+
+# Informação · falas
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="apresentação">
+
+Agora eu vou fazer algumas perguntas e eu quero que você responda.
+
+</Fala>
+
+<Acao>
+
+Ir ao item de entrada da idade e ler cada pergunta **literalmente**.
+
+</Acao>
+
+<Fala quando="resposta vaga ou (Q)">
+
+Explique o que você quer dizer. · Fale um pouco mais sobre isso.
+
+</Fala>
+
+<Fala quando="fala e gesto se contradizem">
+
+O que você quer dizer?
+
+</Fala>
+
+</div>
+<div>
+
+<Acao>
+
+**Ouviu outra palavra** (ex.: responde sobre *fácil* quando a pergunta era sobre *fóssil*):
+repetir o item, **enfatizando** a palavra que a criança ouviu mal.
+
+</Acao>
+
+<Acao>
+
+**Itens 1 e 2 (†) com erro:** corrigir, mostrando ou dizendo a resposta certa do manual. Depois
+deles, nenhuma ajuda.
+
+</Acao>
+
+<Nota tipo="alerta" titulo="Leitura literal">
+
+Repetir pode — **quantas vezes for preciso**. Reformular, explicar ou dar pista, **nunca**.
+
+</Nota>
+
+</div>
+</Grade>
+
+<!--
+"Fala e gesto se contradizem": por exemplo, a criança diz um número e mostra outro com os dedos.
+Nas respostas que pedem inquérito (Q), perguntar só o que o manual prevê; nunca para salvar uma
+resposta errada.
+-->
+
+---
+layout: default
+---
+
+# Informação · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="pontuação" titulo="Certo ou errado" destaque>
+
+Cada item vale **1 ou 0**. Os exemplos do manual **não são exaustivos**: julgue respostas
+atípicas pela equivalência com eles.
+
+</Cartao>
+<Cartao rotulo="várias respostas" titulo="A melhor vale">
+
+Comentário extra não conta ("eu tenho 6 anos e meu irmão tem 4"). Uma resposta **absurda**
+junto de uma certa **zera** o item.
+
+</Cartao>
+<Cartao rotulo="ouvido" titulo="Confusão de palavra">
+
+Resposta a uma palavra **parecida** não é erro de conhecimento: repita com ênfase antes de
+pontuar.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="info" titulo="Na interpretação">
+
+Informação mede o que a criança **aprendeu** — depende de escola, família e curiosidade. Leia o
+escore junto com a história escolar e social.
+
+</Nota>
+
+<!--
+Observar: respostas rápidas e seguras indicam conhecimento consolidado; muitas respostas "quase
+certas" ou com hesitação podem indicar dificuldade de recuperação na memória de longo prazo.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
