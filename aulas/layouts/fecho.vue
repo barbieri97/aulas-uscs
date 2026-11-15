@@ -5,9 +5,9 @@
   layout: fecho
   title: O que fica
   pontos:
-    - A fermentação é uma troca de tempo por sabor
-    - Temperatura muda o resultado mais que a receita
-  proximo: Aula 04 — por que o pão endurece
+    - g explica a variedade positiva, mas não esgota a inteligência
+    - O CHC organiza as capacidades em três estratos
+  proximo: Aula 02 — WISC-V na prática
   ---
 
   `title`, cada item de `pontos` e `proximo` aceitam HTML. O slot é o lugar
@@ -62,8 +62,6 @@ const title = props.frontmatter?.title
 }
 
 .pontos li {
-  padding-left: var(--ds-space-5);
-  border-left: var(--ds-border-thick) solid var(--ds-accent);
   font-size: var(--ds-text-lg);
   line-height: var(--ds-leading-normal);
 }
@@ -79,7 +77,7 @@ const title = props.frontmatter?.title
   padding-top: var(--ds-space-4);
   border-top: var(--ds-border) solid var(--ds-rule);
   font-size: var(--ds-text-lg);
-  font-weight: 600;
+  font-weight: var(--ds-peso-forte);
   max-width: none;
 }
 

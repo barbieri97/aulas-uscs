@@ -129,6 +129,11 @@ const indexHtml = `<!doctype html>
 <title>${escapeHtml(pageTitle)}</title>
 <meta name="description" content="${escapeHtml(site.description)}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>📽️</text></svg>">
+<!-- Os decks empacotam a Poppins (@fontsource); a landing é HTML estático fora do Vite, então
+     busca a mesma fonte no Google Fonts. Sem rede, cai para a fonte do sistema. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
 <style>
 /* --- tokens: cópia literal de aulas/styles/tokens.css --- */
 ${tokensCss()}

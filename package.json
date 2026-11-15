@@ -9,6 +9,7 @@
     "lint": "node scripts/lint.mjs"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.3.0",
     "@slidev/cli": "^52.19.0",
     "vue": "^3.5.33"
   },

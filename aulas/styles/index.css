@@ -10,6 +10,15 @@
    Arquivo novo em styles/ só passa a valer depois de entrar aqui.
    ========================================================================== */
 
+/* Poppins, a fonte autorizada pela USCS — Thin, Light, Regular e Bold (com itálico
+   leve para citação). Vem do pacote npm @fontsource/poppins: os arquivos de fonte
+   entram no build, então o deck publicado e o PDF não dependem do Google Fonts. */
+@import "@fontsource/poppins/100.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/300-italic.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/700.css";
+
 @import "./tokens.css"; /* o vocabulário: cor, tipo, espaço */
 @import "./base.css"; /* como o markdown puro se parece */
 @import "./utilities.css"; /* as classes `ds-*` que os slides usam */

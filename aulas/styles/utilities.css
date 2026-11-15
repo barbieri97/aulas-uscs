@@ -9,14 +9,27 @@
    ajustes pontuais; use estas para o que tem significado editorial.
    ========================================================================== */
 
-/* Rótulo acima de um título: "Aula 02", "Parte 1", o nome do módulo. */
+/* Rótulo acima de um título: "Aula 02", "Parte 1", o nome do módulo.
+   É a pílula de contorno laranja da capa do modelo USCS ("Pós-graduação") —
+   o motivo visual que se repete no deck inteiro. */
 .ds-kicker {
-  margin: 0 0 var(--ds-space-2);
-  color: var(--ds-accent);
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 var(--ds-space-3);
+  padding: 0.2em 1.1em 0.24em;
+  border: 1.5px solid var(--ds-accent);
+  border-radius: var(--ds-radius-pill);
+  color: var(--ds-accent-texto);
   font-size: var(--ds-text-xs);
-  font-weight: 700;
+  font-weight: var(--ds-peso-normal);
   letter-spacing: var(--ds-tracking-kicker);
-  text-transform: uppercase;
+  line-height: 1.5;
+  max-width: none;
+}
+
+.ds-escuro .ds-kicker {
+  border-color: var(--uscs-amarelo);
+  color: var(--uscs-laranja);
 }
 
 /* Parágrafo de abertura — maior e mais claro que o corpo. */
@@ -24,6 +37,7 @@
   max-width: 46ch;
   color: var(--ds-muted);
   font-size: var(--ds-text-lg);
+  font-weight: var(--ds-peso-leve);
   line-height: var(--ds-leading-normal);
 }
 
@@ -34,13 +48,28 @@
 /* Destaque inline. Serve principalmente para os campos de frontmatter que
    aceitam HTML: `title: A pergunta <span class="ds-em">certa</span>`. */
 .ds-em {
-  color: var(--ds-accent);
-  font-weight: 650;
+  color: var(--ds-accent-texto);
+  font-weight: var(--ds-peso-forte);
 }
 
 .ds-em-2 {
   color: var(--ds-accent-2);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
+}
+
+/* No escuro, o destaque é o degradê laranja→amarelo da capa ("Expandindo horizontes"). */
+.ds-escuro .ds-em,
+.ds-grad {
+  background: var(--ds-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: var(--ds-peso-forte);
+}
+
+/* Peso fino (Poppins Thin) — só para tipo grande: um número, uma palavra de efeito. */
+.ds-fino {
+  font-weight: var(--ds-peso-fino);
 }
 
 /* Texto pequeno de rodapé: fonte, crédito, observação. */
@@ -71,5 +100,5 @@
   height: 3px;
   margin: var(--ds-space-4) 0;
   border-radius: 3px;
-  background: var(--ds-accent);
+  background: var(--ds-grad);
 }

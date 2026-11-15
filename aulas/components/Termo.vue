@@ -1,8 +1,8 @@
 <!--
   <Termo> — a definição formal de uma palavra. O bloco que a turma copia.
 
-  <Termo palavra="Glúten" origem="do latim gluten, cola">
-  Rede de proteínas que segura o gás produzido pela fermentação.
+  <Termo palavra="Memória operacional" origem="working memory">
+  Capacidade de manter e manipular informação por um curto período.
   </Termo>
 -->
 <script setup lang="ts">
@@ -38,7 +38,7 @@ dt {
   gap: var(--ds-space-3);
   flex-wrap: wrap;
   font-size: var(--ds-text-xl);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
   line-height: var(--ds-leading-tight);
 }
 

@@ -1,8 +1,10 @@
-# O design system das aulas
+# O design system das aulas (identidade USCS)
 
-O que este repositório traz de fábrica: um design system **local**, escrito em `aulas/`, sem
-tema npm nenhum (`theme: none` no headmatter). Trocar por um tema pronto, ou gerar outro DS do
-zero, é assunto de [`temas.md`](temas.md).
+Um design system **local**, escrito em `aulas/`, sem tema npm nenhum (`theme: none` no
+headmatter). Ele reproduz o modelo de apresentações da **Pós-graduação USCS** (o PPTX "Modelos
+PPT USCS — Fundo Branco"): as imagens de fundo foram extraídas do modelo, e as cores e a fonte
+são as do slide "Orientação de cores e letras para apresentações". Trocar por um tema pronto,
+ou gerar outro DS do zero, é assunto de [`temas.md`](temas.md).
 
 Este arquivo é o contrato: o que existe, quando usar cada coisa e as armadilhas do Slidev que
 já custaram um slide.
@@ -22,9 +24,24 @@ aulas/
 │   └── utilities.css    ← as classes `ds-*` que um slide pode usar
 ├── layouts/*.vue        ← a forma do slide (campo `layout:` do frontmatter)
 ├── components/*.vue     ← peças usadas dentro do slide (auto-importadas, sem `import`)
+├── setup/mermaid.ts     ← diagramas mermaid nas cores da USCS
 ├── lib/asset.ts         ← resolve caminho de imagem contra a base do site
 └── public/              ← imagens; `/foto.png` no markdown = `aulas/public/foto.png`
+    └── uscs-*.jpg       ← os fundos institucionais, extraídos do modelo PPTX
 ```
+
+### Os fundos institucionais
+
+| arquivo | onde aparece | o que tem |
+|---|---|---|
+| `uscs-fundo-conteudo.jpg` | todo slide claro (via `base.css`) | branco, faixa azul diagonal, marca "USCS Pós-Graduação" |
+| `uscs-capa.jpg` | `capa` | painel azul com a chama à esquerda, fachada à direita |
+| `uscs-fundo-escuro.jpg` | `secao`, `destaque` | saguão desfocado, chama no alto, marca embaixo |
+| `uscs-redes.jpg` | `redes` | o slide das redes sociais da Pós, exatamente como no modelo |
+| `uscs-encerramento.jpg` | `encerramento` | fachada desfocada com a linha de contatos (site, e-mail, telefone) |
+
+Os textos que vinham "chumbados" nas imagens da capa e do "Obrigado(a)!" foram apagados da
+imagem: o layout os escreve em Poppins, e você pode trocar.
 
 Uma `public/` ou uma `components/` na **raiz do repositório** não seria vista por ninguém.
 
@@ -38,32 +55,40 @@ esse arquivo, e só ele** — inclusive a página inicial do site, que lê os me
 
 | grupo | tokens |
 |---|---|
-| cor | `--ds-bg` `--ds-surface` `--ds-ink` `--ds-muted` `--ds-rule` `--ds-accent` `--ds-accent-2` `--ds-ok` `--ds-warn` `--ds-danger` |
+| marca | `--uscs-azul` `#152342` · `--uscs-laranja` `#EF7D00` · `--uscs-amarelo` `#E9BC00` · `--uscs-branco` · `--uscs-preto` · `--uscs-azul-medio` · `--ds-grad` (laranja→amarelo) |
+| cor | `--ds-bg` `--ds-surface` `--ds-ink` `--ds-muted` `--ds-rule` `--ds-accent` `--ds-accent-texto` `--ds-accent-2` `--ds-ok` `--ds-warn` `--ds-danger` |
 | cor translúcida | `--ds-accent-wash` `--ds-accent-2-wash` `--ds-ink-wash` |
-| tipo | `--ds-font-sans` `--ds-font-serif` `--ds-font-mono`, escala `--ds-text-xs` … `--ds-text-3xl`, `--ds-leading-*`, `--ds-tracking-kicker` |
-| espaço | `--ds-space-1` … `--ds-space-8`, `--ds-pad-slide` |
-| forma | `--ds-radius-sm` `--ds-radius` `--ds-radius-lg` `--ds-border` `--ds-border-thick` `--ds-shadow` |
+| tipo | `--ds-font-sans` (Poppins), `--ds-peso-fino` `--ds-peso-leve` `--ds-peso-normal` `--ds-peso-forte`, escala `--ds-text-xs` … `--ds-text-3xl`, `--ds-leading-*`, `--ds-tracking-kicker` |
+| espaço | `--ds-space-1` … `--ds-space-8`, `--ds-pad-slide` (o de baixo é maior: reserva a faixa azul) |
+| forma | `--ds-radius-sm` `--ds-radius` `--ds-radius-lg` `--ds-radius-pill` `--ds-border` `--ds-border-thick` `--ds-shadow` |
 
-O tema claro vive em `:root`, o escuro em `.dark` — a classe que o Slidev põe no `<html>`
-conforme o `colorSchema` do headmatter. Nenhuma cor pode existir **só** no bloco `.dark`.
+**Dois contextos de cor.** O slide claro vive em `:root` (texto azul sobre branco). O escuro é
+a classe `.ds-escuro`, que os layouts escuros (`capa`, `secao`, `destaque`, `redes`,
+`encerramento`) põem na própria raiz: ela redefine os tokens de cor, e tudo o que estiver
+dentro — componentes inclusive — fica branco sobre azul. `.dark` (modo escuro do Slidev) só
+serve à página inicial; as aulas fixam `colorSchema: light`.
+
+**Laranja em letra pequena.** O `#EF7D00` puro tem contraste baixo sobre branco em texto fino.
+Marcadores, bordas, fundos e números grandes usam `--ds-accent`; texto corrido em laranja
+(negrito, `ds-em`, rótulos) usa `--ds-accent-texto`, um laranja mais escuro. O amarelo nunca
+vai em texto sobre branco — só no degradê e no escuro.
 
 A escala de tipo é fechada: sete tamanhos. Quando um slide parece precisar de um tamanho fora
 dela, quase sempre o problema é conteúdo demais no slide.
 
-### Fontes
+### Fonte
 
-Os tokens de fonte pedem Inter / Iowan / JetBrains Mono e caem para as do sistema. Para
-carregá-las de verdade, use o campo do Slidev no headmatter:
+**Poppins**, a única autorizada pelo modelo. Vem do pacote npm `@fontsource/poppins`, importado
+no topo de `aulas/styles/index.css` (pesos 100, 300, 300 itálico, 400 e 700): os arquivos de
+fonte entram no build, então o deck publicado e o PDF não dependem do Google Fonts. **Não**
+use o campo `fonts:` do headmatter.
 
-```yaml
-fonts:
-  sans: Inter
-  serif: Iowan Old Style
-  mono: JetBrains Mono
-```
-
-Isso faz o site buscar as fontes no Google Fonts em tempo de exibição. As aulas de exemplo
-não usam, de propósito: sem esse campo o deck publicado não depende de rede.
+| peso | token | uso |
+|---|---|---|
+| Thin 100 | `--ds-peso-fino` / `.ds-fino` | número grande da `secao`, tipo de efeito |
+| Light 300 | `--ds-peso-leve` | corpo do texto (é o peso dos contatos no modelo) |
+| Regular 400 | `--ds-peso-normal` | pílula do kicker, valor do `<Numero>` |
+| Bold 700 | `--ds-peso-forte` | títulos, negrito, destaques |
 
 ---
 
@@ -73,16 +98,25 @@ Vão no campo `layout:` do frontmatter do slide. Os campos de cada um viram prop
 
 | layout | quando usar | campos |
 |---|---|---|
-| `capa` | o primeiro slide da aula | `kicker` `title` `subtitle` `meta` |
-| `secao` | avisar que a aula virou de assunto | `numero` `kicker` `title` `note` |
-| `destaque` | uma frase sozinha na tela: a pergunta que abre a discussão, a tese, o número | `kicker` `title` `fonte` |
-| `roteiro` | o índice da aula, ou lista de tópico + explicação | `kicker` `title` `itens[]` `atual` |
-| `figura` | quando a imagem **é** o argumento e o texto comenta | `imagem` `legenda` `lado` `ajuste` |
-| `fecho` | o último slide: o que fica, o que vem | `kicker` `title` `pontos[]` `proximo` |
+| layout | fundo | quando usar | campos |
+|---|---|---|---|
+| `capa` | fachada | o primeiro slide da aula | `kicker` (padrão "Pós-graduação") `title` `titulo` `subtitle` `meta` |
+| `secao` | escuro | avisar que a aula virou de assunto | `numero` `kicker` `title` `note` |
+| `destaque` | escuro | uma frase sozinha na tela: a pergunta que abre a discussão, a tese | `kicker` `title` `fonte` |
+| `roteiro` | claro | o índice da aula, ou lista de tópico + explicação | `kicker` `title` `itens[]` `atual` |
+| `figura` | claro | quando a imagem **é** o argumento e o texto comenta | `imagem` `legenda` `lado` `ajuste` |
+| `fecho` | claro | o que fica, o que vem, referências | `kicker` `title` `pontos[]` `proximo` |
+| `redes` | institucional | as redes da Pós-graduação USCS — penúltimo slide | (nenhum) |
+| `encerramento` | institucional | o "Obrigado(a)!" com os contatos — último slide | `title` `subtitle` (opcionais) |
 
-Os layouts do próprio Slidev continuam valendo: `default`, `center`, `two-cols`,
-`two-cols-header`, `image-left`, `image-right`, `iframe`, `full`, `none`. Para imagem
-decorativa, `image-right` dá menos trabalho que o `figura`.
+Na `capa`, `title` vem do headmatter e é texto puro (vira o nome da aba e o título na página
+inicial); `titulo` é a versão com HTML só para a capa — use-o para pôr palavras no degradê
+laranja→amarelo, como o "Expandindo horizontes" do modelo.
+
+Os layouts do próprio Slidev continuam valendo, **e herdam o fundo claro com a faixa**:
+`default`, `center`, `two-cols`, `two-cols-header`, `iframe`, `full`, `none`. Evite
+`image-left`/`image-right`: a imagem cobre metade do slide e esconde a faixa e a marca USCS —
+use o `figura`.
 
 Campos marcados como "aceita HTML" nos comentários de cada `.vue` são renderizados com
 `v-html` — dá para escrever `<span class="ds-em">assim</span>` dentro de um título.
@@ -95,15 +129,18 @@ Ficam em `aulas/components/` e são **auto-importados**: basta escrever a tag no
 |---|---|
 | `<Nota>` | o aparte: `tipo` = `info` (padrão), `ok`, `alerta`, `erro` |
 | `<Grade>` + `<Cartao>` | comparar coisas do mesmo tipo, 2 ou 3 colunas |
+| `<Numero>` | o dado grande com rótulo: média e DP, número de subtestes, faixa etária |
 | `<Termo>` | a definição formal — o bloco que a turma copia |
 | `<Citacao>` | a palavra de outra pessoa, dentro de um slide com mais coisas |
 | `<Pessoa>` | quem é essa gente que a aula cita |
 | `<LinhaDoTempo>` | sequência com marcos — história ou processo |
-| `<Fonte>` | o crédito no pé do slide |
+| `<Fonte>` | o crédito no pé do slide — em letra branca, sobre a faixa azul |
 
 ## Utilitários
 
-`ds-kicker` `ds-lead` `ds-muted` `ds-em` `ds-em-2` `ds-small` `ds-grid` `ds-stack` `ds-rule`.
+`ds-kicker` (a pílula de contorno laranja da capa do modelo) `ds-lead` `ds-muted` `ds-em`
+(laranja no claro, degradê no escuro) `ds-em-2` `ds-grad` (texto em degradê) `ds-fino`
+(Poppins Thin) `ds-small` `ds-grid` `ds-stack` `ds-rule`.
 O UnoCSS do Slidev também está ligado (`text-sm`, `mt-4`, `grid`…) — use-o para ajuste
 pontual, e as classes `ds-*` para o que tem significado editorial.
 
@@ -186,5 +223,10 @@ Vale em qualquer nível de aninhamento — `<Cartao>` dentro de `<Grade>` també
 - **CSS solto num slide é sinal de que falta um layout ou um componente.** A exceção honesta
   é o desenho que só existe naquele slide (o catálogo de cores em `_design-system.md` é um
   exemplo). Se você escreveria o mesmo `<style>` duas vezes, vire componente.
+- **Layout novo sem tema precisa de altura.** Sem tema npm, ninguém dá `height` ao
+  `.slidev-layout`; o `base.css` já põe `height: 100%`. Um layout que posicione tudo com
+  `position: absolute` e sobrescreva isso fica com altura zero — e o fundo some.
+- **Imagem de fundo montada em script também passa por `asset()`.** Os layouts escuros fazem
+  `` `url("${asset('/uscs-capa.jpg')}")` `` por isso.
 - Um layout ou componente novo **ganha um slide em `aulas/_design-system.md`**. É o que
   mantém o catálogo confiável.
