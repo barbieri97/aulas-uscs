@@ -1,8 +1,8 @@
 <!--
   <Cartao> — um bloco de conteúdo com título. Um conceito por cartão.
 
-  <Cartao rotulo="passo 1" titulo="Misturar" destaque>
-  Farinha e água, só. Descansa 30 minutos.
+  <Cartao rotulo="Sternberg · 1985" titulo="Teoria triárquica" destaque>
+  Inteligência analítica, criativa e prática.
   </Cartao>
 
   `destaque` (booleano) pinta o cartão com o accent — use em no máximo um por
@@ -43,9 +43,9 @@ defineProps<{
 
 .rotulo {
   margin: 0;
-  color: var(--ds-accent);
+  color: var(--ds-accent-texto);
   font-size: var(--ds-text-xs);
-  font-weight: 700;
+  font-weight: var(--ds-peso-forte);
   letter-spacing: var(--ds-tracking-kicker);
   text-transform: uppercase;
 }
@@ -53,7 +53,7 @@ defineProps<{
 .titulo {
   margin: 0;
   font-size: var(--ds-text-lg);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
   line-height: var(--ds-leading-tight);
 }
 

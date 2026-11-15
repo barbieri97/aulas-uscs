@@ -1,11 +1,50 @@
-# Template de aulas em Slidev
+# Aulas USCS em Slidev
 
-Um repositório de decks [Slidev](https://sli.dev/) **agnóstico de tema**. **Uma aula por
-arquivo `.md`** em `aulas/`, publicadas no GitHub Pages, cada uma na sua própria URL.
+Instruções para agentes de IA (este é o único arquivo de instruções do repositório — não
+existe `CLAUDE.md`; qualquer agente deve ler este `AGENTS.md`).
 
-De fábrica não há tema npm (`theme: none`): o visual vem de um design system local, escrito em
-`aulas/styles`, `aulas/layouts` e `aulas/components`. Trocar por um tema pronto, ou gerar
-outro DS, é decisão de quem usa o template — os scripts não sabem qual é o visual.
+Decks [Slidev](https://sli.dev/) das aulas de pós-graduação na **USCS** (Universidade de
+São Caetano do Sul): teorias da inteligência, escalas Wechsler (WISC) e funções
+cognitivas. **Uma aula por arquivo `.md`** em `aulas/`, publicadas no GitHub Pages, cada uma
+na sua própria URL. Conteúdo em português.
+
+Não há tema npm (`theme: none`): o visual vem de um design system local que reproduz o
+**modelo de apresentações exigido pela USCS** (fundo branco com a faixa azul diagonal e a
+marca "USCS Pós-Graduação"; capa com a fachada; slides de redes e "Obrigado(a)!"). Está em
+`aulas/styles`, `aulas/layouts`, `aulas/components` e nas imagens `aulas/public/uscs-*.jpg`.
+Os scripts continuam agnósticos de tema — não sabem qual é o visual.
+
+## Identidade visual (não negociável)
+
+O modelo da faculdade autoriza só isto — não invente cores nem fontes:
+
+| | |
+|---|---|
+| Fonte | **Poppins** (Thin / Bold; o corpo usa Light 300, como os contatos do modelo) |
+| Azul | `#152342` — texto, títulos, fundos escuros |
+| Laranja | `#EF7D00` — destaques, marcadores, números |
+| Amarelo | `#E9BC00` — só no degradê laranja→amarelo e sobre fundo escuro |
+| Branco / preto | `#FFFFFF` / `#000000` |
+
+Tudo isso já está em `aulas/styles/tokens.css`. Os fundos institucionais são imagens
+extraídas do modelo PPTX — não os redesenhe em CSS.
+
+## Como uma aula é montada
+
+Sequência típica (a `aula-01-teorias-da-inteligencia.md` é o exemplo completo, com um slide de
+cada layout e componente):
+
+`capa` → `roteiro` → `destaque` → (`secao` → slides `default`…) × N → `fecho` → `redes` → `encerramento`
+
+- **`capa`**: a fachada da USCS; `kicker` é a pílula ("Pós-graduação"), `titulo` aceita HTML
+  para palavras em degradê (`<span class="ds-em">…</span>`), `subtitle`, `meta`.
+- **slides claros** (`default`, `roteiro`, `figura`, `fecho` e os do Slidev como
+  `two-cols-header`): fundo branco com a faixa azul e a marca embaixo. O conteúdo **não pode
+  descer até a faixa** — o padding inferior já reserva o espaço; se o slide transborda, divida.
+- **slides escuros** (`capa`, `secao`, `destaque`, `redes`, `encerramento`): fotos azuis da
+  instituição; a classe `.ds-escuro` troca as cores de tudo o que está dentro.
+- **`redes`** e **`encerramento`** fecham toda aula, nessa ordem — são os dois últimos slides
+  do modelo da faculdade.
 
 ## Antes de escrever ou editar qualquer deck
 
@@ -55,6 +94,7 @@ um componente — a exceção honesta é o desenho que só existe naquele slide.
 | Headmatter | além de `theme`/`title`, cada aula traz `info:` (ementa de uma linha) e `date:` (`YYYY-MM-DD`, entre aspas) — os dois alimentam a landing page |
 | Download | `download: true` no headmatter, em toda aula — deixa o deck disponível para baixar em PDF direto da apresentação publicada |
 | Identidade do curso | `site.config.json` na raiz (`title`, `institution`, `description`, `intro`) — o único lugar com o nome da disciplina |
+| Fonte | Poppins vem do pacote `@fontsource/poppins` (importado em `aulas/styles/index.css`): o deck e o PDF não dependem do Google Fonts |
 
 O bloco de abertura de um deck é headmatter **e** frontmatter do primeiro slide ao mesmo
 tempo. O `title:` dele é o título do deck e o que a `capa` mostra — não repita o campo.
@@ -77,8 +117,17 @@ npm run build                                # builda tudo em dist/ (roda o lint
 `npm run dev` serve **uma aula por vez**, na raiz (`/`). O conjunto das aulas mais a página
 inicial só existe depois do `npm run build` — é o build que dá a cada deck o seu `--base`.
 
-Para adicionar uma aula nova: crie o `.md` em `aulas/`, commit, push. O workflow builda e
-publica — nenhuma config precisa ser tocada.
+Para adicionar uma aula nova: copie `aulas/aula-01-teorias-da-inteligencia.md`, renomeie para
+`aula-NN-slug.md`, troque o conteúdo mantendo a sequência de layouts, commit, push. O workflow
+builda e publica — nenhuma config precisa ser tocada.
+
+Ao **converter uma aula que chega pronta** (PPTX, PDF, texto): um slide de origem vira um slide
+aqui, escolhendo o layout pela forma do conteúdo — título + tópicos → `default`; divisor →
+`secao`; frase de impacto → `destaque`; imagem + comentário → `figura`; definição → `<Termo>`;
+comparação → `<Grade>` + `<Cartao>`; números → `<Numero>`; cronologia → `<LinhaDoTempo>`.
+Imagens vão para `aulas/public/`. Os slides institucionais do modelo (capa, redes,
+"Obrigado(a)!") **não** são copiados como imagem: use os layouts `capa`, `redes` e
+`encerramento`. Notas do apresentador vão em comentário `<!-- -->` no fim do slide.
 
 ## Por que `aulas/public/`
 

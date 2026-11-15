@@ -1,8 +1,8 @@
 <!--
   <Pessoa> — quem é essa gente que a aula cita.
 
-  <Pessoa nome="Louis Pasteur" papel="1822–1895 · químico" foto="/exemplo-avatar.svg">
-  Mostrou que a fermentação é obra de organismos vivos.
+  <Pessoa nome="David Wechsler" papel="1896–1981 · psicólogo" foto="/retrato.jpg">
+  Criou as escalas que levam o seu nome, do Wechsler-Bellevue ao WISC.
   </Pessoa>
 
   Sem `foto`, entra um monograma com a inicial — assim uma grade de pessoas não
@@ -60,13 +60,13 @@ const src = asset(props.foto)
   background: var(--ds-accent-wash);
   color: var(--ds-accent);
   font-size: var(--ds-text-xl);
-  font-weight: 700;
+  font-weight: var(--ds-peso-forte);
 }
 
 .nome {
   margin: 0;
   font-size: var(--ds-text-lg);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
   line-height: var(--ds-leading-tight);
 }
 

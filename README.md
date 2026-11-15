@@ -1,33 +1,30 @@
-# Template de aulas em Slidev
+# Aulas USCS em Slidev
 
-Um repositório para escrever aulas em [Slidev](https://sli.dev/) e publicá-las no GitHub
-Pages, **uma aula por arquivo** em [`aulas/`](aulas/), cada uma na sua própria URL.
+As aulas de pós-graduação na USCS — teorias da inteligência, escalas Wechsler (WISC) e funções
+cognitivas — escritas em [Slidev](https://sli.dev/) e publicadas no GitHub Pages, **uma aula
+por arquivo** em [`aulas/`](aulas/), cada uma na sua própria URL.
 
 ```
-https://<usuario>.github.io/<repo>/                                    ← índice
-https://<usuario>.github.io/<repo>/aula-01-uma-breve-historia-da-tipografia/
+https://<usuario>.github.io/<repo>/                                  ← índice
+https://<usuario>.github.io/<repo>/aula-01-teorias-da-inteligencia/
 ```
 
-É **agnóstico de tema**. De fábrica vem um design system próprio — tokens, seis layouts e oito
-componentes, tudo em `aulas/` — e nenhum tema npm (`theme: none`). Quando for escrever a sua
-disciplina, escolha:
+O visual reproduz o **modelo de apresentações exigido pela USCS** (Pós-graduação, fundo
+branco): Poppins, azul `#152342`, laranja `#EF7D00`, amarelo `#E9BC00`, a faixa azul com a
+marca nos slides de conteúdo, a capa com a fachada e os slides finais de redes e
+"Obrigado(a)!". É um design system local — oito layouts e nove componentes em `aulas/` —
+sem tema npm (`theme: none`).
 
-- **instalar um tema pronto** (`npm i slidev-theme-<nome>`) e escrever para ele; ou
-- **manter/gerar um design system** e ter layouts com o nome e a forma do seu conteúdo.
-
-O roteiro dos dois caminhos, com o que quebra o deploy em cada um, está em
-[`docs/temas.md`](docs/temas.md).
-
-As três aulas em `aulas/` são exemplos de assuntos aleatórios — tipografia, bicicleta e
-fermentação. Elas existem para o site ficar de pé e servir de vitrine; apague quando for
-escrever as suas.
+[`aulas/aula-01-teorias-da-inteligencia.md`](aulas/aula-01-teorias-da-inteligencia.md) é a
+**aula modelo**: um conteúdo de verdade usando cada layout e cada componente uma vez. Copie-a
+para começar uma aula nova.
 
 ## Uso diário
 
 ```bash
 npm install                                   # uma vez
 npm run dev                                   # abre a primeira aula com hot reload
-npm run dev -- 03                             # abre a aula cujo nome contém "03"
+npm run dev -- 01                             # abre a aula cujo nome contém "01"
 npm run ref                                   # catálogo de layouts e componentes
 npm run lint                                  # valida os decks
 npm run build                                 # gera dist/ igual ao que vai pro ar
@@ -37,7 +34,7 @@ npm run build                                 # gera dist/ igual ao que vai pro 
 só existe depois do `npm run build` — é o build que dá a cada deck o seu `--base` e monta o
 índice, do mesmo jeito que o Actions faz na publicação.
 
-**Para criar uma aula nova:** copie um `.md` de `aulas/`, renomeie para
+**Para criar uma aula nova:** copie `aulas/aula-01-teorias-da-inteligencia.md`, renomeie para
 `aula-NN-titulo-em-slug.md`, edite, commit, push. O workflow builda e publica sozinho — o
 índice se atualiza a partir do `title` / `info` / `date` do topo do arquivo. O nome do arquivo
 vira a URL.
@@ -50,19 +47,20 @@ numa aula nova). Quem gera esse PDF durante o build é o `playwright-chromium`, 
 
 Antes de escrever slides, leia [`docs/design-system.md`](docs/design-system.md) — layouts,
 componentes, tokens e as armadilhas do Slidev que fazem um slide sumir sem erro nenhum.
-Resumo das convenções em [`CLAUDE.md`](CLAUDE.md).
+Resumo das convenções — e as instruções para agentes de IA — em [`AGENTS.md`](AGENTS.md).
 
 ## O que tem dentro
 
 ```
 aulas/
-├── aula-01-*.md … aula-03-*.md   as três aulas de exemplo
+├── aula-01-teorias-da-inteligencia.md   a aula modelo
 ├── _design-system.md             o catálogo (o `_` mantém fora do site)
-├── styles/                       tokens.css · base.css · utilities.css
-├── layouts/                      capa · secao · destaque · roteiro · figura · fecho
-├── components/                   Nota · Grade · Cartao · Termo · Citacao · Pessoa · LinhaDoTempo · Fonte
+├── styles/                       tokens.css · base.css · utilities.css (+ Poppins)
+├── layouts/                      capa · secao · destaque · roteiro · figura · fecho · redes · encerramento
+├── components/                   Nota · Grade · Cartao · Numero · Termo · Citacao · Pessoa · LinhaDoTempo · Fonte
+├── setup/mermaid.ts              diagramas nas cores da USCS
 ├── lib/asset.ts                  resolve caminho de imagem contra a base do site
-└── public/                       imagens (`/foto.svg` no markdown)
+└── public/                       imagens (`/foto.svg` no markdown) e os fundos uscs-*.jpg
 docs/                             design-system.md · temas.md
 scripts/                          dev.mjs · lint.mjs · build-site.mjs · lib.mjs
 site.config.json                  a identidade do curso
@@ -70,7 +68,12 @@ site.config.json                  a identidade do curso
 
 **A pasta do deck é a raiz do projeto para o Slidev.** As aulas estão em `aulas/`, então
 `public/`, `layouts/`, `components/` e `styles/` só valem lá dentro; os mesmos nomes na raiz do
-repositório são ignorados em silêncio. Detalhes em [`CLAUDE.md`](CLAUDE.md).
+repositório são ignorados em silêncio. Detalhes em [`AGENTS.md`](AGENTS.md).
+
+**Instruções para agentes de IA** ficam só em [`AGENTS.md`](AGENTS.md) — o repositório não tem
+`CLAUDE.md`, para valer igual para qualquer ferramenta. A skill do Slidev está em
+`.agents/skills/slidev/` (e espelhada em `.claude/skills/slidev/`, onde o Claude Code a
+procura).
 
 ## Primeira publicação
 
@@ -110,9 +113,9 @@ do repositório no CI, e a identidade do curso mora em [`site.config.json`](site
      "intro": "O parágrafo abaixo do título na página inicial (aceita HTML)"
    }
    ```
-2. Escolha o visual: tema npm ou design system próprio, seguindo
-   [`docs/temas.md`](docs/temas.md). Para ficar com o design system que já vem, o único
-   arquivo a mexer é `aulas/styles/tokens.css`.
+2. O visual já é o da USCS. Para trocar de instituição, edite `aulas/styles/tokens.css` e
+   substitua as imagens `aulas/public/uscs-*.jpg`; para um tema npm, siga
+   [`docs/temas.md`](docs/temas.md).
 3. Apague as aulas de exemplo em `aulas/` e escreva a primeira. **O build falha de propósito
    com `aulas/` vazio** — não deixe o repo sem nenhuma aula esperando o CI ficar verde.
 4. **Settings → Pages → Source: `GitHub Actions`.** Configuração de repositório não vem do

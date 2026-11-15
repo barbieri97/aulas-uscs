@@ -36,45 +36,66 @@ body,
 }
 
 .slidev-layout {
+  /* Sem tema npm ninguém dá altura ao layout: sem isto o fundo institucional encolhe
+     até o tamanho do conteúdo (e a capa, toda absoluta, some). */
+  box-sizing: border-box;
+  height: 100%;
   padding: var(--ds-pad-slide);
   background: var(--ds-bg);
   color: var(--ds-ink);
   font-family: var(--ds-font-sans);
   font-size: var(--ds-text-base);
+  font-weight: var(--ds-peso-leve);
   line-height: var(--ds-leading-normal);
   -webkit-font-smoothing: antialiased;
+}
+
+/* O fundo institucional do slide claro: branco com a faixa azul diagonal e a marca
+   "USCS Pós-Graduação" no canto inferior direito — a imagem do próprio modelo da
+   faculdade. Vale para todo layout claro, inclusive os do Slidev (default, center,
+   two-cols…). Os layouts escuros põem `.ds-escuro` e trocam a imagem. */
+.slidev-layout:not(.ds-escuro) {
+  background: var(--ds-bg) url("/uscs-fundo-conteudo.jpg") center / 100% 100% no-repeat;
+}
+
+/* No contexto escuro (fotos azuis da instituição) o texto é branco. */
+.slidev-layout.ds-escuro {
+  background-color: var(--uscs-azul);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* --- títulos -------------------------------------------------------------- */
 
 .slidev-layout h1 {
   margin: 0 0 var(--ds-space-5);
+  color: var(--ds-ink);
   font-size: var(--ds-text-2xl);
-  font-weight: 700;
+  font-weight: var(--ds-peso-forte);
   line-height: var(--ds-leading-tight);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
 .slidev-layout h2 {
   margin: var(--ds-space-6) 0 var(--ds-space-3);
   font-size: var(--ds-text-xl);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
   line-height: var(--ds-leading-tight);
-  letter-spacing: -0.01em;
 }
 
 .slidev-layout h3 {
   margin: var(--ds-space-5) 0 var(--ds-space-2);
   font-size: var(--ds-text-lg);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
 }
 
 /* h4 é o subtítulo discreto de um bloco; h5/h6 quase não aparecem em aula. */
 .slidev-layout h4 {
   margin: var(--ds-space-4) 0 var(--ds-space-2);
   font-size: var(--ds-text-base);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
   color: var(--ds-muted);
 }
 
@@ -85,7 +106,7 @@ body,
   font-weight: 600;
   letter-spacing: var(--ds-tracking-kicker);
   text-transform: uppercase;
-  color: var(--ds-accent);
+  color: var(--ds-accent-texto);
   opacity: 1;
 }
 
@@ -104,8 +125,8 @@ body,
 
 .slidev-layout strong,
 .slidev-layout b {
-  font-weight: 650;
-  color: var(--ds-accent);
+  font-weight: var(--ds-peso-forte);
+  color: var(--ds-accent-texto);
 }
 
 .slidev-layout em {
@@ -113,7 +134,7 @@ body,
 }
 
 .slidev-layout a {
-  color: var(--ds-accent);
+  color: var(--ds-accent-texto);
   border-bottom: 1px dashed currentColor;
   text-decoration: none;
 }
@@ -158,9 +179,9 @@ body,
   top: 0.72em;
   left: 0.1em;
   width: 0.7em;
-  height: 2px;
+  height: 3px;
   background: var(--ds-accent);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .slidev-layout ol > li {
@@ -171,7 +192,7 @@ body,
 
 .slidev-layout ol > li::marker {
   color: var(--ds-accent);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
 }
 
 /* Sublistas: menores, sem o traço, recuadas. */
@@ -196,8 +217,9 @@ body,
   border-radius: 0;
   background: transparent;
   color: var(--ds-ink);
-  font-family: var(--ds-font-serif);
+  font-family: var(--ds-font-sans);
   font-size: var(--ds-text-lg);
+  font-weight: var(--ds-peso-leve);
   font-style: italic;
   line-height: var(--ds-leading-normal);
 }
@@ -239,10 +261,10 @@ body,
 
 .slidev-layout th {
   padding: var(--ds-space-2) var(--ds-space-3);
-  border-bottom: 2px solid var(--ds-rule);
-  color: var(--ds-muted);
+  border-bottom: 2px solid var(--ds-accent);
+  color: var(--ds-ink);
   font-size: var(--ds-text-xs);
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
   letter-spacing: var(--ds-tracking-kicker);
   text-align: left;
   text-transform: uppercase;
@@ -286,6 +308,19 @@ body,
    é porque ele grava width/height como atributo no próprio <svg>. */
 .slidev-layout .slidev-mermaid svg {
   max-width: 100% !important;
-  max-height: 58vh;
+  max-height: 52vh;
   height: auto !important;
+}
+
+/* --- layouts de colunas do Slidev ----------------------------------------- */
+
+/* `two-cols` e `two-cols-header` vêm do Slidev sem respiro entre as colunas. */
+.slidev-layout.two-columns,
+.slidev-layout.two-cols-header {
+  column-gap: var(--ds-space-7);
+}
+
+.slidev-layout.two-cols-header {
+  grid-template-rows: auto 1fr;
+  align-content: start;
 }

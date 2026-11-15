@@ -2,7 +2,7 @@
   <Nota> — a caixa de aviso. O que não é o fio da aula, mas não pode passar batido.
 
   <Nota tipo="alerta" titulo="Cuidado">
-  Fermento químico e fermento biológico não são a mesma coisa.
+  QI total e índices não são intercambiáveis.
   </Nota>
 
   tipo: info (padrão) · ok · alerta · erro
@@ -25,7 +25,7 @@ withDefaults(defineProps<{
 /* `--cor` é o único ponto de variação entre os quatro tipos: a borda, o título
    e o fundo saem todos dela. */
 .ds-nota {
-  --cor: var(--ds-accent);
+  --cor: var(--ds-accent-texto);
   margin: var(--ds-space-4) 0;
   padding: var(--ds-space-4) var(--ds-space-5);
   border-left: var(--ds-border-thick) solid var(--cor);
@@ -49,7 +49,7 @@ withDefaults(defineProps<{
   margin: 0 0 var(--ds-space-2);
   color: var(--cor);
   font-size: var(--ds-text-xs);
-  font-weight: 700;
+  font-weight: var(--ds-peso-forte);
   letter-spacing: var(--ds-tracking-kicker);
   text-transform: uppercase;
 }

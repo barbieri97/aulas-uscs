@@ -2,9 +2,9 @@
   <Grade> — a caixa que organiza <Cartao> (ou qualquer coisa) em colunas.
 
   <Grade :cols="3">
-    <Cartao titulo="Farinha">Estrutura.</Cartao>
-    <Cartao titulo="Água">Movimento.</Cartao>
-    <Cartao titulo="Sal">Freio.</Cartao>
+    <Cartao titulo="Thurstone">Capacidades primárias.</Cartao>
+    <Cartao titulo="Gardner">Inteligências múltiplas.</Cartao>
+    <Cartao titulo="Sternberg">Teoria triárquica.</Cartao>
   </Grade>
 
   `:cols` precisa dos dois-pontos — sem eles o Vue passa a string "3".

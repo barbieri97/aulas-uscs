@@ -1,12 +1,12 @@
 <!--
   destaque — uma frase sozinha na tela. Pergunta que abre discussão, tese da
-  aula, número que impressiona.
+  aula, número que impressiona. Fundo escuro da USCS.
 
   ---
   layout: destaque
   kicker: A pergunta
-  title: Por que o pão <span class="ds-em">cresce</span>?
-  fonte: Chartier, <em>O gosto do pão</em>, 2012
+  title: Inteligência é <span class="ds-em">uma</span> coisa ou <span class="ds-em">várias</span>?
+  fonte: Spearman (1904) · Thurstone (1938)
   ---
 
   `title` e `fonte` aceitam HTML. Um slide, uma frase — se precisar de mais
@@ -14,6 +14,8 @@
 -->
 <script setup lang="ts">
 // `title` chega pelo objeto `frontmatter`, não como prop — ver o comentário em capa.vue.
+import { asset } from '../lib/asset'
+
 const props = defineProps<{
   kicker?: string
   fonte?: string
@@ -21,10 +23,11 @@ const props = defineProps<{
 }>()
 
 const title = props.frontmatter?.title
+const fundo = `url("${asset('/uscs-fundo-escuro.jpg')}")`
 </script>
 
 <template>
-  <div class="slidev-layout ds-destaque">
+  <div class="slidev-layout ds-escuro ds-destaque" :style="{ backgroundImage: fundo }">
     <p v-if="kicker" class="ds-kicker" v-html="kicker" />
     <h1 v-if="title" v-html="title" />
     <div class="corpo"><slot /></div>
@@ -39,6 +42,7 @@ const title = props.frontmatter?.title
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: var(--ds-space-6) 8rem;
   text-align: center;
 }
 
@@ -46,13 +50,14 @@ const title = props.frontmatter?.title
   max-width: 22ch;
   margin: 0;
   font-size: var(--ds-text-3xl);
-  font-weight: 700;
-  line-height: 1.08;
+  font-weight: var(--ds-peso-forte);
+  line-height: 1.12;
 }
 
 .corpo:not(:empty) {
   margin-top: var(--ds-space-5);
-  max-width: 48ch;
+  max-width: 46ch;
+  color: var(--ds-muted);
 }
 
 .fonte {

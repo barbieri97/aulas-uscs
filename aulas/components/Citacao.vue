@@ -1,8 +1,8 @@
 <!--
   <Citacao> — a palavra de outra pessoa, com crédito.
 
-  <Citacao autor="Elizabeth Eisenstein" fonte="A revolução da imprensa, 1979">
-  A prensa não criou a leitura. Ela criou o leitor que compara.
+  <Citacao autor="Charles Spearman" fonte="American Journal of Psychology, 1904">
+  Todos os ramos da atividade intelectual têm em comum uma função fundamental.
   </Citacao>
 
   Para uma frase de efeito ocupando o slide inteiro, o layout `destaque` serve
@@ -56,7 +56,7 @@ figcaption {
 }
 
 .autor {
-  font-weight: 650;
+  font-weight: var(--ds-peso-forte);
 }
 
 .fonte {

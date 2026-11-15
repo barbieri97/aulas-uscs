@@ -1,17 +1,21 @@
 <!--
-  secao — divisor: avisa que a aula virou de assunto.
+  secao — divisor: avisa que a aula virou de assunto. Fundo escuro da USCS (o
+  saguão desfocado, com a chama no alto e a marca embaixo, à direita).
 
   ---
   layout: secao
   numero: "02"
-  title: Como o fermento trabalha
-  note: O que acontece dentro da massa enquanto ela descansa.
+  kicker: Parte 2
+  title: As escalas <span class="ds-em">Wechsler</span>
+  note: Da Wechsler-Bellevue (1939) ao WISC-V.
   ---
 
-  `title` e `note` aceitam HTML. Sem `numero`, o bloco grande some.
+  `title`, `kicker` e `note` aceitam HTML. Sem `numero`, o número grande some.
 -->
 <script setup lang="ts">
 // `title` chega pelo objeto `frontmatter`, não como prop — ver o comentário em capa.vue.
+import { asset } from '../lib/asset'
+
 const props = defineProps<{
   numero?: string | number
   kicker?: string
@@ -20,10 +24,11 @@ const props = defineProps<{
 }>()
 
 const title = props.frontmatter?.title
+const fundo = `url("${asset('/uscs-fundo-escuro.jpg')}")`
 </script>
 
 <template>
-  <div class="slidev-layout ds-secao">
+  <div class="slidev-layout ds-escuro ds-secao" :style="{ backgroundImage: fundo }">
     <span v-if="numero !== undefined" class="numero">{{ numero }}</span>
     <div class="texto">
       <p v-if="kicker" class="ds-kicker" v-html="kicker" />
@@ -35,22 +40,25 @@ const title = props.frontmatter?.title
 </template>
 
 <style scoped>
+/* A margem direita deixa livre a coluna da chama e da marca USCS. */
 .ds-secao {
   display: flex;
   align-items: center;
-  gap: var(--ds-space-7);
+  gap: var(--ds-space-6);
   height: 100%;
-  background: var(--ds-accent-wash);
+  padding: var(--ds-space-6) 9rem var(--ds-space-6) 4.5rem;
 }
 
-/* Número em marca-d'água: grande, mas atrás do texto na hierarquia de leitura. */
+/* Número em Poppins Thin, no degradê da marca: grande, mas leve. */
 .numero {
-  color: var(--ds-accent);
-  font-size: 9rem;
-  font-weight: 800;
-  line-height: 0.8;
-  letter-spacing: -0.05em;
-  opacity: 0.4;
+  background: var(--ds-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 8.5rem;
+  font-weight: var(--ds-peso-fino);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -60,6 +68,11 @@ const title = props.frontmatter?.title
 }
 
 .texto :deep(h1) {
-  margin-bottom: var(--ds-space-3);
+  margin: 0 0 var(--ds-space-3);
+  font-size: var(--ds-text-2xl);
+}
+
+.texto .ds-lead {
+  margin: 0;
 }
 </style>

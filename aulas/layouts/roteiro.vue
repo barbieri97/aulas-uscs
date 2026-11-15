@@ -5,9 +5,9 @@
   layout: roteiro
   title: O caminho de hoje
   itens:
-    - { tema: A massa, desc: farinha, água e tempo }
-    - { tema: O fermento, desc: quem faz o gás }
-    - { tema: O forno, desc: onde tudo trava }
+    - { tema: O fator g, desc: Spearman e a variedade positiva }
+    - { tema: O modelo CHC, desc: três estratos }
+    - { tema: Do modelo ao WISC, desc: os índices }
   ---
 
   Cada item aceita `tema` e `desc` (os dois com HTML). Um item pode ser só uma
@@ -80,9 +80,9 @@ const itensNormalizados = (props.itens ?? []).map(item =>
 }
 
 .num {
-  color: var(--ds-accent);
+  color: var(--ds-accent-texto);
   font-size: var(--ds-text-sm);
-  font-weight: 700;
+  font-weight: var(--ds-peso-forte);
   font-variant-numeric: tabular-nums;
 }
 
@@ -95,7 +95,7 @@ const itensNormalizados = (props.itens ?? []).map(item =>
 
 .tema {
   font-size: var(--ds-text-lg);
-  font-weight: 600;
+  font-weight: var(--ds-peso-forte);
 }
 
 .desc {

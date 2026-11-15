@@ -1,19 +1,22 @@
 ---
 theme: none
-title: Design system — catálogo
+title: Design system USCS — catálogo
 info: Um slide por layout e por componente, com a situação de uso nas notas
-date: "2026-08-11"
+date: "2026-11-16"
 colorSchema: light
 layout: capa
 kicker: Deck de bancada
-subtitle: Um slide para cada <span class="ds-em">layout</span> e cada <span class="ds-em">componente</span>. Abra com <code>npm run ref</code>.
-meta: O nome começa com <code>_</code>, então o site não publica este deck. Ele existe para você ver antes de escrever.
+titulo: Design system <span class="ds-em">USCS</span>
+subtitle: Um slide para cada layout e cada componente. Abra com <code>npm run ref</code>.
+meta: O nome começa com <code>_</code>, então o site não publica este deck.
 ---
 
 <!--
 Este é o catálogo do design system: a versão renderizada do que docs/design-system.md
 descreve por escrito. Toda vez que você criar um layout ou componente novo em aulas/,
 acrescente um slide aqui — é o que mantém o catálogo confiável.
+
+A aula aula-01-teorias-da-inteligencia.md usa as mesmas peças num conteúdo de verdade.
 -->
 
 ---
@@ -21,9 +24,9 @@ layout: roteiro
 kicker: O que tem aqui
 title: O catálogo
 itens:
-  - { tema: Tokens, desc: cor, tipo e espaço — o vocabulário }
-  - { tema: Layouts, desc: "6 locais + os que o Slidev já traz" }
-  - { tema: Componentes, desc: "8 peças para usar dentro do slide" }
+  - { tema: Tokens, desc: as cores e a fonte do modelo USCS }
+  - { tema: Layouts, desc: "8 locais + os que o Slidev já traz" }
+  - { tema: Componentes, desc: "9 peças para usar dentro do slide" }
   - { tema: Markdown puro, desc: como texto sem enfeite se parece }
 ---
 
@@ -31,27 +34,25 @@ itens:
 layout: secao
 numero: "01"
 title: Tokens
-note: Nenhum layout e nenhum componente escreve uma cor na mão. Todos leem daqui.
+note: As cores e a fonte que o modelo da USCS autoriza. Nenhum layout escreve uma cor na mão.
 ---
 
 ---
 layout: default
 ---
 
-# As cores
+# As cores da marca
 
 <div class="amostras">
-  <div><span class="chip" style="background: var(--ds-accent)"></span><code>--ds-accent</code><em>a cor da disciplina</em></div>
-  <div><span class="chip" style="background: var(--ds-accent-2)"></span><code>--ds-accent-2</code><em>o acento secundário</em></div>
-  <div><span class="chip" style="background: var(--ds-ink)"></span><code>--ds-ink</code><em>texto principal</em></div>
-  <div><span class="chip" style="background: var(--ds-muted)"></span><code>--ds-muted</code><em>texto secundário</em></div>
-  <div><span class="chip" style="background: var(--ds-surface); border-color: var(--ds-rule)"></span><code>--ds-surface</code><em>cartões e blocos</em></div>
-  <div><span class="chip" style="background: var(--ds-ok)"></span><code>--ds-ok</code><em>estado bom</em></div>
-  <div><span class="chip" style="background: var(--ds-warn)"></span><code>--ds-warn</code><em>atenção</em></div>
-  <div><span class="chip" style="background: var(--ds-danger)"></span><code>--ds-danger</code><em>erro</em></div>
+  <div><span class="chip" style="background: var(--uscs-azul)"></span><code>#152342</code><em>azul — texto, títulos, fundo escuro</em></div>
+  <div><span class="chip" style="background: var(--uscs-laranja)"></span><code>#EF7D00</code><em>laranja — o accent</em></div>
+  <div><span class="chip" style="background: var(--uscs-amarelo)"></span><code>#E9BC00</code><em>amarelo — fim do degradê</em></div>
+  <div><span class="chip" style="background: var(--ds-grad)"></span><code>--ds-grad</code><em>laranja → amarelo dos títulos</em></div>
+  <div><span class="chip" style="background: var(--uscs-branco); border-color: var(--ds-rule)"></span><code>#FFFFFF</code><em>branco — fundo do slide claro</em></div>
+  <div><span class="chip" style="background: var(--ds-accent-texto)"></span><code>--ds-accent-texto</code><em>laranja para letra sobre branco</em></div>
 </div>
 
-<Fonte>Trocar a identidade visual das aulas = editar <code>aulas/styles/tokens.css</code>, e só ele.</Fonte>
+<Fonte>Trocar a identidade visual = editar <code>aulas/styles/tokens.css</code> (e as imagens <code>aulas/public/uscs-*.jpg</code>).</Fonte>
 
 <style>
 .amostras {
@@ -78,25 +79,24 @@ ou um componente.
 layout: default
 ---
 
-# A escala de tipo
+# Poppins, a fonte autorizada
 
 <div class="escala">
-  <p style="font-size: var(--ds-text-3xl)">3xl — só a capa e o destaque</p>
-  <p style="font-size: var(--ds-text-2xl)">2xl — o h1 de um slide comum</p>
-  <p style="font-size: var(--ds-text-xl)">xl — h2, termo, citação</p>
-  <p style="font-size: var(--ds-text-lg)">lg — abertura de parágrafo, item de lista importante</p>
-  <p style="font-size: var(--ds-text-base)">base — o corpo do texto</p>
+  <p style="font-size: var(--ds-text-3xl); font-weight: var(--ds-peso-fino)">Thin 100 — número grande</p>
+  <p style="font-size: var(--ds-text-2xl); font-weight: var(--ds-peso-forte)">Bold 700 — títulos</p>
+  <p style="font-size: var(--ds-text-lg)">Light 300 — o corpo do texto, como nos contatos do modelo</p>
+  <p style="font-size: var(--ds-text-base)">base — o corpo do texto · <span class="ds-em">ds-em</span> · <strong>negrito</strong></p>
   <p style="font-size: var(--ds-text-sm)">sm — legenda, tabela, crédito</p>
-  <p style="font-size: var(--ds-text-xs)">xs — rótulo em caixa alta</p>
+  <p style="font-size: var(--ds-text-xs)">xs — rótulo</p>
 </div>
 
 <style>
-.escala p { margin: var(--ds-space-2) 0; max-width: none; line-height: 1.25; }
+.escala p { margin: var(--ds-space-1) 0; max-width: none; line-height: 1.25; }
 </style>
 
 <!--
-Sete tamanhos, e só. Quando um slide "precisa" de um tamanho que não está na escala,
-o problema quase sempre é conteúdo demais no slide — não a escala.
+O modelo da USCS autoriza Poppins Thin e Bold. O corpo usa Light (300) — o peso dos textos
+de contato do próprio modelo — porque Thin em letra pequena some no projetor.
 -->
 
 ---
@@ -113,7 +113,7 @@ title: Este slide é o layout <code>roteiro</code>
 itens:
   - { tema: Um tópico, desc: e a explicação dele }
   - { tema: Outro tópico, desc: "com <code>atual</code> marcando onde estamos" }
-  - { tema: Um terceiro, desc: "a lista aceita item simples também" }
+  - Um item simples também vale
 atual: 2
 ---
 
@@ -126,24 +126,46 @@ title: Uma frase <span class="ds-em">sozinha</span> na tela.
 fonte: o campo <code>fonte</code> vai aqui embaixo
 ---
 
-<!-- Situação: a pergunta que abre a discussão, a tese da aula, o número que impressiona. Uma frase por slide — se precisa de duas linhas de explicação, o layout é outro. -->
+<!-- Situação: a pergunta que abre a discussão, a tese da aula, o número que impressiona. Fundo escuro da USCS. -->
 
 ---
 layout: figura
-imagem: /exemplo-figura.svg
+imagem: /curva-normal-qi.svg
 legenda: O campo <code>legenda</code> aceita HTML.
-lado: direita
+lado: esquerda
 ---
 
 # O layout `figura`
 
-Imagem de um lado, texto do outro. `lado: esquerda` troca os dois de lugar, e
+Imagem de um lado, texto do outro. `lado: esquerda` (como aqui) troca os dois de lugar, e
 `ajuste: cover` faz a imagem preencher em vez de caber inteira.
 
-O caminho é absoluto e sem a pasta: `/exemplo-figura.svg` procura em
-`aulas/public/exemplo-figura.svg`.
+O caminho é absoluto e sem a pasta: `/curva-normal-qi.svg` procura em
+`aulas/public/curva-normal-qi.svg`.
 
-<!-- Situação: quando a imagem É o argumento e o texto comenta. Para imagem decorativa, o layout `image-right` do Slidev serve e dá menos trabalho. -->
+<!-- Situação: quando a imagem É o argumento e o texto comenta. -->
+
+---
+layout: fecho
+title: O layout <code>fecho</code>
+pontos:
+  - O que fica da aula, em uma linha cada
+  - "Os itens aceitam <strong>HTML</strong>"
+proximo: O campo <code>proximo</code> anuncia a aula seguinte
+---
+
+O corpo do slide é o lugar das referências.
+
+---
+layout: redes
+---
+
+<!-- layout: redes — o slide institucional com as redes da Pós-graduação USCS. Sem campos. -->
+
+---
+layout: encerramento
+subtitle: "layout: encerramento — <code>title</code> e <code>subtitle</code> são opcionais"
+---
 
 ---
 layout: secao
@@ -158,29 +180,28 @@ layout: default
 
 # `<Nota>` — os quatro tipos
 
+<Grade :cols="2">
 <Nota titulo="Info">
 
 O tipo padrão, com **markdown funcionando** — repare nas linhas em branco.
 
 </Nota>
-
 <Nota tipo="ok" titulo="Funciona">
 
-Para confirmar o caminho certo: "é assim que se faz".
+Para confirmar o caminho certo.
 
 </Nota>
-
 <Nota tipo="alerta" titulo="Cuidado">
 
 Para a pegadinha que a turma sempre cai.
 
 </Nota>
-
 <Nota tipo="erro" titulo="Não faça">
 
 Para o erro que precisa ser nomeado como erro.
 
 </Nota>
+</Grade>
 
 <!-- Situação: o aparte. Se o conteúdo é o ponto principal do slide, ele não vai numa <Nota> — vai no corpo. -->
 
@@ -188,7 +209,7 @@ Para o erro que precisa ser nomeado como erro.
 layout: default
 ---
 
-# `<Grade>` + `<Cartao>`
+# `<Grade>` + `<Cartao>` e `<Numero>`
 
 <Grade :cols="3">
 <Cartao rotulo="passo 1" titulo="Comparar">
@@ -198,19 +219,15 @@ Três coisas do **mesmo tipo**, lado a lado.
 </Cartao>
 <Cartao rotulo="passo 2" titulo="Escolher" destaque>
 
-O `destaque` pinta um cartão com o accent — um por grade.
+O `destaque` pinta um cartão — um por grade.
 
 </Cartao>
-<Cartao rotulo="passo 3" titulo="Explicar">
-
-Cartão sem `rotulo` também funciona.
-
-</Cartao>
+<Numero valor="100" rotulo="média do QI" detalhe="desvio-padrão 15" />
 </Grade>
 
 <Fonte><code>:cols</code> precisa dos dois-pontos — sem eles o Vue passa a string <code>"3"</code>.</Fonte>
 
-<!-- Situação: comparar coisas do mesmo tipo. Duas ou três colunas; com quatro, o texto de cada cartão já não cabe. -->
+<!-- Situação: <Cartao> compara coisas do mesmo tipo; <Numero> é o dado que a turma precisa guardar. -->
 
 ---
 layout: default
@@ -218,9 +235,9 @@ layout: default
 
 # `<Termo>` e `<Citacao>`
 
-<Termo palavra="Design system" origem="o conjunto de decisões já tomadas">
+<Termo palavra="Funções executivas" origem="o termo que a turma copia">
 
-As peças e as regras que fazem trinta slides parecerem um curso, e não trinta arquivos.
+Processos que controlam e coordenam o comportamento dirigido a metas.
 
 </Termo>
 
@@ -229,8 +246,6 @@ As peças e as regras que fazem trinta slides parecerem um curso, e não trinta 
 A citação de dentro do slide. Para uma frase ocupando a tela inteira, use o layout `destaque`.
 
 </Citacao>
-
-<!-- Situação: <Termo> é o bloco que a turma copia — a definição formal. <Citacao> é a palavra de outra pessoa, com crédito. -->
 
 ---
 layout: default
@@ -241,15 +256,9 @@ layout: default
 <div class="ds-grid">
 <div>
 
-<Pessoa nome="Com retrato" papel="o campo `foto`" foto="/exemplo-avatar.svg">
+<Pessoa nome="David Wechsler" papel="1896–1981 · psicólogo">
 
-O slot é a descrição curta.
-
-</Pessoa>
-
-<Pessoa nome="Sem retrato" papel="entra um monograma">
-
-Assim uma grade de pessoas não fica torta.
+Sem `foto`, entra um monograma com a inicial.
 
 </Pessoa>
 
@@ -257,15 +266,13 @@ Assim uma grade de pessoas não fica torta.
 <div>
 
 <LinhaDoTempo :itens="[
-{ quando: '1450', o_que: 'Um marco', desc: 'a explicação dele' },
-  { quando: '1501', o_que: 'Outro marco' },
-  { quando: 'hoje', o_que: 'O campo é texto', desc: 'não precisa ser ano' },
+  { quando: '1939', o_que: 'Wechsler-Bellevue', desc: 'a primeira escala' },
+  { quando: '1949', o_que: 'WISC' },
+  { quando: '2014', o_que: 'WISC-V', desc: 'o campo é texto livre' },
 ]" />
 
 </div>
 </div>
-
-<!-- Situação: <LinhaDoTempo> serve para história e também para processo — "o que acontece em cada etapa". O campo `quando` é texto livre: "etapa 1" funciona igual. -->
 
 ---
 layout: secao
@@ -280,30 +287,14 @@ layout: default
 
 # Um slide comum
 
-Parágrafo com **negrito no accent**, *itálico*, `código inline` e um
-[link](https://sli.dev/). O corpo do texto tem largura máxima de 62 caracteres — é
-o que se lê sem cansar.
+Parágrafo com **negrito no laranja**, *itálico*, `código inline` e um
+[link](https://sli.dev/).
 
-- Item de lista, com o traço no accent
+- Item de lista, com o traço laranja
 - Outro item
   - Sublista fica menor e discreta
-
-> A citação em markdown vira o bloco em serifa, com a barra à esquerda.
 
 | campo | o que faz |
 |---|---|
 | `title` | vira o nome da aula no índice do site |
 | `info` | a ementa de uma linha |
-| `date` | a data, em `YYYY-MM-DD` |
-
----
-layout: fecho
-title: Onde continuar
-pontos:
-  - "O contrato escrito: <code>docs/design-system.md</code>"
-  - "Trocar tudo por um tema npm, ou gerar outro DS: <code>docs/temas.md</code>"
-proximo: Copie uma aula de exemplo e comece a escrever
----
-
-Layouts e componentes novos entram em `aulas/layouts/` e `aulas/components/` — e ganham
-um slide aqui.

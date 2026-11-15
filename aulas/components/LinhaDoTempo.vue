@@ -3,8 +3,8 @@
   processo ("o que acontece em cada etapa").
 
   <LinhaDoTempo :itens="[
-    { quando: '1450', o_que: 'Gutenberg', desc: 'tipos móveis na Europa' },
-    { quando: '1501', o_que: 'Itálico', desc: 'Aldo Manúcio imprime em bolso' },
+    { quando: '1904', o_que: 'Spearman', desc: 'fator geral g' },
+    { quando: '1993', o_que: 'Carroll', desc: 'teoria dos três estratos' },
   ]" />
 
   `desc` é opcional. `o_que` e `desc` aceitam HTML.
@@ -65,9 +65,9 @@ defineProps<{
    empurra só a sua linha para a direita e a coluna dos títulos sai torta. */
 .quando {
   flex: 0 0 6.5rem;
-  color: var(--ds-accent);
+  color: var(--ds-accent-texto);
   font-size: var(--ds-text-sm);
-  font-weight: 700;
+  font-weight: var(--ds-peso-forte);
   font-variant-numeric: tabular-nums;
 }
 
@@ -79,7 +79,7 @@ defineProps<{
 
 .o-que {
   font-size: var(--ds-text-lg);
-  font-weight: 600;
+  font-weight: var(--ds-peso-forte);
   line-height: var(--ds-leading-tight);
 }
 

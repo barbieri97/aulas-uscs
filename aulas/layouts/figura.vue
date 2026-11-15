@@ -3,7 +3,7 @@
 
   ---
   layout: figura
-  imagem: /exemplo-figura.svg
+  imagem: /curva-normal-qi.svg
   legenda: Duas séries medidas na mesma escala.
   lado: direita        # onde fica a IMAGEM (padrão: direita)
   ajuste: contain      # contain (padrão, mostra a figura inteira) | cover
@@ -71,7 +71,7 @@ const arquivo = asset(props.imagem)
 
 .figura img {
   width: 100%;
-  max-height: 62vh;
+  max-height: 50vh;
   border-radius: var(--ds-radius);
 }
 
