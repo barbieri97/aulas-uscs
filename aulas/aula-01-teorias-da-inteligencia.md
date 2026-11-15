@@ -1655,6 +1655,177 @@ ajuda além do inquérito.
 layout: default
 ---
 
+# 3 · Dígitos (DG)
+
+O aplicador diz sequências de números. Na **Ordem Direta** a criança repete na mesma ordem; na
+**Ordem Inversa**, de trás para frente.
+
+<Grade :cols="2">
+<Cartao rotulo="IMO · principal" titulo="O que mede">
+
+Memória auditiva de curto prazo, sequenciamento, atenção e concentração. A **direta** pede
+memorização e codificação auditiva; a **inversa**, transformar a informação — memória
+operacional.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gsm · memória de curto prazo" destaque>
+
+Predomina o **Gsm**, com participação de **Gf** — sobretudo na ordem inversa, que exige
+manipular o que foi guardado.
+
+</Cartao>
+</Grade>
+
+<!--
+Cada ordem tem 8 itens com 2 tentativas. A Ordem Inversa ganhou duas tentativas de exemplo,
+para a criança entender a instrução antes de as sequências crescerem.
+Escores de processo: DIOD e DIOI (pontos de cada ordem) e UDIOD e UDIOI (a maior sequência
+repetida corretamente em cada ordem — "o span").
+Na interpretação (Pessotto & Bartholomeu): a direta está mais ligada a reter (memória de curto
+prazo); a inversa, à atenção e à memória de trabalho, porque além de reter é preciso processar.
+A alternância entre as duas exige flexibilidade.
+-->
+
+---
+layout: default
+---
+
+# Dígitos · regras
+
+| | |
+|---|---|
+| **material** | Manual e Protocolo de Registro (as sequências estão nos dois) |
+| **início** | Ordem Direta: item 1 · Ordem Inversa: **exemplo**, depois item 1 — todas as idades |
+| **sequência inversa** | não há |
+| **interrupção** | em cada ordem, quando a criança tira **0 nas duas tentativas de um mesmo item** |
+| **tentativas** | duas por item — aplique **as duas**, mesmo com acerto na primeira |
+| **pontuação** | 1 ou 0 por tentativa · DIOD 16 + DIOI 16 = **32** pontos |
+
+<Fonte>A Ordem Inversa é aplicada sempre, qualquer que tenha sido o desempenho na Direta.</Fonte>
+
+<!--
+O escore do item é a soma das duas tentativas (0, 1 ou 2).
+UDIOD: número de dígitos da última tentativa da direta que recebeu 1 ponto (máximo 9). UDIOI:
+o mesmo na inversa (máximo 8). Ex.: acertou 4 dígitos uma vez na inversa e errou as duas de
+5 → UDIOI = 4.
+O exemplo da Ordem Inversa não entra na soma.
+-->
+
+---
+layout: default
+---
+
+# Dígitos · falas
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="Ordem Direta">
+
+Eu vou dizer alguns números. Ouça com atenção e, assim que eu terminar, repita exatamente o
+que eu disse. É só falar o que eu falei.
+
+</Fala>
+
+<Fala quando="Ordem Inversa · exemplo, tentativa 1">
+
+Agora eu vou dizer mais alguns números, mas desta vez, quando eu parar, eu quero que você
+fale os números de trás para frente. Se eu disser [X – Y], o que você deverá dizer?
+
+</Fala>
+
+<Fala quando="exemplo, tentativa 2">
+
+Vamos tentar com estes números. Lembre-se: você deve dizer os números de trás para frente:
+[X – Y].
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="exemplo · resposta correta">
+
+Isso mesmo.
+
+</Fala>
+
+<Fala quando="exemplo · resposta incorreta">
+
+Não é bem isso. Eu disse [X – Y]. Então, para falar de trás para frente, você deveria dizer
+[Y – X]. Vamos tentar outra vez: [X – Y].
+
+</Fala>
+
+<Fala quando="se errar de novo">
+
+Não é bem isso. Eu disse [X – Y]. Então, para falar de trás para frente, você deveria dizer
+[Y – X].
+
+</Fala>
+
+<Fala quando="pedido de repetição">
+
+Fale o que você acha que eu disse.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Ordem Direta: depois da instrução, passar para a Tentativa 1 do Item 1. Aplicar as duas
+tentativas de cada item e seguir até a interrupção.
+Depois da tentativa 1 do exemplo, passar para a tentativa 2; depois da tentativa 2, para o item
+1 da Ordem Inversa.
+[X – Y] = os dois dígitos do exemplo, que estão no manual e no Protocolo.
+No exemplo, a criança tem duas chances em cada tentativa: se erra, o aplicador explica e dá
+"Vamos tentar outra vez"; se erra de novo, explica e segue.
+-->
+
+---
+layout: default
+---
+
+# Dígitos · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="ritmo" titulo="Um dígito por segundo" destaque>
+
+Leia **literalmente**, no ritmo de **um por segundo**, baixando levemente a voz no **último
+dígito**. Depois, pausa para a criança responder.
+
+</Cartao>
+<Cartao rotulo="repetição" titulo="Nunca repita">
+
+Nenhuma tentativa é repetida. Se a criança pedir: **"Fale o que você acha que eu disse."**
+
+</Cartao>
+<Cartao rotulo="ajuda" titulo="Só no exemplo">
+
+Ajuda e correção existem **apenas no exemplo da Ordem Inversa**. Nos itens, nenhum feedback.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Interrupção">
+
+Só se interrompe com **0 nas duas tentativas do mesmo item** — errar a tentativa 2 de um item e
+a tentativa 1 do seguinte não basta.
+
+</Nota>
+
+<!--
+Agrupar os dígitos ("3-8, 6-1") ou variar a entonação muda a tarefa: a criança passa a lembrar
+blocos, não dígitos. Por isso o ritmo regular e a voz baixando só no fim.
+Evitar que a criança veja o Protocolo: as sequências estão impressas nele.
+DIOD e DIOI separados permitem comparar retenção (direta) e manipulação (inversa).
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
