@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" font-family="Poppins, system-ui, sans-serif">
+  <title>A síntese CHC: o modelo Gf-Gc de Cattell e Horn, sem g, e o modelo de três estratos de Carroll, com g, se juntam no modelo CHC</title>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EF7D00"/>
+    </marker>
+  </defs>
+  <rect width="600" height="440" fill="#ffffff"/>
+
+  <!-- Cattell-Horn -->
+  <rect x="20" y="20" width="270" height="200" rx="12" fill="#ffffff" stroke="#152342" stroke-width="2"/>
+  <text x="155" y="52" text-anchor="middle" font-size="19" font-weight="700" fill="#152342">Cattell-Horn</text>
+  <text x="155" y="74" text-anchor="middle" font-size="13" fill="#152342" fill-opacity="0.75">modelo Gf-Gc expandido · sem g</text>
+  <g font-size="14" font-weight="700" fill="#152342" text-anchor="middle">
+    <rect x="39" y="94" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="65" y="114">Gf</text>
+    <rect x="99" y="94" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="125" y="114">Gc</text>
+    <rect x="159" y="94" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="185" y="114">Gsm</text>
+    <rect x="219" y="94" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="245" y="114">Glr</text>
+    <rect x="39" y="134" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="65" y="154">Gv</text>
+    <rect x="99" y="134" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="125" y="154">Ga</text>
+    <rect x="159" y="134" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="185" y="154">Gs</text>
+    <rect x="219" y="134" width="52" height="30" rx="6" fill="#152342" fill-opacity="0.1"/><text x="245" y="154">Gq</text>
+  </g>
+  <text x="155" y="198" text-anchor="middle" font-size="13" fill="#152342">capacidades amplas, lado a lado</text>
+
+  <!-- Carroll -->
+  <rect x="310" y="20" width="270" height="200" rx="12" fill="#ffffff" stroke="#152342" stroke-width="2"/>
+  <text x="445" y="52" text-anchor="middle" font-size="19" font-weight="700" fill="#152342">Carroll</text>
+  <text x="445" y="74" text-anchor="middle" font-size="13" fill="#152342" fill-opacity="0.75">três estratos · com g</text>
+  <polygon points="445,88 466.8,118 423.2,118" fill="#EF7D00"/>
+  <polygon points="420.3,122 469.7,122 496.6,166 393.4,166" fill="#152342"/>
+  <polygon points="390.5,170 499.5,170 525,205 365,205" fill="#152342" fill-opacity="0.55"/>
+  <text x="445" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#152342">g</text>
+  <text x="445" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">II</text>
+  <text x="445" y="193" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">I</text>
+
+  <!-- setas -->
+  <line x1="155" y1="224" x2="245" y2="280" stroke="#EF7D00" stroke-width="3" marker-end="url(#seta)"/>
+  <line x1="445" y1="224" x2="355" y2="280" stroke="#EF7D00" stroke-width="3" marker-end="url(#seta)"/>
+
+  <!-- CHC -->
+  <rect x="110" y="288" width="380" height="140" rx="14" fill="#152342"/>
+  <text x="300" y="327" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">Modelo CHC</text>
+  <text x="300" y="353" text-anchor="middle" font-size="15" fill="#E9BC00">Cattell · Horn · Carroll</text>
+  <text x="300" y="380" text-anchor="middle" font-size="13" fill="#ffffff">g no topo · capacidades amplas · habilidades específicas</text>
+  <text x="300" y="405" text-anchor="middle" font-size="13" fill="#ffffff" fill-opacity="0.8">McGrew (1997) · McGrew &amp; Flanagan (1998)</text>
+</svg>

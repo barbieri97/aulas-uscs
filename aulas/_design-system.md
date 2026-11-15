@@ -15,7 +15,7 @@ Este é o catálogo do design system: a versão renderizada do que docs/design-s
 descreve por escrito. Toda vez que você criar um layout ou componente novo em aulas/,
 acrescente um slide aqui — é o que mantém o catálogo confiável.
 
-A aula aula-01-teorias-da-inteligencia.md usa as mesmas peças num conteúdo de verdade.
+A aula aula-01-teorias-da-inteligencia.md usa estas peças num conteúdo de verdade.
 -->
 
 ---

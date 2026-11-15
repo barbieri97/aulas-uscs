@@ -14,9 +14,9 @@ marca nos slides de conteúdo, a capa com a fachada e os slides finais de redes 
 "Obrigado(a)!". É um design system local — oito layouts e nove componentes em `aulas/` —
 sem tema npm (`theme: none`).
 
-[`aulas/aula-01-teorias-da-inteligencia.md`](aulas/aula-01-teorias-da-inteligencia.md) é a
-**aula modelo**: um conteúdo de verdade usando cada layout e cada componente uma vez. Copie-a
-para começar uma aula nova.
+[`aulas/_design-system.md`](aulas/_design-system.md) é o **catálogo**: um slide para cada
+layout e cada componente (`npm run ref`). [`aulas/aula-01-teorias-da-inteligencia.md`](aulas/aula-01-teorias-da-inteligencia.md)
+é a primeira aula real da disciplina e mostra a sequência completa, da capa ao encerramento.
 
 ## Uso diário
 
@@ -34,8 +34,8 @@ npm run build                                 # gera dist/ igual ao que vai pro 
 só existe depois do `npm run build` — é o build que dá a cada deck o seu `--base` e monta o
 índice, do mesmo jeito que o Actions faz na publicação.
 
-**Para criar uma aula nova:** copie `aulas/aula-01-teorias-da-inteligencia.md`, renomeie para
-`aula-NN-titulo-em-slug.md`, edite, commit, push. O workflow builda e publica sozinho — o
+**Para criar uma aula nova:** crie `aulas/aula-NN-titulo-em-slug.md` seguindo a sequência de
+layouts da aula 01 (e o catálogo para cada peça), edite, commit, push. O workflow builda e publica sozinho — o
 índice se atualiza a partir do `title` / `info` do topo do arquivo. As aulas não têm data:
 elas se repetem a cada turma. O nome do arquivo
 vira a URL.
@@ -54,7 +54,7 @@ Resumo das convenções — e as instruções para agentes de IA — em [`AGENTS
 
 ```
 aulas/
-├── aula-01-teorias-da-inteligencia.md   a aula modelo
+├── aula-01-teorias-da-inteligencia.md   aula 01: teorias da inteligência e o modelo CHC
 ├── _design-system.md             o catálogo (o `_` mantém fora do site)
 ├── contratos.mjs                 o que cada layout e componente aceita (lido pelo lint)
 ├── styles/                       tokens.css · base.css · utilities.css (+ Poppins)

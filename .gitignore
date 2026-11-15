@@ -5,3 +5,6 @@ dist
 .vite-inspect
 .remote-assets
 components.d.ts
+
+# Material de referência (manuais de testes, capítulos): uso restrito, não publicar
+referencias/
