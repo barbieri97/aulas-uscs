@@ -1995,6 +1995,266 @@ classe)? É o que distingue o raciocínio concreto do abstrato na análise quali
 layout: default
 ---
 
+# 5 · Código (CD)
+
+Consultando uma **chave**, a criança desenha o símbolo que corresponde a cada forma geométrica
+(**Código A**, 6–7 anos) ou a cada número (**Código B**, 8–16 anos), em **120 segundos**.
+
+<Grade :cols="2">
+<Cartao rotulo="IVP · principal" titulo="O que mede">
+
+Velocidade de processamento, memória de curto prazo, aprendizagem, percepção visual,
+coordenação visomotora, flexibilidade cognitiva, atenção e motivação.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gs · velocidade de processamento" destaque>
+
+Predomina o **Gs**, com tempo de decisão (**Gt**), processamento visual (**Gv**) e habilidade
+psicomotora (**Gp**) — o lápis pesa.
+
+</Cartao>
+</Grade>
+
+<!--
+Também envolve processamento visual e sequencial (o "processamento visual sequencial" da
+introdução teórica).
+Na interpretação (Pessotto & Bartholomeu): os três subtestes de IVP (Código, Procurar Símbolos
+e Cancelamento) compartilham Gt, Gs, Gv e Gp. Um Código baixo com Procurar Símbolos médio pode
+apontar o componente grafomotor (copiar símbolos) mais que a velocidade em si.
+Na deficiência motora, considerar Procurar Símbolos ou Cancelamento no lugar de Código.
+-->
+
+---
+layout: default
+---
+
+# Código · regras
+
+| | |
+|---|---|
+| **material** | Protocolo de Respostas 1, Crivo de Correção, Protocolo de Registro, lápis nº 2 **sem borracha**, cronômetro |
+| **início** | 6–7 anos: exemplos e itens do **Código A** · 8–16 anos: do **Código B** · suspeita de déficit: a forma da **idade cronológica** |
+| **interrupção** | após **120 segundos** |
+| **tempo** | aciona na última palavra da instrução; para ao completar ou aos 120 s — **registre o tempo** |
+| **pontuação** | 1 ponto por símbolo correto · A: 59 + até 6 de **bônus** = 65 · B: 119, sem bônus |
+
+<Fonte>Bônus só no Código A, e só com escore perfeito: quanto menor o tempo, mais pontos (tabela no Manual e no Protocolo).</Fonte>
+
+<!--
+Código A fica na página 1 do Protocolo de Respostas 1; Código B na página 2 — dobre o protocolo
+para a criança ver só o Código B.
+Corrigir com o Crivo da forma aplicada, alinhado de modo que as respostas certas fiquem acima
+das da criança. O número de itens por linha está à direita do crivo.
+Itens de exemplo não entram nos pontos brutos. Itens em branco (pulados ou não alcançados) não
+contam. Se a criança não desenhou nada, ou riscou uma linha atravessando o subteste: 0.
+Quem não completa no tempo tem o tempo registrado como 120 s.
+-->
+
+---
+layout: default
+---
+
+# Código · falas (1/2) — exemplos
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**Código A.** Protocolo de Respostas 1, página 1, na frente da criança. Apontar a chave:
+
+</Acao>
+
+<Fala>
+
+Aqui estão algumas formas com sinais dentro delas. Cada forma tem o seu próprio sinal.
+
+</Fala>
+
+<Fala quando="apontando os itens de exemplo">
+
+Aqui embaixo estão algumas formas vazias. Você vai preencher essas formas assim.
+
+</Fala>
+
+<Fala quando="1º exemplo · apontar na chave, depois desenhar">
+
+Veja como eu faço. Aqui nós temos um(a) [forma]. Este(a) [forma] aqui em cima tem [sinal].
+Assim, eu desenho [sinal] aqui neste(a) [forma].
+
+</Fala>
+
+<Acao>
+
+2º exemplo: o mesmo, começando por "Veja como eu faço, outra vez".
+
+</Acao>
+
+</div>
+<div>
+
+<Acao>
+
+**Código B.** Página 2, dobrada. Apontar a chave, passando o dedo pelos números e símbolos:
+
+</Acao>
+
+<Fala>
+
+Olhe estes quadros divididos. Cada quadro tem um número, na parte de cima, e um símbolo, na
+parte de baixo. Cada número tem o seu próprio símbolo.
+
+</Fala>
+
+<Fala quando="apontando os itens de exemplo">
+
+Aqui embaixo os quadros têm os números na parte de cima, mas a parte de baixo está vazia. Eu
+quero que você desenhe os símbolos que devem estar nos quadros vazios, na parte de baixo. Faça
+assim.
+
+</Fala>
+
+<Fala quando="3 exemplos · item, depois chave">
+
+Aqui nós temos um [nº]. O [nº] tem este símbolo. Assim, eu vou desenhar este símbolo no
+quadro.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Os sinais e formas reais de cada exemplo estão no Manual. Aqui eles viram [forma], [sinal] e
+[nº].
+No Código A, o aplicador faz 2 exemplos; no B, 3. Cada um: apontar o item, apontar a chave,
+dizer a fala, desenhar.
+-->
+
+---
+layout: default
+---
+
+# Código · falas (2/2) — treino e itens
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+Dar o lápis **sem borracha** e apontar os exemplos restantes:
+
+</Acao>
+
+<Fala>
+
+Agora faça estes. Pare quando chegar nesta linha. *(mostrar a linha que separa exemplos e
+itens)*
+
+</Fala>
+
+<Fala quando="exemplos certos">
+
+Isso mesmo. · Certo. — e, ao final: Agora você sabe como fazer.
+
+</Fala>
+
+<Fala quando="erro no exemplo · corrigir na hora">
+
+Olhe, este(a) é um(a) [forma/nº] *(mostrar na chave)*. Tem [sinal] dentro; por isso, você deve
+pôr [sinal] neste(a) [forma] aqui *(apontar o exemplo)*.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="itens de teste">
+
+Quando eu disser "Pode começar", faça estes da mesma maneira. Comece aqui *(apontar o 1º item)*,
+e continue na ordem, sem pular nenhum. Trabalhe o mais depressa que puder e procure não errar,
+até eu dizer para parar. Pronto?
+
+</Fala>
+
+<Fala quando="acionar o cronômetro">
+
+Pode começar.
+
+</Fala>
+
+<Fala quando="aos 120 segundos">
+
+Pare.
+
+</Fala>
+
+<Acao>
+
+Registrar o tempo de execução no Protocolo de Registro e tirar o Protocolo de Respostas da
+frente da criança.
+
+</Acao>
+
+</div>
+</Grade>
+
+<!--
+Nos exemplos o aplicador deixa a criança trabalhar sozinha e corrige cada erro imediatamente,
+usando o item para reforçar como a chave funciona. No Código B: "Você está vendo, este é um [nº].
+O [nº] tem este símbolo. Então eu vou desenhar este símbolo no quadro."
+Não passar aos itens de teste enquanto a criança não entender a tarefa. Se ficar claro que ela
+não vai entender, interromper o subteste e aplicar Cancelamento para obter o IVP e o QIT.
+Antes do "Pode começar", dar mais explicações se necessário.
+-->
+
+---
+layout: default
+---
+
+# Código · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="canhotos" titulo="A mão cobre a chave" destaque>
+
+Coloque **outro Protocolo de Respostas à direita**, com a chave alinhada à que a mão encobre.
+Ensine a usar essa chave já nos exemplos.
+
+</Cartao>
+<Cartao rotulo="erros" titulo="Sem borracha">
+
+Pergunta sobre erro: **"Não tem problema. Continue trabalhando o mais depressa possível."**
+Corrigir por conta própria pode — e vale ponto.
+
+</Cartao>
+<Cartao rotulo="ordem" titulo="Pulou ou inverteu">
+
+**"Preencha na ordem. Não pule nenhum."** Apontar o próximo: **"Este é o próximo."** Fora isso,
+só estimular a continuar.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="O que conta como certo">
+
+O símbolo não precisa ser perfeito, só **claramente equivalente** ao da chave e **distinto dos
+outros**. A correção espontânea ao lado ou acima do erro vale 1 ponto.
+
+</Nota>
+
+<!--
+Não desestimular as correções espontâneas — a menos que sejam tão frequentes que prejudiquem o
+desempenho.
+O registro preciso do tempo é especialmente importante no Código A, por causa dos pontos de
+bonificação para quem completa tudo certo.
+Observar: a criança consulta a chave a cada símbolo ou memoriza os pares? Isso diz algo sobre
+aprendizagem incidental e memória de curto prazo.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
