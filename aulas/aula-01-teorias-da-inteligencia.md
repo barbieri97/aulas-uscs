@@ -2994,8 +2994,8 @@ aí, 0.
 
 <Nota tipo="info" titulo="Exemplo fora do teste">
 
-*Por que usar cinto de segurança?* → "para não se machucar" (proteção) e "porque é lei" (norma)
-são **dois conceitos**; "para não se ferir" só repete o primeiro.
+*Por que usar protetor solar?* → "para não se queimar" (proteção) e "porque o médico manda"
+(orientação) são **dois conceitos**; "para não ficar vermelho" só repete o primeiro.
 
 </Nota>
 
@@ -3289,8 +3289,7 @@ layout: default
 <!--
 Os itens 1 e 2 (†) ensinam a tarefa: resposta errada ou ausente → o aplicador aponta e diz o que
 falta. Depois deles, nenhuma ajuda.
-A criança que não sabe o nome exato pode descrever com as próprias palavras ("o buraco por onde
-sai a água") — vale 1 ponto.
+A criança que não sabe o nome exato pode descrever com as próprias palavras — vale 1 ponto.
 -->
 
 ---
@@ -4161,6 +4160,8 @@ layout: default
   interpretation of broad CHC scores "beyond g". *Journal of Intelligence, 11*(1), 19.
 - Pessotto, F. O modelo CHC das habilidades cognitivas. In [organizadores], *[título do
   livro]* (pp. 11–18). [Editora], [ano].
+- Pessotto, F., & Bartholomeu, D. Escalas Wechsler e o modelo CHC. In [organizadores],
+  *[título do livro]* (pp. 21–[…]). [Editora], [ano].
 - Schneider, W. J., & McGrew, K. S. (2018). The Cattell-Horn-Carroll theory of cognitive
   abilities. In D. P. Flanagan & E. M. McDonough (Eds.), *Contemporary intellectual
   assessment* (4th ed., pp. 73–163). Guilford.
@@ -4175,10 +4176,11 @@ layout: fecho
 title: O que fica
 pontos:
   - "Do <strong>g</strong> de Spearman ao CHC: um século discutindo se a inteligência é uma ou várias"
-  - "O <strong>CHC</strong> organiza a inteligência em três estratos: g, 16 capacidades amplas e mais de 90 específicas"
+  - "O <strong>CHC</strong>: g, 16 capacidades amplas e mais de 90 específicas"
   - "<strong>Gf</strong>, <strong>Gc</strong> e <strong>Gsm</strong> são os pilares — e a base dos índices do WISC-IV"
-  - "O <strong>WISC-IV</strong>: 4 índices e o QIT, 10 subtestes principais e 5 suplementares, aplicação padronizada"
-proximo: "WISC-IV: os subtestes"
+  - "O <strong>WISC-IV</strong>: 4 índices e o QIT, 10 subtestes principais e 5 suplementares"
+  - "Aplicar é seguir as <strong>falas literais</strong> e as regras de cada subteste"
+proximo: "WISC-IV: correção e interpretação"
 ---
 
 ---
