@@ -2673,6 +2673,174 @@ Evitar que a criança veja o Protocolo: as sequências estão impressas nele.
 layout: default
 ---
 
+# 8 · Raciocínio Matricial (RM)
+
+A criança vê uma **matriz incompleta** e escolhe, entre **cinco opções**, a parte que falta.
+
+<Grade :cols="2">
+<Cartao rotulo="IOP · principal · novo" titulo="O que mede">
+
+**Raciocínio fluido** visual: padrões contínuos e descontínuos, classificação, raciocínio
+analógico e serial. Pouco dependente de cultura e idioma, e **dispensa as mãos**.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gf + Gv" destaque>
+
+Uma das medidas mais **puras de Gf** da escala — indução e dedução de regras —, apoiada no
+processamento visual (**Gv**).
+
+</Cartao>
+</Grade>
+
+<!--
+Subteste novo no WISC-IV, um dos três que reforçam o raciocínio fluido. 35 itens.
+Os quatro tipos de item: padrão contínuo e descontínuo, classificação, raciocínio analógico e
+raciocínio serial.
+Por não exigir resposta verbal nem manipulação, é uma boa opção para crianças com dificuldade
+motora ou de linguagem — e para avaliar crianças de outra língua, com cautela.
+-->
+
+---
+layout: default
+---
+
+# Raciocínio Matricial · regras
+
+| | |
+|---|---|
+| **material** | Livro de Estímulos e Protocolo de Registro |
+| **início** | sempre os **exemplos A–C**; depois 6–8 anos: item 4 · 9–11: item 7 · 12–16: item 11 · suspeita de déficit: item 4 |
+| **sequência inversa** | errou **qualquer um** dos dois primeiros itens: volte até acertar **dois itens seguidos** |
+| **interrupção** | **4 zeros consecutivos** ou **4 zeros em 5 itens consecutivos** |
+| **tempo** | sem limite |
+| **pontuação** | 1 ou 0 · máximo de **35** pontos |
+
+<Fonte>Ajuda só nos exemplos A, B e C.</Fonte>
+
+<!--
+O critério de interrupção tem duas formas — atenção à segunda (4 zeros em 5 itens seguidos):
+uma criança que alterna erros com um acerto isolado também é interrompida.
+No Protocolo, circular o número escolhido; as respostas certas estão em verde. Sem resposta ou
+"não sei": circular NR.
+-->
+
+---
+layout: default
+---
+
+# Raciocínio Matricial · falas
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**Exemplo A.** Livro fechado, espiral para a criança; abrir no exemplo A.
+
+</Acao>
+
+<Fala>
+
+Olhe estas figuras. Qual destas aqui *(passar o dedo pelas opções)* vai aqui *(apontar o
+espaço com o ponto de interrogação)*?
+
+</Fala>
+
+<Fala quando="exemplos · resposta correta">
+
+Muito bem. Vamos fazer outro.
+
+</Fala>
+
+<Fala quando="exemplos · resposta incorreta">
+
+Vamos olhar outra vez. [explica a regra, apontando a matriz]. Este(a) *(apontar a resposta
+certa)* [também segue a regra], então vai aqui *(apontar o ?)*. Vamos fazer outro.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="exemplos B e C">
+
+Qual destas aqui *(opções)* vai aqui *(?)*?
+
+</Fala>
+
+<Fala quando="itens 1–35">
+
+Qual destas figuras aqui *(passar o dedo pelas opções)* vai aqui *(apontar o ?)*?
+
+</Fala>
+
+<Fala quando="respondeu descrevendo a figura">
+
+Mostre para mim.
+
+</Fala>
+
+<Fala quando="mais de uma resposta">
+
+Cada problema tem somente uma resposta correta. Escolha a melhor.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+A correção de cada exemplo explica a regra concreta da matriz (cor, forma, linha) — o texto
+exato de cada uma está no Manual, porque descreve o conteúdo do exemplo.
+Depois do exemplo C, ir ao item de entrada da idade, com acerto ou erro.
+As instruções dos itens podem ser abreviadas ou omitidas quando a criança entendeu a tarefa.
+-->
+
+---
+layout: default
+---
+
+# Raciocínio Matricial · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="instrução" titulo="Aponte sempre" destaque>
+
+Deixe a instrução **bem clara**: passe o dedo pelas **opções** e aponte a **caixa com o ponto de
+interrogação** — é o que define a tarefa.
+
+</Cartao>
+<Cartao rotulo="resposta" titulo="Apontar ou número">
+
+A criança aponta ou diz o **número** da opção. Se descreve a figura, peça: **"Mostre para
+mim."**
+
+</Cartao>
+<Cartao rotulo="ajuda" titulo="Só nos exemplos">
+
+A explicação da regra existe **só nos exemplos A–C**. Nos itens, nenhum feedback, nem "muito
+bem".
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Interrupção em duas formas">
+
+Pare com **4 zeros seguidos** — ou com **4 zeros em 5 itens seguidos**. A segunda forma é a que
+mais se esquece.
+
+</Nota>
+
+<!--
+Sem tempo limite, mas o critério geral vale: depois de 10 a 30 segundos sem resposta, pode-se
+perguntar se a criança tem uma resposta e seguir.
+Observar a impulsividade: escolher rápido sem examinar todas as opções é comum e pode derrubar
+o escore sem refletir o raciocínio.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
