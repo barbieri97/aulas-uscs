@@ -3419,6 +3419,239 @@ ou não responde (perfeccionismo, insegurança)?
 layout: default
 ---
 
+# 12 · Cancelamento (CA)
+
+A criança examina dois arranjos de figuras, um **aleatório** e um **estruturado**, e risca as
+figuras-alvo, em **45 segundos** cada.
+
+<Grade :cols="2">
+<Cartao rotulo="IVP · suplementar · novo" titulo="O que mede">
+
+Velocidade de processamento, **atenção visual seletiva**, vigilância e **negligência visual**
+(deixar de ver um lado do campo).
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gs · velocidade de processamento" destaque>
+
+Predomina o **Gs**, com tempo de decisão (**Gt**), processamento visual (**Gv**) e habilidade
+psicomotora (**Gp**).
+
+</Cartao>
+</Grade>
+
+<!--
+Subteste novo no WISC-IV: tarefas de cancelamento já eram usadas em neuropsicologia para avaliar
+atenção seletiva e negligência visual.
+Dois itens: 1 aleatório (CAA) e 2 estruturado (CAE) — escores de processo. Comparar os dois
+mostra se a organização do material ajuda a criança: CAE muito acima de CAA sugere que ela se
+beneficia da estrutura; os dois baixos, problema de velocidade ou atenção.
+Substitui Código ou Procurar Símbolos no IVP. Recomenda-se aplicá-lo de rotina, para ter um
+substituto se um subteste do IVP for invalidado.
+-->
+
+---
+layout: default
+---
+
+# Cancelamento · regras
+
+| | |
+|---|---|
+| **material** | Protocolo de Respostas 2, Crivo de Avaliação, Protocolo de Registro, lápis **sem borracha**, cronômetro |
+| **início** | **6–16 anos**: exemplo, treino e item 1 (aleatório); depois item 2 (estruturado) |
+| **interrupção** | cada item, após **45 segundos** |
+| **tempo** | aciona na última palavra da instrução; para quando a criança termina — **registre o tempo** |
+| **pontuação** | por item, **acertos − erros**; com 60 ou mais, ganha **bônus por tempo** · máximo de 136 |
+
+<Fonte>CAA (aleatório) e CAE (estruturado) valem até 68 pontos cada. Bônus de 1 a 4 pontos para quem termina antes de 45 s.</Fonte>
+
+<!--
+Bônus (Tabela 19): 45 s → 0 · 40–44 → 1 · 35–39 → 2 · 30–34 → 3 · 0–29 → 4. Só se a diferença
+acertos − erros for 60 ou mais.
+Total menor ou igual a 0 vira 0.
+Correção com o Crivo de Avaliação, dividido em quadrantes de 16 retângulos — o mesmo crivo serve
+aos dois itens. Q1 na parte superior esquerda do Protocolo de Respostas 2.
+Conta como riscada só a figura que a criança claramente quis riscar; risco no espaço vazio vale
+para a figura mais próxima; uma linha sobre várias figuras: cada alvo conta como acerto e cada
+não-alvo como erro.
+-->
+
+---
+layout: default
+---
+
+# Cancelamento · falas (1/2) — exemplo e treino
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+Protocolo de Respostas 2 na frente da criança — só exemplo e treino à vista. Percorrer com o
+dedo, da esquerda para a direita, a fileira do alto:
+
+</Acao>
+
+<Fala>
+
+Olhe esta fileira. Todos são animais.
+
+</Fala>
+
+<Fala quando="apontando o exemplo · riscar os dois animais">
+
+Olhe esta fileira. Ela tem animais e também outros objetos. Eu vou fazer uma linha sobre cada
+animal. Eu não vou fazer uma linha sobre as outras coisas.
+
+</Fala>
+
+<Fala quando="treino · dar o lápis sem borracha">
+
+Agora, faça estes. Faça uma linha sobre cada animal. Não faça a linha sobre as outras coisas.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="treino certo · a cada animal, depois ao final">
+
+Isso mesmo. · Está certo. — Muito bem. Agora você já sabe como fazer.
+
+</Fala>
+
+<Fala quando="treino · deixou um animal">
+
+Não é bem assim. Aqui tem um animal *(apontar)*. Faça uma linha sobre cada animal.
+
+</Fala>
+
+<Fala quando="treino · riscou outra coisa">
+
+Não é bem assim. Olhe isto aqui *(o erro)*. Isto não é um animal *(apontar os animais do alto)*.
+Você deve riscar somente os animais. Não risque mais nada.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Usar o treino para explicar a tarefa até a criança entender. Não passar ao item 1 enquanto ela
+não entender; se ficar claro que não vai entender, interromper o subteste.
+-->
+
+---
+layout: default
+---
+
+# Cancelamento · falas (2/2) — itens 1 e 2
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**Item 1 · aleatório.** Abrir o Protocolo pela **esquerda do aplicador**, com as duas páginas do
+item expostas. Colocar na frente da criança:
+
+</Acao>
+
+<Fala>
+
+Quando eu disser "pode começar", faça uma linha sobre cada animal. Trabalhe o mais depressa
+possível, sem errar. Avise quando terminar. Pronto?
+
+</Fala>
+
+<Fala quando="acionar o cronômetro · 45 s">
+
+Pode começar.
+
+</Fala>
+
+<Fala quando="aos 45 segundos">
+
+Pare.
+
+</Fala>
+
+</div>
+<div>
+
+<Acao>
+
+Registrar o tempo. Fechar o Protocolo pela esquerda, deixando a **última página em branco**
+para cima.
+
+</Acao>
+
+<Acao>
+
+**Item 2 · estruturado.** Abrir de novo pela esquerda do aplicador, com as duas páginas do item
+expostas. **Mesmas falas** do item 1.
+
+</Acao>
+
+<Acao>
+
+Aos 45 s ou ao terminar: registrar o tempo, fechar o Protocolo e tirá-lo da vista.
+
+</Acao>
+
+</div>
+</Grade>
+
+<!--
+Antes do "Pode começar", dar mais explicações se necessário. Durante o item, só lembrar de
+continuar trabalhando.
+-->
+
+---
+layout: default
+---
+
+# Cancelamento · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="manuseio" titulo="Abrir pela esquerda" destaque>
+
+O Protocolo de Respostas 2 é aberto e fechado **pelo lado esquerdo do aplicador** — é assim que
+cada item aparece com as **duas páginas** expostas.
+
+</Cartao>
+<Cartao rotulo="erros" titulo="Sem borracha">
+
+Pergunta sobre erro: **"Não tem problema. Continue trabalhando o mais depressa possível."**
+Corrigir por conta própria pode.
+
+</Cartao>
+<Cartao rotulo="tempo" titulo="Registre sempre">
+
+O tempo de cada item decide o **bônus**. Quem não termina tem o tempo registrado como **45 s**.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Correção no treino">
+
+Todo erro do treino é **corrigido na hora** — deixar de riscar um animal ou riscar outra coisa.
+Nos itens 1 e 2, **nenhuma ajuda** além de "continue".
+
+</Nota>
+
+<!--
+Não desestimular as correções espontâneas, a menos que sejam tão frequentes que prejudiquem o
+desempenho.
+Observar a estratégia de busca: sistemática (linha a linha, coluna a coluna) ou desorganizada?
+Omissões concentradas de um lado da folha podem sugerir negligência visual e merecem
+investigação.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
