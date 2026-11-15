@@ -3978,6 +3978,175 @@ e ajudam a interpretar o escore junto com Dígitos e SNL.
 layout: default
 ---
 
+# 15 · Raciocínio com Palavras (RP)
+
+O aplicador dá **uma, duas ou três dicas**; a criança descobre o **conceito comum** que elas
+descrevem — um jogo de adivinhar.
+
+<Grade :cols="2">
+<Cartao rotulo="ICV · suplementar · novo" titulo="O que mede">
+
+Compreensão verbal, raciocínio analógico e geral, abstração verbal, conhecimento de domínio,
+**integrar e sintetizar** informações e gerar conceitos alternativos.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gc + Gkn + Gf" destaque>
+
+Conhecimento cristalizado (**Gc**, **Gkn**) a serviço do raciocínio fluido (**Gf**): cada nova
+dica obriga a rever a hipótese.
+
+</Cartao>
+</Grade>
+
+<!--
+Subteste novo no WISC-IV, um dos três que reforçam o raciocínio fluido. 24 itens.
+Lembra tarefas como o Word Context Test do D-KEFS, as Adivinhações do K-ABC e os testes de
+"cloze" (completar lacunas).
+Substitui Semelhanças, Vocabulário ou Compreensão no ICV.
+-->
+
+---
+layout: default
+---
+
+# Raciocínio com Palavras · regras
+
+| | |
+|---|---|
+| **material** | Manual e Protocolo de Registro (as dicas estão impressas nele) |
+| **início** | sempre os **exemplos A e B**; depois 6–9 anos: item 1 · 10–16: item 5 · suspeita de déficit: item 1 |
+| **sequência inversa** | 10–16 anos com erro em **qualquer um** dos dois primeiros itens: volte até acertar **dois itens seguidos** |
+| **interrupção** | após **5 zeros consecutivos** |
+| **tempo** | cerca de **5 s** por dica; mais 5 s depois de uma repetição |
+| **pontuação** | 1 ou 0 · acertou antes da última dica: 1 ponto e próximo item · máximo de **24** |
+
+<Fonte>No Protocolo, circule S ou N a cada dica e anote R quando repetir.</Fonte>
+
+<!--
+Resposta correta dada depois dos 5 segundos também vale.
+Sinônimos e nomes de marcas ou de objetos específicos são aceitos como corretos.
+Os exemplos do manual não são exaustivos: dar crédito a respostas equivalentes.
+-->
+
+---
+layout: default
+---
+
+# Raciocínio com Palavras · falas
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="exemplo A">
+
+Vamos jogar um jogo de adivinhar. Diga o que eu estou pensando. [dica]. Qual é?
+
+</Fala>
+
+<Fala quando="exemplo A · resposta correta">
+
+Muito bem. O/A [resposta] [dica]. Vamos fazer outro.
+
+</Fala>
+
+<Fala quando="exemplos · erro (ou sem resposta após repetir)">
+
+É um(a) [resposta]. O/A [resposta] [dica]. Vamos fazer outro.
+
+</Fala>
+
+<Fala quando="exemplo B · 1ª dica → 2ª, repetindo a 1ª">
+
+[dica 1]. O que é? → [dica 1] e [dica 2]. O que é?
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="início de cada item">
+
+Vamos fazer outro.
+
+</Fala>
+
+<Acao>
+
+Ler cada dica **literalmente** e esperar ~5 s. Sem resposta: **repetir a dica uma vez** e
+esperar mais 5 s.
+
+</Acao>
+
+<Acao>
+
+Errou ou não respondeu: dar a **próxima dica**, repetindo **todas as anteriores** antes dela.
+Na última dica: passar ao próximo item.
+
+</Acao>
+
+<Fala quando="exemplo de 3ª dica (forma)">
+
+Pode ser [dica 1], e [dica 2], e [dica 3]. O que é?
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Ajuda só nos exemplos A e B. Nos itens 1–24, nenhuma correção nem explicação.
+No exemplo B, se a criança acerta na 1ª dica: "Muito bem. O/A [resposta] [dica 1]. Vamos fazer
+outro." — e passa ao item de entrada. Se erra na 2ª: "É um(a) [resposta]. O/A [resposta] [dica 1]
+e [dica 2]. Vamos fazer outro."
+Exemplo A sem resposta: repetir a dica, esperar ~5 s; se ainda não responder ou errar, dar a
+resposta.
+As dicas e respostas dos exemplos estão no Manual — aqui viram [dica] e [resposta].
+-->
+
+---
+layout: default
+---
+
+# Raciocínio com Palavras · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="dicas" titulo="Repita as anteriores" destaque>
+
+Cada nova dica vem **precedida das anteriores**. Essa repetição é livre — não conta como a
+"repetição única".
+
+</Cartao>
+<Cartao rotulo="repetição" titulo="Uma vez por dica">
+
+Cada dica pode ser repetida **apenas uma vez** — a pedido da criança ou depois de 5 s sem
+resposta. Anote **R**.
+
+</Cartao>
+<Cartao rotulo="novo item" titulo="Sinalize">
+
+Diga **"Vamos fazer outro"** no começo de cada item — a criança precisa saber que o conceito
+mudou.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Acertou cedo, para">
+
+Resposta certa **antes da última dica** vale 1 ponto — não apresente as dicas restantes. Passe
+ao próximo item.
+
+</Nota>
+
+<!--
+Sinônimos e nomes de marcas ou de objetos específicos valem como corretos.
+Observar: a criança persevera na hipótese anterior mesmo com a nova dica contradizendo? Isso
+fala de flexibilidade cognitiva. Ou chuta uma resposta a cada dica, sem integrar as pistas?
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
