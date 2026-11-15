@@ -26,7 +26,8 @@ npm install                                   # uma vez
 npm run dev                                   # abre a primeira aula com hot reload
 npm run dev -- 01                             # abre a aula cujo nome contém "01"
 npm run ref                                   # catálogo de layouts e componentes
-npm run lint                                  # valida os decks
+npm run lint                                  # valida os decks contra o contrato dos layouts
+npm test                                      # testa o próprio lint
 npm run build                                 # gera dist/ igual ao que vai pro ar
 ```
 
@@ -55,6 +56,7 @@ Resumo das convenções — e as instruções para agentes de IA — em [`AGENTS
 aulas/
 ├── aula-01-teorias-da-inteligencia.md   a aula modelo
 ├── _design-system.md             o catálogo (o `_` mantém fora do site)
+├── contratos.mjs                 o que cada layout e componente aceita (lido pelo lint)
 ├── styles/                       tokens.css · base.css · utilities.css (+ Poppins)
 ├── layouts/                      capa · secao · destaque · roteiro · figura · fecho · redes · encerramento
 ├── components/                   Nota · Grade · Cartao · Numero · Termo · Citacao · Pessoa · LinhaDoTempo · Fonte
@@ -62,7 +64,7 @@ aulas/
 ├── lib/asset.ts                  resolve caminho de imagem contra a base do site
 └── public/                       imagens (`/foto.svg` no markdown) e os fundos uscs-*.jpg
 docs/                             design-system.md · temas.md
-scripts/                          dev.mjs · lint.mjs · build-site.mjs · lib.mjs
+scripts/                          dev.mjs · lint.mjs · contratos.mjs · build-site.mjs · lib.mjs · testes/
 site.config.json                  a identidade do curso
 ```
 

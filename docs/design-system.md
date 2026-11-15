@@ -150,11 +150,40 @@ com `_`, então o site não o publica.
 
 ---
 
+## O contrato: `aulas/contratos.mjs`
+
+O que cada layout e cada componente aceita, num formato que o lint lê:
+
+```js
+figura: {
+  campos: {
+    imagem: obrigatorio('imagem'),                 // falta = erro; precisa existir em public/
+    legenda: texto,
+    lado: { opcoes: ['direita', 'esquerda'] },      // outro valor = erro
+  },
+},
+```
+
+A linguagem completa (texto, número, booleano, imagem, opções, listas, objetos, `bind`,
+`posicao`, `corpo: 'proibido'`, `validar()`) está no comentário do topo do arquivo.
+
+`npm run lint`, o build e o GitHub Actions conferem cada slide contra o contrato do seu layout
+e cada `<Componente>` contra o dele. **Erro** (campo obrigatório, tipo, valor fora da lista,
+atributo numérico sem `:`) bloqueia a publicação; **aviso** (campo que o layout não conhece,
+markdown colado na tag, slide institucional fora do lugar) só aparece no log.
+
+O contrato não pode desatualizar: o lint compara cada entrada com o `defineProps` do `.vue`
+correspondente e dá erro se um tiver uma prop que o outro não tem. Layout novo sem contrato
+gera aviso. `npm test` roda o lint em `scripts/testes/aula-quebrada.md`, um deck com um erro
+conhecido por slide, e confere que cada regra dispara.
+
+---
+
 ## As armadilhas do Slidev
 
 As quatro coisas abaixo não são opinião de estilo. São comportamentos do Slidev que fazem um
-slide sumir ou uma imagem quebrar **só depois de publicado**. `npm run lint` pega as três
-primeiras.
+slide sumir ou uma imagem quebrar **só depois de publicado**. `npm run lint` pega as quatro
+(a última como aviso).
 
 ### 1. `src:` no frontmatter apaga o slide
 
@@ -228,5 +257,5 @@ Vale em qualquer nível de aninhamento — `<Cartao>` dentro de `<Grade>` també
   `position: absolute` e sobrescreva isso fica com altura zero — e o fundo some.
 - **Imagem de fundo montada em script também passa por `asset()`.** Os layouts escuros fazem
   `` `url("${asset('/uscs-capa.jpg')}")` `` por isso.
-- Um layout ou componente novo **ganha um slide em `aulas/_design-system.md`**. É o que
-  mantém o catálogo confiável.
+- Um layout ou componente novo **ganha um slide em `aulas/_design-system.md`** e **uma
+  entrada em `aulas/contratos.mjs`**. É o que mantém o catálogo e o lint confiáveis.

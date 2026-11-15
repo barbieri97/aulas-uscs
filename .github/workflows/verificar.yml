@@ -1,0 +1,35 @@
+name: Verificar aulas
+
+# Roda em todo pull request (e em push fora da main): mostra o ✗ vermelho no PR antes do
+# merge, para que uma aula quebrada nem chegue à main. A publicação (deploy.yml) roda o
+# mesmo lint de novo antes de buildar.
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      # O lint não precisa do Chromium (só o PDF do build precisa): pular o download
+      # deixa este job em poucos segundos.
+      - run: npm ci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+
+      - name: Lint das aulas
+        run: npm run lint
+
+      - name: Teste do lint
+        run: npm test

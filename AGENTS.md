@@ -73,7 +73,25 @@ Se a aula for usar outro visual, o roteiro dos dois caminhos (tema npm ou DS ger
 - **Markdown dentro de componente só funciona com linha em branco** depois da tag de abertura
   e antes da de fechamento. Sem elas, `**negrito**` aparece com os asteriscos na tela.
 
-`npm run lint` pega as três primeiras. Rode antes de commitar.
+`npm run lint` pega as quatro (a quarta como aviso). Rode antes de commitar.
+
+### O contrato dos layouts e componentes
+
+`aulas/contratos.mjs` diz, para cada layout e cada componente, que campos existem, quais são
+obrigatórios, de que tipo e com que valores (`lado: direita | esquerda`, `<Nota tipo>`…). O
+lint confere toda aula contra ele — campo obrigatório faltando, valor fora da lista, tipo
+errado, `cols="3"` sem `:`, item de lista sem `tema`, layout `redes`/`encerramento` fora do
+lugar, nome de campo digitado errado (com sugestão) — e **erro bloqueia a publicação**: o
+GitHub Actions roda o lint em todo PR (`verificar.yml`) e de novo antes do build
+(`deploy.yml`).
+
+**Criou ou mudou uma prop de layout/componente? Atualize `aulas/contratos.mjs` no mesmo
+commit.** O lint compara o contrato com o `defineProps` de cada `.vue` e dá erro se divergirem.
+Regra nova do lint? Acrescente o caso em `scripts/testes/aula-quebrada.md` e a mensagem
+esperada em `scripts/testes/lint.test.mjs` (`npm test`).
+
+Armadilha de YAML que o contrato pega: em `{ tema: X, desc: a, b }` a vírgula termina o
+campo — texto com vírgula dentro de `{ }` vai entre aspas: `desc: "a, b"`.
 
 ### Nada de CSS solto no slide
 
@@ -110,7 +128,8 @@ no deck publicado — quem faz isso é o `playwright-chromium` (devDependency do
 npm run dev                                  # abre a primeira aula de aulas/ com hot reload
 npm run dev -- 03                            # abre a aula cujo nome contém "03"
 npm run ref                                  # abre o catálogo de layouts/componentes
-npm run lint                                 # valida todos os decks
+npm run lint                                 # valida todos os decks (inclui o contrato)
+npm test                                     # testa o próprio lint contra um deck quebrado
 npm run build                                # builda tudo em dist/ (roda o lint antes)
 ```
 
@@ -162,7 +181,8 @@ rodar esse Chromium headless — sem ele o `slidev build` quebra na hora de gera
 
 `scripts/lint.mjs` é o lint do repositório, e é agnóstico de tema: a lista de layouts e
 componentes válidos é montada na hora, a partir do Slidev, do tema declarado (se houver) e das
-pastas locais de `aulas/`.
+pastas locais de `aulas/`. `scripts/contratos.mjs` aplica `aulas/contratos.mjs` — também sem
+saber nome de layout nenhum; sem o arquivo de contrato, essas checagens não rodam.
 
 `scripts/lib.mjs` concentra o que os scripts compartilham: onde ficam as aulas (`deckFiles()`
 ignora os `_`; `allDeckFiles()` inclui), como achar binários de `node_modules` sem npx

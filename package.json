@@ -6,7 +6,8 @@
     "dev": "node scripts/dev.mjs",
     "ref": "slidev aulas/_design-system.md --open",
     "build": "node scripts/build-site.mjs",
-    "lint": "node scripts/lint.mjs"
+    "lint": "node scripts/lint.mjs",
+    "test": "node --test \"scripts/testes/*.test.mjs\""
   },
   "dependencies": {
     "@fontsource/poppins": "^5.3.0",

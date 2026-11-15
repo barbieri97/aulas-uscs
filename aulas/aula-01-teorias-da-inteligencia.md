@@ -34,7 +34,7 @@ itens:
   - { tema: O que é inteligência, desc: a definição de consenso }
   - { tema: O fator g, desc: Spearman e a variedade positiva }
   - { tema: Inteligências no plural, desc: "Thurstone, Cattell, Gardner, Sternberg" }
-  - { tema: O modelo CHC, desc: três estratos, uma taxonomia }
+  - { tema: O modelo CHC, desc: "três estratos, uma taxonomia" }
   - { tema: Do modelo ao WISC, desc: os índices e o que eles medem }
 atual: 1
 ---
