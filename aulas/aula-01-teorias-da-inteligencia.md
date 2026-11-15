@@ -2255,6 +2255,196 @@ aprendizagem incidental e memória de curto prazo.
 layout: default
 ---
 
+# 6 · Vocabulário (VC)
+
+Nos **itens figurativos**, a criança nomeia figuras do Livro de Estímulos. Nos **itens
+verbais**, define palavras que o aplicador lê em voz alta.
+
+<Grade :cols="2">
+<Cartao rotulo="ICV · principal" titulo="O que mede">
+
+Conhecimento de palavras e formação de conceitos verbais. Envolve memória de longo prazo,
+desenvolvimento da linguagem, percepção auditiva, pensamento abstrato e expressão verbal.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gc · inteligência cristalizada" destaque>
+
+É uma das medidas mais **puras de Gc**: o repertório de palavras acumulado pela
+escolarização e pelo ambiente.
+
+</Cartao>
+</Grade>
+
+<!--
+36 itens: 4 figurativos (1–4) e 32 verbais (5–36).
+Por ser muito sensível à escolarização e ao ambiente cultural, Vocabulário costuma ser um dos
+melhores estimadores do nível intelectual pré-mórbido — e um dos que mais pesam quando a
+criança vem de um ambiente pouco estimulante.
+Na interpretação (Pessotto & Bartholomeu): Vocabulário e Compreensão altos com Semelhanças
+baixo sugerem conhecimento verbal preservado com dificuldade de abstração (Gf).
+-->
+
+---
+layout: default
+---
+
+# Vocabulário · regras
+
+| | |
+|---|---|
+| **material** | Livro de Estímulos e Protocolo de Registro |
+| **início** | 6–8 anos: item 5 · 9–11: item 7 · 12–16: item 9 · suspeita de déficit: item 5 |
+| **sequência inversa** | sem pontuação máxima em um dos dois primeiros itens: volte até **2 pontos em dois itens seguidos** |
+| **interrupção** | após **5 zeros consecutivos** |
+| **tempo** | sem limite |
+| **pontuação** | figurativos (1–4): 1 ou 0 · verbais (5–36): 2, 1 ou 0 · máximo de 68 pontos |
+
+<Fonte>Os itens figurativos só entram pela sequência inversa: nenhuma idade começa neles.</Fonte>
+
+<!--
+Os itens 5 e 6 (marcados com † no manual) ensinam a tarefa: se a resposta não vale 2 pontos, o
+aplicador dá a resposta-modelo do manual. Depois deles, nenhuma ajuda.
+Itens com asterisco (*) pedem um inquérito específico, descrito no manual.
+-->
+
+---
+layout: default
+---
+
+# Vocabulário · falas
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**Figurativos (1–4).** Abrir o Livro no item e apontar a figura:
+
+</Acao>
+
+<Fala>
+
+O que é isto?
+
+</Fala>
+
+<Fala quando="resposta marginal">
+
+Sim, mas que outro nome isso tem?
+
+</Fala>
+
+<Fala quando="resposta generalizada">
+
+Sim, mas que tipo de [resposta da criança] é?
+
+</Fala>
+
+<Fala quando="descrição funcional ou gesto · apontando a figura">
+
+Sim, mas como isso se chama?
+
+</Fala>
+
+<Fala quando="só apontou ou mostrou">
+
+Diga, usando palavras, o que é um(a) [palavra].
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="verbais · apresentação">
+
+Eu vou dizer algumas palavras. Preste atenção e diga o que cada palavra quer dizer.
+
+</Fala>
+
+<Fala quando="cada item · literal">
+
+O que é um(a) [palavra]? · O que quer dizer [palavra]?
+
+</Fala>
+
+<Fala quando="resposta vaga ou (Q)">
+
+Explique o que você quer dizer. · Fale um pouco mais sobre isso.
+
+</Fala>
+
+<Fala quando="ouviu outra palavra">
+
+Ouça com atenção: o que [palavra] significa?
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Verbais: depois da apresentação, ir ao item de entrada da idade. Para 9–16 anos, apontar a
+palavra no Livro de Estímulos enquanto a lê, para a criança acompanhar; para 6–8 anos, não usar
+o Livro.
+Itens 5 e 6 (†): se a resposta não vale 2 pontos, dizer a definição-modelo do manual ("Um(a)
+[palavra] é uma coisa que…").
+Os inquéritos dos figurativos (marginal, generalizada, funcional, gesto) são feitos sempre que
+necessário — mas não quando a resposta é claramente incorreta.
+"Ouça com atenção" é a única pergunta permitida quando a criança confunde a palavra (ouve uma
+parecida e a define).
+-->
+
+---
+layout: default
+---
+
+# Vocabulário · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="2 pontos" titulo="Domina o conceito" destaque>
+
+Bom sinônimo, uso importante, classificação geral ou características definidoras. *Tesoura* →
+"serve para cortar papel e pano".
+
+</Cartao>
+<Cartao rotulo="1 ponto" titulo="Correto, mas pobre">
+
+Falta conteúdo, sinônimo vago, uso secundário ou interpretação concreta: "é uma coisa que você
+usa".
+
+</Cartao>
+<Cartao rotulo="0 ponto" titulo="Sem compreensão">
+
+Claramente errado, vago mesmo após o inquérito, só um gesto sem palavras, gíria ou
+regionalismo fora do dicionário.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Leitura e pronúncia">
+
+Leia **literalmente** e com a **pronúncia local** — repetir pode, mudar o enunciado não.
+Nunca desconte erro de **articulação** da criança.
+
+</Nota>
+
+<Fonte>"Tesoura" é um exemplo nosso, fora do teste.</Fonte>
+
+<!--
+Figurativos: respostas pessoais ("eu tenho um", "papai usa um") e nomes próprios ou fictícios
+valem 0. Marginais, generalizadas, funcionais e gestos valem 0 se, depois do inquérito, a
+resposta continua errada.
+Qualquer significado aceito da palavra vale; o que pesa é o conteúdo. Conhecimento vago não
+recebe crédito total.
+Várias respostas: comentário extra não afeta; vale a melhor; uma resposta absurda junto com
+uma boa zera o item.
+Definir uma forma relacionada da palavra (o substantivo no lugar do verbo) vale 1.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
