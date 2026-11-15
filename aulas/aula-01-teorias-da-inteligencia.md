@@ -3812,6 +3812,172 @@ certas" ou com hesitação podem indicar dificuldade de recuperação na memóri
 layout: default
 ---
 
+# 14 · Aritmética (AR)
+
+A criança resolve **mentalmente** problemas de aritmética apresentados oralmente, **sem lápis e
+papel**, em até **30 segundos** por item.
+
+<Grade :cols="2">
+<Cartao rotulo="IMO · suplementar" titulo="O que mede">
+
+Manipulação mental, concentração, atenção, memória de curto e longo prazo, **raciocínio
+numérico**, sequenciamento e raciocínio lógico.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gsm + Gf" destaque>
+
+Predomina a **memória de trabalho** (Gsm): guardar o enunciado enquanto calcula. Pesa também o
+raciocínio fluido (**Gf**) — e algum conhecimento quantitativo.
+
+</Cartao>
+</Grade>
+
+<!--
+34 itens. Foi revisto no WISC-IV para aumentar a demanda de memória de trabalho e reduzir a de
+conhecimento matemático. Deixou de ter bônus por tempo.
+Substitui Dígitos ou Sequência de Números e Letras no IMO. Recomenda-se aplicá-lo de rotina,
+para ter um substituto se um subteste do IMO for invalidado.
+Na interpretação: AR baixo com Dígitos e SNL médios pode apontar dificuldade em matemática
+(conhecimento quantitativo) mais que em memória de trabalho.
+-->
+
+---
+layout: default
+---
+
+# Aritmética · regras
+
+| | |
+|---|---|
+| **material** | Livro de Estímulos (itens 1–5), Protocolo de Registro, cronômetro |
+| **início** | 6–7 anos: item 3 · 8–9: item 9 · 10–16: item 12 · suspeita de déficit: item 3 |
+| **sequência inversa** | errou **qualquer um** dos dois primeiros itens: volte até acertar **dois itens seguidos** |
+| **interrupção** | após **4 zeros consecutivos** |
+| **tempo** | **30 s** por item — aciona na última palavra; para quando a criança responde |
+| **pontuação** | 1 ou 0 · sem bônus por tempo · máximo de **34** pontos |
+
+<Fonte>Itens 1–5 têm figuras no Livro; do item 6 em diante, o Livro sai da vista e o aplicador só lê.</Fonte>
+
+<!--
+Os itens 1–3 (†) ensinam a tarefa: resposta errada ou ausente em 30 s → o aplicador mostra a
+contagem e diz a resposta. Depois disso, nenhuma ajuda.
+Vale o resultado numérico, mesmo sem a unidade ou com a unidade errada. Em itens de tempo ou
+dinheiro, respostas alternativas valem se a unidade correta for dita (ex.: 1 real = 100
+centavos).
+Correção espontânea dentro dos 30 s: vale 1 ponto.
+-->
+
+---
+layout: default
+---
+
+# Aritmética · falas
+
+<Grade :cols="2">
+<div>
+
+<Fala quando="apresentação">
+
+Agora eu vou pedir para você resolver alguns problemas.
+
+</Fala>
+
+<Fala quando="itens 1–3 · apontando a página">
+
+Conte estes [objetos] com o dedo. Conte em voz alta para eu poder ouvir. → *se acertar:* Vamos
+fazer outro.
+
+</Fala>
+
+<Fala quando="itens 1–3 · erro ou sem resposta">
+
+Não é bem isso. Veja como eu faço e ouça com atenção. *(contar em voz alta, apontando cada um,
+da esquerda para a direita da criança, ~1 por segundo)* São [n] [objetos]. Vamos fazer outro.
+
+</Fala>
+
+</div>
+<div>
+
+<Acao>
+
+**Itens 4–5:** apontar a página e ler a pergunta, apontando os grupos de figuras citados. Sem
+ajuda.
+
+</Acao>
+
+<Acao>
+
+**Itens 6–34:** tirar o Livro da vista e ler cada problema **literalmente**.
+
+</Acao>
+
+<Fala quando="duas respostas sem dizer qual vale">
+
+Você disse [1ª resposta] e [2ª resposta]. Qual delas é a sua resposta?
+
+</Fala>
+
+<Nota tipo="alerta" titulo="Repetir só uma vez">
+
+O item pode ser repetido **uma única vez**, **inteiro** — e o **cronômetro não para**.
+
+</Nota>
+
+</div>
+</Grade>
+
+<!--
+O tempo começa a contar depois da primeira leitura do item e continua até a resposta ou os 30 s,
+mesmo durante a repetição.
+A repetição pode vir a pedido da criança ou quando o aplicador suspeita que ela não entendeu.
+Itens 1–5: acionar o cronômetro depois de apresentar a página e dizer a última palavra.
+-->
+
+---
+layout: default
+---
+
+# Aritmética · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="sem papel" titulo="Dedo na mesa pode" destaque>
+
+Nada de lápis e papel em **nenhum** item. Mas **não impeça** a criança de "escrever" com o dedo
+na mesa.
+
+</Cartao>
+<Cartao rotulo="repetição" titulo="Uma vez, inteira">
+
+Diferente dos verbais: aqui só se repete **uma vez** e o enunciado **inteiro**, sem ênfase nem
+pausa extra.
+
+</Cartao>
+<Cartao rotulo="resposta" titulo="Vale o número">
+
+Unidade ausente ou errada não tira ponto. Correção espontânea **dentro dos 30 s** vale a última
+resposta.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="O cronômetro não espera">
+
+Ele começa depois da **primeira** leitura e segue durante a repetição. Resposta depois dos
+**30 s** vale 0.
+
+</Nota>
+
+<!--
+Observar: a criança conta nos dedos, subvocaliza, pede repetição com frequência? Pedidos
+frequentes de repetição podem indicar dificuldade de memória de trabalho auditiva ou de atenção,
+e ajudam a interpretar o escore junto com Dígitos e SNL.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
