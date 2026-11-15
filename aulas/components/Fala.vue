@@ -18,22 +18,34 @@ defineProps<{
 
 <template>
   <div class="ds-fala">
-    <p class="rotulo">Diga<span v-if="quando" class="quando"> · {{ quando }}</span></p>
-    <div class="corpo"><slot /></div>
+    <p class="rotulo">Diga</p>
+    <div class="corpo">
+      <p v-if="quando" class="quando">{{ quando }}</p>
+      <slot />
+    </div>
   </div>
 </template>
 
 <style scoped>
+/* Rótulo e texto na mesma linha, como em <Acao>: os dois alinham pela coluna do
+   rótulo e um slide de falas cabe acima da faixa. */
 .ds-fala {
+  display: flex;
+  gap: var(--ds-space-3);
+  align-items: baseline;
   margin: var(--ds-space-2) 0;
-  padding: var(--ds-space-2) var(--ds-space-4);
+  padding: var(--ds-space-2) var(--ds-space-3);
   border-left: var(--ds-border-thick) solid var(--ds-accent);
   border-radius: 0 var(--ds-radius-sm) var(--ds-radius-sm) 0;
   background: var(--ds-accent-wash);
+  font-size: var(--ds-text-sm);
+  line-height: 1.45;
 }
 
 .rotulo {
-  margin: 0 0 var(--ds-space-1);
+  flex: none;
+  width: 2.6rem;
+  margin: 0;
   color: var(--ds-accent-texto);
   font-size: var(--ds-text-xs);
   font-weight: var(--ds-peso-forte);
@@ -41,15 +53,15 @@ defineProps<{
   text-transform: uppercase;
 }
 
-.quando {
-  color: var(--ds-muted);
-  font-weight: var(--ds-peso-normal);
-  text-transform: none;
-  letter-spacing: 0;
-}
-
 .corpo {
   font-weight: var(--ds-peso-normal);
+}
+
+.corpo .quando {
+  margin: 0 0 0.1rem;
+  color: var(--ds-muted);
+  font-size: var(--ds-text-xs);
+  font-weight: var(--ds-peso-leve);
 }
 
 .corpo :deep(p) {

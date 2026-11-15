@@ -22,14 +22,16 @@
   gap: var(--ds-space-3);
   align-items: baseline;
   margin: var(--ds-space-2) 0;
-  padding: 0 var(--ds-space-4);
+  padding: 0 var(--ds-space-3);
   border-left: var(--ds-border-thick) solid var(--ds-ink);
   color: var(--ds-muted);
-  font-size: var(--ds-text-sm);
+  font-size: var(--ds-text-xs);
+  line-height: 1.45;
 }
 
 .rotulo {
   flex: none;
+  width: 2.6rem;
   margin: 0;
   color: var(--ds-ink);
   font-size: var(--ds-text-xs);

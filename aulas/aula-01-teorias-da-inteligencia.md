@@ -1208,6 +1208,281 @@ note: Na ordem padrão de aplicação — o que mede, as regras, as falas e os c
 layout: default
 ---
 
+# 1 · Cubos (CB)
+
+A criança usa cubos vermelhos e brancos para reproduzir, **dentro de um tempo limite**, um
+modelo montado pelo aplicador ou impresso no Livro de Estímulos.
+
+<Grade :cols="2">
+<Cartao rotulo="IOP · principal" titulo="O que mede">
+
+Analisar e sintetizar estímulos visuais **abstratos**. Envolve percepção e organização visual,
+processamento simultâneo, coordenação visomotora e separação figura-fundo.
+
+</Cartao>
+<Cartao rotulo="CHC" titulo="Gv · processamento visual" destaque>
+
+Predomina o **Gv**. Pesam também a habilidade psicomotora (**Gp**) e a velocidade psicomotora
+(**Gps**): as mãos e o relógio entram na nota.
+
+</Cartao>
+</Grade>
+
+<!--
+14 itens: 11 do WISC-III e 3 novos. O critério de interrupção passou de 2 para 3 zeros, e o
+bônus por tempo agora só vale nos 6 últimos itens — por isso muitas crianças não chegam a ganhar
+bônus.
+Escore de processo CUSB (Cubos Sem Bônus de Tempo): itens 1–3 valem 2, 1 ou 0; itens 4–14 valem
+4 ou 0. Máximo de 50 pontos (contra 68 no CB).
+Na interpretação (Pessotto & Bartholomeu): CB bem abaixo do CUSB sugere que o tempo — a parte
+motora — derrubou a nota, não necessariamente o raciocínio visoespacial. Crianças que montam
+certo mas passam do tempo são um indicador de dificuldade motora, não cognitiva.
+Cooper (1995): para as crianças pequenas, a tarefa envolve observação visual e combinação, e
+integra os processos visuais e motores.
+-->
+
+---
+layout: default
+---
+
+# Cubos · regras
+
+| | |
+|---|---|
+| **material** | Livro de Estímulos, Caixa de Cubos, Protocolo de Registro, cronômetro |
+| **início** | 6–7 anos: item 1 · 8–16 anos: item 3 · suspeita de déficit intelectual: item 1 |
+| **sequência inversa** | 8–16 anos sem pontuação máxima em um dos dois primeiros itens: volte até obter **2 pontos em dois itens seguidos** |
+| **interrupção** | após **3 zeros consecutivos** |
+| **tempo** | item 1: 30 s · itens 2–5: 45 s · itens 6–10: 75 s · itens 11–14: 120 s |
+| **tentativas** | itens 1–3 têm **duas**: acerto na 1ª vale 2, na 2ª vale 1 |
+| **cubos** | item 1: dois · itens 2–10: quatro · itens 11–14: nove |
+
+<Fonte>Bônus por tempo só nos itens 9–14. Os itens 1–2 usam modelo montado; o item 3, modelo montado e figura; do item 4 em diante, só a figura do Livro.</Fonte>
+
+<!--
+Pontuação: itens 1–3 valem 2/1/0; itens 4–8 valem 4 ou 0; itens 9–14 valem 4 a 7 conforme o
+tempo de execução (tabela no Manual e no Protocolo). Máximo: 68 pontos brutos.
+Item incorreto (0 ponto): montagem diferente do modelo, rotação de 30° ou mais, ou fora do tempo.
+Se a criança começou no item 3 e acertou os itens 3 e 4, os itens 1 e 2 ganham crédito total.
+-->
+
+---
+layout: default
+---
+
+# Cubos · falas (1/2)
+
+<Acao>
+
+**6–7 anos.** Colocar dois cubos na frente do examinando. Pegar um cubo e dizer:
+
+</Acao>
+
+<Fala quando="apresentação">
+
+Você está vendo estes cubos? Eles são todos iguais. Eles têm alguns lados só vermelhos
+*(mostrar uma face vermelha)*, outros só brancos *(mostrar uma face branca)* e outros que são
+metade vermelhos, metade brancos *(mostrar uma face vermelha e branca)*.
+
+</Fala>
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**Tentativa 1.** Colocar os cubos na frente do examinando e dizer:
+
+</Acao>
+
+<Fala>
+
+Veja como eu junto os cubos para fazer algo.
+
+</Fala>
+
+<Acao>
+
+Construir o modelo lentamente. Colocar mais dois cubos na frente do examinando, apontar para o
+modelo e dizer:
+
+</Acao>
+
+<Fala>
+
+Agora faça um igualzinho ao meu. Pode começar.
+
+</Fala>
+
+</div>
+<div>
+
+<Acao>
+
+**Tentativa 2.** Deixar intacto o modelo e dizer:
+
+</Acao>
+
+<Fala>
+
+Veja como eu faço novamente.
+
+</Fala>
+
+<Acao>
+
+Usando os cubos do examinando, construir o modelo lentamente. Desfazê-lo, colocar os cubos na
+frente do examinando, apontar para o modelo e dizer:
+
+</Acao>
+
+<Fala>
+
+Agora tente fazer um igualzinho ao meu. Pode começar.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Acionar o cronômetro logo depois de "Pode começar".
+Item 1 usa dois cubos; item 2 usa quatro ("Veja como eu junto quatro cubos para fazer algo").
+No item 2, a fala da Tentativa 1 ganha o pedido de rapidez: "Agora faça um igualzinho ao meu.
+Trabalhe o mais depressa possível e avise quando terminar. Pode começar."
+Montagem correta na Tentativa 1: passar ao item seguinte. Incorreta: Tentativa 2. Depois da
+Tentativa 2, certa ou errada, passar ao item seguinte.
+O modelo do aplicador fica montado: a criança o observa enquanto constrói o dela.
+-->
+
+---
+layout: default
+---
+
+# Cubos · falas (2/2)
+
+<Grade :cols="2">
+<div>
+
+<Acao>
+
+**8–16 anos · item 3.** Mesma apresentação dos cubos. Livro fechado, espiral para a criança;
+abrir no item 3 e dizer:
+
+</Acao>
+
+<Fala>
+
+Veja como eu junto os cubos para que fiquem iguais a esta figura.
+
+</Fala>
+
+<Acao>
+
+Construir o modelo lentamente, na frente do examinando, e dizer:
+
+</Acao>
+
+<Fala>
+
+Veja, as partes de cima destes cubos formam um desenho igual ao desta figura.
+
+</Fala>
+
+<Acao>
+
+Desfazer o modelo, misturar os cubos, colocá-los na frente do examinando e dizer:
+
+</Acao>
+
+<Fala>
+
+Agora faça um igualzinho a esta figura. Trabalhe o mais depressa possível e avise quando
+terminar. Pode começar.
+
+</Fala>
+
+</div>
+<div>
+
+<Fala quando="item 3 · tentativa 2">
+
+Veja como eu faço novamente. *(construir lentamente)* Veja, as partes de cima destes cubos
+formam um desenho igual ao desta figura.
+
+</Fala>
+
+<Fala quando="depois de desfazer e misturar">
+
+Agora tente novamente. Lembre que deve ficar igualzinho a esta figura. Pode começar.
+
+</Fala>
+
+<Fala quando="itens 4–14">
+
+Agora faça um exatamente como este *(itens 11–14: usando os nove cubos)*. Trabalhe o mais
+depressa possível e avise quando terminar. Pode começar.
+
+</Fala>
+
+</div>
+</Grade>
+
+<!--
+Do item 4 em diante: colocar os cubos na frente do examinando e passar para o item do Livro de
+Estímulos antes de falar. As instruções podem ser abreviadas quando a criança já entendeu
+claramente a tarefa.
+Item 3 errado nas duas tentativas: quem começou no item 3 vai para a sequência inversa (itens 2
+e 1); quem começou no item 1 segue, se não atingiu a interrupção.
+-->
+
+---
+layout: default
+---
+
+# Cubos · cuidados
+
+<Grade :cols="3">
+<Cartao rotulo="posição" titulo="Onde fica o modelo">
+
+A **18 cm** da borda da mesa. Destro: um pouco à esquerda da linha do corpo; canhoto: um pouco
+à direita. Cubos com faces variadas — só **um** (4 cubos) ou **dois** (9 cubos) com a face
+vermelha e branca para cima.
+
+</Cartao>
+<Cartao rotulo="rotação" titulo="30° ou mais é erro" destaque>
+
+Corrija **só a primeira** rotação: gire os cubos para a posição certa e diga **"Veja, é
+assim."** As outras só se anotam, com seta e graus.
+
+</Cartao>
+<Cartao rotulo="tempo" titulo="Cronômetro">
+
+Começa na última palavra da instrução e para quando a criança indica que terminou. Quase
+pronta no limite? Deixe terminar pelo rapport, **sem crédito**.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Os erros de aplicação mais comuns">
+
+Deixar cubos sobrando à vista · deixar a criança **girar o Livro** nos itens 13–14 · esquecer
+que o modelo do Protocolo está na **perspectiva do aplicador** (invertido).
+
+</Nota>
+
+<!--
+Nos itens 1 e 2, se a criança tenta copiar também as faces laterais do modelo, esclareça que só
+a face de cima deve ser reproduzida, e deixe que continue até o limite de tempo.
+Registro: circular S (modelo correto) ou N na coluna Modelo Correto — S também quando a montagem
+está certa mas fora do tempo ou rodada (ela recebe 0, mas o S registra que a criança sabia).
+Pinte na grade o que a criança montou até o tempo acabar, na perspectiva do aplicador.
+-->
+
+---
+layout: default
+---
+
 # Referências
 
 <div class="ds-small">
