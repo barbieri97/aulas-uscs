@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" font-family="Poppins, system-ui, sans-serif">
+  <title>Pirâmide do modelo CHC: estrato III, a inteligência geral g; estrato II, 16 capacidades amplas; estrato I, mais de 90 habilidades específicas</title>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EF7D00"/>
+      <stop offset="1" stop-color="#E9BC00"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="460" fill="#ffffff"/>
+
+  <!-- Estrato III -->
+  <polygon points="300,20 366.7,120 233.3,120" fill="url(#grad)"/>
+  <text x="300" y="86" text-anchor="middle" font-size="30" font-weight="700" fill="#152342">g</text>
+  <text x="300" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#152342">Estrato III</text>
+
+  <!-- Estrato II -->
+  <polygon points="228,128 372,128 506.7,330 93.3,330" fill="#152342"/>
+  <text x="300" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#E9BC00">Estrato II</text>
+  <text x="300" y="186" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">16 capacidades amplas</text>
+  <g text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">
+    <text x="200" y="222" fill="#EF7D00">Gf</text>
+    <text x="250" y="222" fill="#EF7D00">Gc</text>
+    <text x="300" y="222" fill="#EF7D00">Gsm</text>
+    <text x="350" y="222">Gv</text>
+    <text x="400" y="222">Ga</text>
+    <text x="175" y="254">Glr</text>
+    <text x="225" y="254">Gs</text>
+    <text x="275" y="254">Gt</text>
+    <text x="325" y="254">Grw</text>
+    <text x="375" y="254">Gq</text>
+    <text x="425" y="254">Gkn</text>
+    <text x="200" y="286">Gh</text>
+    <text x="250" y="286">Gk</text>
+    <text x="300" y="286">Go</text>
+    <text x="350" y="286">Gp</text>
+    <text x="400" y="286">Gps</text>
+  </g>
+  <text x="300" y="316" text-anchor="middle" font-size="12" fill="#ffffff" fill-opacity="0.8">“tipos de raciocínio”: grupos de habilidades muito correlacionadas</text>
+
+  <!-- Estrato I -->
+  <polygon points="88,338 512,338 580,440 20,440" fill="#152342" fill-opacity="0.72"/>
+  <text x="300" y="370" text-anchor="middle" font-size="13" font-weight="700" fill="#E9BC00">Estrato I</text>
+  <text x="300" y="396" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">+ de 90 habilidades específicas</text>
+  <text x="300" y="422" text-anchor="middle" font-size="12" fill="#ffffff">ex.: raciocínio indutivo (RI) · conhecimento léxico (VL) · extensão da memória (MS)</text>
+</svg>

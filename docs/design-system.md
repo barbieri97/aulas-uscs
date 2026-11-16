@@ -134,13 +134,16 @@ Ficam em `aulas/components/` e são **auto-importados**: basta escrever a tag no
 | `<Citacao>` | a palavra de outra pessoa, dentro de um slide com mais coisas |
 | `<Pessoa>` | quem é essa gente que a aula cita |
 | `<LinhaDoTempo>` | sequência com marcos — história ou processo |
+| `<Fala>` + `<Acao>` | roteiro de aplicação: o que o aplicador **diz** (literal, com `quando` opcional) e o que ele **faz** |
+| `<Protocolo>` | um quadro do protocolo de registro recriado (`letra`, `titulo`, `compacto`): `<th>` é o impresso, `<td>` o manuscrito, `td.bloq` a célula sombreada, `tr.soma` a linha de totais |
+| `<PerfilGrafico>` | o gráfico de perfil do protocolo do WISC: `tipo` = `ponderados` (1–19, por grupo) ou `compostos` (40–160) |
 | `<Fonte>` | o crédito no pé do slide — em letra branca, sobre a faixa azul |
 
 ## Utilitários
 
 `ds-kicker` (a pílula de contorno laranja da capa do modelo) `ds-lead` `ds-muted` `ds-em`
 (laranja no claro, degradê no escuro) `ds-em-2` `ds-grad` (texto em degradê) `ds-fino`
-(Poppins Thin) `ds-small` `ds-grid` `ds-stack` `ds-rule`.
+(Poppins Thin) `ds-small` `ds-compacta` (tabela de linhas baixas) `ds-grid` `ds-stack` `ds-rule`.
 O UnoCSS do Slidev também está ligado (`text-sm`, `mt-4`, `grid`…) — use-o para ajuste
 pontual, e as classes `ds-*` para o que tem significado editorial.
 

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 372" font-family="Poppins, system-ui, sans-serif">
+  <title>As 16 capacidades amplas do modelo CHC, ligadas ao fator g e agrupadas em capacidades gerais de processamento, conhecimentos adquiridos e capacidades ligadas aos sentidos e à motricidade. Gf, Gc e Gsm em destaque.</title>
+  <defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EF7D00"/><stop offset="1" stop-color="#E9BC00"/></linearGradient></defs>
+  <rect width="980" height="372" fill="#ffffff"/>
+  <line x1="490" y1="26" x2="160.0" y2="56" stroke="#152342" stroke-width="2"/>
+  <line x1="490" y1="26" x2="490.0" y2="56" stroke="#152342" stroke-width="2"/>
+  <line x1="490" y1="26" x2="820.0" y2="56" stroke="#152342" stroke-width="2"/>
+  <circle cx="490" cy="24" r="22" fill="url(#grad)"/>
+  <text x="490" y="32" text-anchor="middle" font-size="22" font-weight="700" fill="#152342">g</text>
+  <rect x="10" y="56" width="300" height="40" rx="10" fill="#152342"/>
+  <text x="160.0" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Gerais de processamento</text>
+  <rect x="10" y="106" width="300" height="38" rx="8" fill="#EF7D00" stroke="#EF7D00" stroke-width="1.5"/>
+  <text x="22" y="132" font-size="18" font-weight="700" fill="#152342">Gf</text>
+  <text x="76" y="131" font-size="16" fill="#152342">Raciocínio fluido</text>
+  <rect x="10" y="150" width="300" height="38" rx="8" fill="#EF7D00" stroke="#EF7D00" stroke-width="1.5"/>
+  <text x="22" y="176" font-size="18" font-weight="700" fill="#152342">Gsm</text>
+  <text x="76" y="175" font-size="16" fill="#152342">Memória de curto prazo</text>
+  <rect x="10" y="194" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="22" y="220" font-size="18" font-weight="700" fill="#152342">Glr</text>
+  <text x="76" y="219" font-size="16" fill="#152342">Memória de longo prazo</text>
+  <rect x="10" y="238" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="22" y="264" font-size="18" font-weight="700" fill="#152342">Gs</text>
+  <text x="76" y="263" font-size="16" fill="#152342">Velocidade cognitiva</text>
+  <rect x="10" y="282" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="22" y="308" font-size="18" font-weight="700" fill="#152342">Gt</text>
+  <text x="76" y="307" font-size="16" fill="#152342">Decisão e reação</text>
+  <rect x="10" y="326" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="22" y="352" font-size="18" font-weight="700" fill="#152342">Gps</text>
+  <text x="76" y="351" font-size="16" fill="#152342">Velocidade psicomotora</text>
+  <rect x="340" y="56" width="300" height="40" rx="10" fill="#152342"/>
+  <text x="490.0" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Conhecimentos adquiridos</text>
+  <rect x="340" y="106" width="300" height="38" rx="8" fill="#EF7D00" stroke="#EF7D00" stroke-width="1.5"/>
+  <text x="352" y="132" font-size="18" font-weight="700" fill="#152342">Gc</text>
+  <text x="406" y="131" font-size="16" fill="#152342">Compreensão-conhecimento</text>
+  <rect x="340" y="150" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="352" y="176" font-size="18" font-weight="700" fill="#152342">Grw</text>
+  <text x="406" y="175" font-size="16" fill="#152342">Leitura e escrita</text>
+  <rect x="340" y="194" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="352" y="220" font-size="18" font-weight="700" fill="#152342">Gq</text>
+  <text x="406" y="219" font-size="16" fill="#152342">Conhecimento quantitativo</text>
+  <rect x="340" y="238" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="352" y="264" font-size="18" font-weight="700" fill="#152342">Gkn</text>
+  <text x="406" y="263" font-size="16" fill="#152342">Conhecimento específico</text>
+  <rect x="670" y="56" width="300" height="40" rx="10" fill="#152342"/>
+  <text x="820.0" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Sentidos e motricidade</text>
+  <rect x="670" y="106" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="682" y="132" font-size="18" font-weight="700" fill="#152342">Gv</text>
+  <text x="736" y="131" font-size="16" fill="#152342">Processamento visual</text>
+  <rect x="670" y="150" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="682" y="176" font-size="18" font-weight="700" fill="#152342">Ga</text>
+  <text x="736" y="175" font-size="16" fill="#152342">Processamento auditivo</text>
+  <rect x="670" y="194" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="682" y="220" font-size="18" font-weight="700" fill="#152342">Gh</text>
+  <text x="736" y="219" font-size="16" fill="#152342">Tátil</text>
+  <rect x="670" y="238" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="682" y="264" font-size="18" font-weight="700" fill="#152342">Gk</text>
+  <text x="736" y="263" font-size="16" fill="#152342">Cinestésica</text>
+  <rect x="670" y="282" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="682" y="308" font-size="18" font-weight="700" fill="#152342">Go</text>
+  <text x="736" y="307" font-size="16" fill="#152342">Olfativa</text>
+  <rect x="670" y="326" width="300" height="38" rx="8" fill="#ffffff" stroke="#152342" stroke-width="1.5"/>
+  <text x="682" y="352" font-size="18" font-weight="700" fill="#152342">Gp</text>
+  <text x="736" y="351" font-size="16" fill="#152342">Psicomotora</text>
+</svg>

@@ -30,8 +30,8 @@ extraídas do modelo PPTX — não os redesenhe em CSS.
 
 ## Como uma aula é montada
 
-Sequência típica (a `aula-01-teorias-da-inteligencia.md` é o exemplo completo, com um slide de
-cada layout e componente):
+Sequência típica (a `aula-01-teorias-da-inteligencia.md` segue essa sequência; um slide de
+cada layout e componente está no catálogo `aulas/_design-system.md`):
 
 `capa` → `roteiro` → `destaque` → (`secao` → slides `default`…) × N → `fecho` → `redes` → `encerramento`
 
@@ -135,8 +135,8 @@ npm run build                                # builda tudo em dist/ (roda o lint
 `npm run dev` serve **uma aula por vez**, na raiz (`/`). O conjunto das aulas mais a página
 inicial só existe depois do `npm run build` — é o build que dá a cada deck o seu `--base`.
 
-Para adicionar uma aula nova: copie `aulas/aula-01-teorias-da-inteligencia.md`, renomeie para
-`aula-NN-slug.md`, troque o conteúdo mantendo a sequência de layouts, commit, push. O workflow
+Para adicionar uma aula nova: crie `aulas/aula-NN-slug.md` com a sequência de layouts acima
+(a aula 01 é o exemplo real, e o catálogo `_design-system.md` mostra cada peça), commit, push. O workflow
 builda e publica — nenhuma config precisa ser tocada.
 
 Ao **converter uma aula que chega pronta** (PPTX, PDF, texto): um slide de origem vira um slide

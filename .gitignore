@@ -5,3 +5,9 @@ dist
 .vite-inspect
 .remote-assets
 components.d.ts
+
+# Material de referência (manuais de testes, capítulos): uso restrito.
+# Os PDFs originais ficam só na máquina; vão ao repositório apenas as cópias
+# criptografadas (AES-256, com senha), com o sufixo .protegido.pdf.
+referencias/**/*.pdf
+!referencias/**/*.protegido.pdf

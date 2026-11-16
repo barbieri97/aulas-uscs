@@ -22,7 +22,12 @@ precisa referenciá-los nas aulas.
 
 | arquivo | serve para |
 |---|---|
-| `curva-normal-qi.svg` | layout `figura` da aula 01 — curva normal do QI (média 100, DP 15) |
+| `curva-normal-qi.svg` | layout `figura` do catálogo `_design-system.md`: curva normal do QI (média 100, DP 15) |
+| `autores/*.jpg` | aula 01: retratos de Spearman, Binet, Thurstone, Cattell, Horn e Carroll, extraídos do material de histórico da disciplina |
+| `chc/chc-sintese.svg` | aula 01: Cattell-Horn (sem g) + Carroll (com g) → CHC |
+| `chc/chc-piramide.svg` | aula 01: os três estratos do CHC (recriação da Figura 1 de Pessotto) |
+| `chc/chc-mapa.svg` | aula 01: as 16 capacidades amplas agrupadas por função |
+| `chc/chc-investimento.svg` | aula 01: teoria do investimento, Gf → Gc ao longo da idade |
 
 ## Duas maneiras de usar, e só uma funciona sempre
 
