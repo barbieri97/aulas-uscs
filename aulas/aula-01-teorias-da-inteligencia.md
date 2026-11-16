@@ -22,11 +22,11 @@ layout: roteiro
 kicker: Aula 01
 title: O caminho de hoje
 itens:
-  - { tema: O que é inteligência, desc: a definição de consenso }
-  - { tema: Histórico, desc: de Spearman às atualizações de 2023 }
+  - { tema: Inteligência, desc: "a definição e um século de história" }
   - { tema: A teoria CHC, desc: "três estratos, 16 capacidades amplas" }
-  - { tema: WISC-IV, desc: "estrutura e orientações de aplicação" }
-  - { tema: Os subtestes, desc: "falas, regras e cuidados de cada um" }
+  - { tema: WISC-IV, desc: "estrutura, aplicação e os 15 subtestes" }
+  - { tema: Correção, desc: "do Protocolo de Registro às tabelas" }
+  - { tema: Interpretação, desc: "índices, perfis e discrepâncias" }
 atual: 1
 ---
 
@@ -5326,7 +5326,8 @@ layout: default
 - Pessotto, F. O modelo CHC das habilidades cognitivas. In [organizadores], *[título do
   livro]* (pp. 11–18). [Editora], [ano].
 - Pessotto, F., & Bartholomeu, D. Escalas Wechsler e o modelo CHC. In [organizadores],
-  *[título do livro]* (pp. 21–[…]). [Editora], [ano].
+  *[título do livro]* (pp. 21–23). [Editora], [ano].
+- Pessotto, F. WISC-IV. In [organizadores], *[título do livro]* (pp. 25–45). [Editora], [ano].
 - Schneider, W. J., & McGrew, K. S. (2018). The Cattell-Horn-Carroll theory of cognitive
   abilities. In D. P. Flanagan & E. M. McDonough (Eds.), *Contemporary intellectual
   assessment* (4th ed., pp. 73–163). Guilford.
@@ -5340,12 +5341,11 @@ layout: default
 layout: fecho
 title: O que fica
 pontos:
-  - "Do <strong>g</strong> de Spearman ao CHC: um século discutindo se a inteligência é uma ou várias"
-  - "O <strong>CHC</strong>: g, 16 capacidades amplas e mais de 90 específicas"
-  - "<strong>Gf</strong>, <strong>Gc</strong> e <strong>Gsm</strong> são os pilares — e a base dos índices do WISC-IV"
-  - "O <strong>WISC-IV</strong>: 4 índices e o QIT, 10 subtestes principais e 5 suplementares"
+  - "Do <strong>g</strong> de Spearman ao <strong>CHC</strong>: g, 16 capacidades amplas e mais de 90 específicas"
+  - "O <strong>WISC-IV</strong>: 4 índices e o QIT — com <strong>Gf</strong>, <strong>Gc</strong> e <strong>Gsm</strong> na base"
   - "Aplicar é seguir as <strong>falas literais</strong> e as regras de cada subteste"
-proximo: "WISC-IV: correção e interpretação"
+  - "Corrigir: bruto → ponderado → composto — e o <strong>QIT não é a média</strong> dos índices"
+  - "Interpretar: diferença <strong>real</strong> não é diferença <strong>rara</strong>"
 ---
 
 ---
