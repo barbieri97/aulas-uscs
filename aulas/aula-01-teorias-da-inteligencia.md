@@ -1187,7 +1187,7 @@ errado e **zera**.
 
 </Nota>
 
-<Fonte>Pontos brutos, ponderados e compostos: na aula de correção.</Fonte>
+<Fonte>Pontos brutos, ponderados e compostos: na Parte 6, de correção.</Fonte>
 
 <!--
 Os subtestes verbais (Semelhanças, Vocabulário, Compreensão, Informação, Raciocínio com
@@ -4140,6 +4140,662 @@ ao próximo item.
 Sinônimos e nomes de marcas ou de objetos específicos valem como corretos.
 Observar: a criança persevera na hipótese anterior mesmo com a nova dica contradizendo? Isso
 fala de flexibilidade cognitiva. Ou chuta uma resposta a cada dica, sem integrar as pistas?
+-->
+
+---
+layout: secao
+numero: "06"
+kicker: Parte 6
+title: <span class="ds-em">Correção</span>
+note: "Do ponto bruto ao QI Total: o Protocolo de Registro passo a passo."
+---
+
+---
+layout: default
+---
+
+# Três métricas
+
+<Grade :cols="3">
+<Numero valor="bruto" rotulo="soma dos pontos dos itens" detalhe="não se compara entre idades" />
+<Numero valor="10" rotulo="ponto ponderado" detalhe="subteste · DP 3 · vai de 1 a 19" />
+<Numero valor="100" rotulo="ponto composto" detalhe="índices e QIT · DP 15 · de 40 a 160" />
+</Grade>
+
+<LinhaDoTempo :itens="[
+  { quando: '1ª página', o_que: 'idade → brutos → ponderados → somas → compostos → perfis', desc: 'a criança comparada com as outras da mesma idade' },
+  { quando: 'Página de Análise', o_que: 'discrepâncias → facilidades e dificuldades → escores de processo', desc: 'a criança comparada com ela mesma' },
+]" />
+
+<!--
+Ponto bruto: soma dos pontos obtidos nos itens de um subteste. Só faz sentido comparado com a
+idade — por isso é convertido.
+Ponto ponderado: a nota padronizada do subteste (média 10, desvio-padrão 3).
+Ponto composto: a nota padronizada dos índices (ICV, IOP, IMO, IVP) e do QI Total (média
+100, desvio-padrão 15).
+DP = desvio-padrão.
+-->
+
+---
+layout: default
+---
+
+# Idade cronológica
+
+<div class="ds-grid">
+<div>
+
+- Data de **aplicação** − data de **nascimento**
+- Todo mês vale **30 dias**
+- **Não arredonde**: 12 anos, 11 meses e 28 dias é corrigido como 12a 11m
+- Aplicou em duas sessões? Use a data da **primeira**
+
+<Nota>
+
+É a idade que escolhe a tabela de normas — um erro aqui contamina todo o protocolo.
+
+</Nota>
+
+</div>
+<div>
+
+<Protocolo letra="A" titulo="Cálculo da Idade da Criança">
+<table>
+<thead><tr><th></th><th>Ano</th><th>Mês</th><th>Dia</th></tr></thead>
+<tbody>
+<tr><th>Data de Aplicação</th><td>2003</td><td><s>6</s> 5</td><td><s>12</s> 42</td></tr>
+<tr><th>Data de Nascimento</th><td>1992</td><td>2</td><td>18</td></tr>
+<tr class="soma"><th>Idade</th><td class="bloq">11</td><td class="bloq">3</td><td class="bloq">24</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+Dia 12 menos 18 não dá: o mês de junho **empresta 30 dias** (12 + 30 = 42) e vira maio.
+Resultado: **11 anos e 3 meses**.
+
+</div>
+</div>
+
+<Fonte>Caso-exemplo do Manual do WISC-IV (Fig. 16–17).</Fonte>
+
+<!--
+O "empréstimo" é como numa subtração armada: o mês cede 30 dias ao dia; se faltar mês, o
+ano cede 12 meses ao mês.
+-->
+
+---
+layout: default
+---
+
+# Passos 1 e 2 · do bruto ao ponderado
+
+<Grade :cols="2">
+<Cartao rotulo="passo 1" titulo="Total de pontos brutos">
+
+Some os pontos de cada subteste — **incluindo os itens anteriores ao início** que não
+precisaram ser aplicados — e anote no fim do subteste. Depois, transfira para a coluna
+**Pontos Brutos** do quadro B.
+
+</Cartao>
+<Cartao rotulo="passo 2" titulo="Tabela A.1 · ponderados" destaque>
+
+Ache a tabela da **idade** da criança — cada página cobre **4 meses**. Procure o bruto na
+coluna do subteste e leia o ponderado na **coluna da esquerda**. Principais à esquerda,
+suplementares à direita.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="Copie o ponderado em todas as casas brancas da linha">
+
+Cada subteste tem uma casa branca na coluna do seu índice e outra na do QI Total. As
+sombreadas ficam vazias.
+
+</Nota>
+
+<!--
+Itens "anteriores ao início": quem começa no item 5 e acerta os dois primeiros recebe os
+pontos dos itens 1 a 4 sem aplicá-los (regra da sequência inversa, Parte 4).
+Tabela A.1 fica no Anexo A do Manual. Os subtestes estão listados no quadro B na ordem padrão
+de aplicação.
+-->
+
+---
+layout: default
+---
+
+# Quadro B · conversão preenchida
+
+<div class="grid grid-cols-[3fr_1fr] gap-6 items-start">
+<div>
+
+<Protocolo letra="B" titulo="Conversão dos Pontos Brutos em Ponderados" compacto>
+<table>
+<thead><tr><th>Subtestes</th><th>Brutos</th><th colspan="6">Pontos Ponderados</th></tr></thead>
+<tbody>
+<tr><th>Cubos (CB)</th><td>32</td><td>9</td><td class="bloq"></td><td>9</td><td class="bloq"></td><td class="bloq"></td><td>9</td></tr>
+<tr><th>Semelhanças (SM)</th><td>26</td><td>12</td><td>12</td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td>12</td></tr>
+<tr><th>Dígitos (DG)</th><td>16</td><td>10</td><td class="bloq"></td><td class="bloq"></td><td>10</td><td class="bloq"></td><td>10</td></tr>
+<tr><th>Conceitos Figurativos (CN)</th><td>16</td><td>8</td><td class="bloq"></td><td>8</td><td class="bloq"></td><td class="bloq"></td><td>8</td></tr>
+<tr><th>Código (CD)</th><td>45</td><td>9</td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td>9</td><td>9</td></tr>
+<tr><th>Vocabulário (VC)</th><td>44</td><td>13</td><td>13</td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td>13</td></tr>
+<tr><th>Seq. de Núm. e Letras (SNL)</th><td>18</td><td>11</td><td class="bloq"></td><td class="bloq"></td><td>11</td><td class="bloq"></td><td>11</td></tr>
+<tr><th>Raciocínio Matricial (RM)</th><td>20</td><td>9</td><td class="bloq"></td><td>9</td><td class="bloq"></td><td class="bloq"></td><td>9</td></tr>
+<tr><th>Compreensão (CO)</th><td>23</td><td>12</td><td>12</td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td>12</td></tr>
+<tr><th>Procurar Símbolos (PS)</th><td>21</td><td>8</td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td>8</td><td>8</td></tr>
+<tr><th>(Completar Figuras) (CF)</th><td></td><td></td><td class="bloq"></td><td><span class="imp">(&emsp;)</span></td><td class="bloq"></td><td class="bloq"></td><td><span class="imp">(&emsp;)</span></td></tr>
+<tr><th>(Cancelamento) (CA)</th><td>73</td><td>9</td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td><span class="imp">(</span>9<span class="imp">)</span></td><td><span class="imp">(</span>9<span class="imp">)</span></td></tr>
+<tr><th>(Informação) (IN)</th><td></td><td></td><td><span class="imp">(&emsp;)</span></td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td><span class="imp">(&emsp;)</span></td></tr>
+<tr><th>(Aritmética) (AR)</th><td>23</td><td>10</td><td class="bloq"></td><td class="bloq"></td><td><span class="imp">(</span>10<span class="imp">)</span></td><td class="bloq"></td><td><span class="imp">(</span>10<span class="imp">)</span></td></tr>
+<tr><th>(Raciocínio com Palavras) (RP)</th><td></td><td></td><td><span class="imp">(&emsp;)</span></td><td class="bloq"></td><td class="bloq"></td><td class="bloq"></td><td><span class="imp">(&emsp;)</span></td></tr>
+<tr class="soma"><th colspan="3">Soma dos Pontos Ponderados</th><td>37</td><td>26</td><td>21</td><td>17</td><td>101</td></tr>
+<tr><th colspan="3"></th><th class="col">ICV</th><th class="col">IOP</th><th class="col">IMO</th><th class="col">IVP</th><th class="col">QIT</th></tr>
+</tbody>
+</table>
+</Protocolo>
+
+</div>
+<div>
+
+<Nota titulo="Os parênteses">
+
+**Suplementares**: recebem o ponderado, mas **não somam** — salvo em substituição.
+
+</Nota>
+
+</div>
+</div>
+
+<Fonte>Caso-exemplo do Manual (Fig. 17), calculado com normas americanas — na prática, use as tabelas brasileiras.</Fonte>
+
+<!--
+As casas sombreadas são as que não recebem aquele subteste: Cubos só vai para Organização
+Perceptual (IOP) e para o QI Total.
+CA = 9 e AR = 10 aparecem entre parênteses, mas a soma do IVP é 9 + 8 = 17 (CD + PS) e a do
+IMO é 10 + 11 = 21 (DG + SNL).
+Conferência: 37 + 26 + 21 + 17 = 101 — a soma das quatro colunas de índice é a do QIT.
+ICV = Compreensão Verbal; IOP = Organização Perceptual; IMO = Memória Operacional;
+IVP = Velocidade de Processamento; QIT = QI Total.
+-->
+
+---
+layout: default
+---
+
+# Passo 3 · somas e substituições
+
+<div class="ds-grid">
+<div>
+
+| índice | soma dos ponderados de |
+|---|---|
+| **ICV** | SM + VC + CO |
+| **IOP** | CB + CN + RM |
+| **IMO** | DG + SNL |
+| **IVP** | CD + PS |
+| **QIT** | os **10 principais** |
+
+</div>
+<div>
+
+<Protocolo letra="B" titulo="Informação no lugar de Compreensão · 6a 2m">
+<table>
+<thead><tr><th>Subtestes</th><th>Brutos</th><th>Pond.</th><th>ICV</th><th>QIT</th></tr></thead>
+<tbody>
+<tr><th>Semelhanças (SM)</th><td>8</td><td>10</td><td>10</td><td>10</td></tr>
+<tr><th>Vocabulário (VC)</th><td>17</td><td>10</td><td>10</td><td>10</td></tr>
+<tr><th>Compreensão (CO)</th><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><th>(Informação) (IN)</th><td>11</td><td>12</td><td><span class="imp">(</span>12<span class="imp">)</span></td><td><span class="imp">(</span>12<span class="imp">)</span></td></tr>
+<tr class="soma"><th colspan="3">Soma dos Pontos Ponderados</th><td>32</td><td>101</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+Informação entra no ICV **e** no QIT. Limite: **uma** substituição por índice e **até
+duas** no QI Total.
+
+</div>
+</div>
+
+<Fonte>Exemplo do Manual (Fig. 18).</Fonte>
+
+<!--
+Os parênteses dizem "suplementar": por padrão não somam. Somam só quando o suplementar ocupa
+o lugar de um principal — invalidado, não aplicado ou impossível de aplicar.
+Substituições possíveis (Parte 4): IN ou RP no ICV; CF no IOP; AR no IMO; CA no IVP.
+-->
+
+---
+layout: default
+---
+
+# Quando falta um subteste
+
+<Grade :cols="3">
+<Cartao rotulo="1ª opção" titulo="Substituir">
+
+Subteste **invalidado** (erro de aplicação, falta de esforço, criança doente): um
+**suplementar** entra no lugar.
+
+</Cartao>
+<Cartao rotulo="2ª opção · evite" titulo="Pró-rata">
+
+Só para **ICV e IOP**, com **2 dos 3** ponderados válidos: Tabela **A.7**, e anote **PRO**
+na margem. Introduz erro de medida.
+
+</Cartao>
+<Cartao rotulo="sem saída" titulo="Invalidar o índice" destaque>
+
+Bruto **zero** em 2 dos 3 subtestes do ICV ou do IOP — ou nos **dois** do IMO ou do IVP:
+não há índice **nem QI Total**.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="IMO e IVP não têm pró-rata">
+
+Se um principal deles for invalidado e nada o substituir, **não há QI Total**. Por isso:
+na dúvida, aplique **Aritmética** e **Cancelamento**.
+
+</Nota>
+
+<!--
+Bruto zero não quer dizer que a criança não tem a habilidade — quer dizer que os itens daquele
+subteste não conseguiram medi-la (ex.: zero em Vocabulário, mas entende palavras mais fáceis).
+Pró-rata: estimar a soma de três subtestes a partir de dois. É especialmente problemático
+quando o resultado vai embasar diagnóstico ou decisão de elegibilidade.
+-->
+
+---
+layout: default
+---
+
+# Passo 4 · o ponto composto
+
+<Protocolo letra="D" titulo="Conversão da Soma dos Pontos Ponderados em Ponto Composto">
+<table>
+<thead><tr><th>Escala</th><th>Soma dos Pontos Ponderados</th><th>Ponto Composto</th><th>Rank Percentil</th><th>Intervalo de Confiança 95%</th></tr></thead>
+<tbody>
+<tr><th>Compreensão Verbal</th><td>37</td><td><span class="imp">ICV</span> 112</td><td>79</td><td>105–118</td></tr>
+<tr><th>Organização Perceptual</th><td>26</td><td><span class="imp">IOP</span> 92</td><td>30</td><td>85–100</td></tr>
+<tr><th>Memória Operacional</th><td>21</td><td><span class="imp">IMO</span> 102</td><td>55</td><td>94–109</td></tr>
+<tr><th>Velocidade de Processamento</th><td>17</td><td><span class="imp">IVP</span> 91</td><td>27</td><td>83–101</td></tr>
+<tr class="soma"><th>QI Total</th><td>101</td><td><span class="imp">QIT</span> 101</td><td>53</td><td>96–106</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+Tabelas **A.2 a A.6** (uma por escala): na linha da soma, leia o composto, o percentil e o
+intervalo de confiança (90% ou 95% — escolha e anote).
+
+<Nota tipo="erro" titulo="O QI Total não é a média dos índices">
+
+Ele sai da soma dos **10 ponderados** (aqui, 101) — nunca da soma nem da média de ICV, IOP,
+IMO e IVP.
+
+</Nota>
+
+<Fonte>Caso-exemplo do Manual (Fig. 17), com normas americanas.</Fonte>
+
+<!--
+Percentil 79 no ICV: a criança foi melhor que 79% das crianças da mesma idade.
+Intervalo de confiança: a faixa em que o escore verdadeiro provavelmente está, dado o erro de
+medida. É ele que se informa no laudo, junto com o composto.
+-->
+
+---
+layout: default
+---
+
+# Passo 5 · os perfis
+
+<div class="ds-grid">
+<div>
+
+<Protocolo letra="E" titulo="Perfil dos Pontos Ponderados dos Subtestes" />
+
+<PerfilGrafico tipo="ponderados" :itens="[
+  { sigla: 'SM', valor: 12, grupo: 'Compreensão Verbal' },
+  { sigla: 'VC', valor: 13, grupo: 'Compreensão Verbal' },
+  { sigla: 'CO', valor: 12, grupo: 'Compreensão Verbal' },
+  { sigla: 'IN', valor: null, grupo: 'Compreensão Verbal', suplementar: true },
+  { sigla: 'RP', valor: null, grupo: 'Compreensão Verbal', suplementar: true },
+  { sigla: 'CB', valor: 9, grupo: 'Organização Perceptual' },
+  { sigla: 'CN', valor: 8, grupo: 'Organização Perceptual' },
+  { sigla: 'RM', valor: 9, grupo: 'Organização Perceptual' },
+  { sigla: 'CF', valor: null, grupo: 'Organização Perceptual', suplementar: true },
+  { sigla: 'DG', valor: 10, grupo: 'Memória Operacional' },
+  { sigla: 'SNL', valor: 11, grupo: 'Memória Operacional' },
+  { sigla: 'AR', valor: 10, grupo: 'Memória Operacional', suplementar: true },
+  { sigla: 'CD', valor: 9, grupo: 'Velocidade de Processamento' },
+  { sigla: 'PS', valor: 8, grupo: 'Velocidade de Processamento' },
+  { sigla: 'CA', valor: 9, grupo: 'Velocidade de Processamento', suplementar: true },
+]" />
+
+</div>
+<div>
+
+<Protocolo letra="F" titulo="Perfil dos Pontos Compostos" />
+
+<PerfilGrafico tipo="compostos" :itens="[
+  { sigla: 'ICV', valor: 112 }, { sigla: 'IOP', valor: 92 }, { sigla: 'IMO', valor: 102 },
+  { sigla: 'IVP', valor: 91 }, { sigla: 'QIT', valor: 101 },
+]" />
+
+</div>
+</div>
+
+<Fonte>Marque cada ponto e ligue-os; se quiser, desenhe barras com o intervalo de confiança.</Fonte>
+
+<!--
+O gráfico da esquerda tem a faixa da média (10) pintada; o da direita, a linha do 100.
+No impresso, a linha liga só os subtestes principais de cada índice; os suplementares
+aplicados aparecem como ponto solto.
+-->
+
+---
+layout: default
+---
+
+# A Página de Análise · a criança × ela mesma
+
+<Grade :cols="3">
+<Cartao rotulo="quadros A e B" titulo="Comparação entre discrepâncias">
+
+Os **6 pares de índices** e **3 pares de subtestes**: DG–SNL, CD–PS, SM–CN.
+
+</Cartao>
+<Cartao rotulo="quadros C e D" titulo="Facilidades e dificuldades">
+
+Cada subteste principal contra a **média** da própria criança.
+
+</Cartao>
+<Cartao rotulo="quadros E a H" titulo="Escores de processo">
+
+Como a criança resolveu **Cubos**, **Dígitos** e **Cancelamento**.
+
+</Cartao>
+</Grade>
+
+<Nota titulo="Toda comparação faz duas perguntas">
+
+**É real?** — o valor crítico (significância estatística). **É rara?** — a frequência
+acumulada na amostra normativa.
+
+</Nota>
+
+<!--
+As tabelas da Página de Análise estão no Anexo B do Manual (B.1 a B.10).
+Informação normativa adicional (Tabela A.9): idade-equivalente de cada subteste — a idade em
+que aquele total bruto corresponde ao ponderado 10. Útil para comparar com outras escalas; a
+média das idades-equivalentes de um índice se calcula somando e dividindo pelo número de
+subtestes.
+-->
+
+---
+layout: default
+---
+
+# Discrepâncias · como preencher
+
+<LinhaDoTempo :itens="[
+  { quando: 'transferir', o_que: 'Pontos Ponderados 1 e 2', desc: 'nos índices, o <strong>ponto composto</strong>; nos subtestes, o ponderado' },
+  { quando: 'subtrair', o_que: 'Diferença = 1 − 2', desc: 'mantenha o sinal (+ ou −)' },
+  { quando: 'Tabela B.1 / B.3', o_que: 'Valor crítico', desc: 'B.1 para índices (faixa etária ou amostra total), B.3 para subtestes · nível 0,15 ou 0,05' },
+  { quando: 'comparar', o_que: '|diferença| ≥ valor crítico → Sim', desc: 'senão, Não' },
+  { quando: 'Tabela B.2 / B.4', o_que: 'Frequência acumulada', desc: 'pelo tamanho e pela <strong>direção</strong> da diferença (ex.: ICV &lt; IOP)' },
+]" />
+
+<Fonte>Marque a base (amostra geral ou nível de habilidade) e o nível de significância no quadro "Base para Comparação".</Fonte>
+
+<!--
+Valor crítico: a diferença mínima para que ela não seja atribuída ao erro de medida.
+Nível 0,05: 5% de chance de chamar de diferença o que é só erro (mais rigoroso); 0,15: 15%.
+Frequência acumulada: a porcentagem de crianças da amostra normativa que tiveram uma diferença
+igual ou maior, na mesma direção.
+A Tabela B.4 também traz comparações extras: DG×AR, SNL×AR, CD×CA, PS×CA.
+-->
+
+---
+layout: default
+---
+
+# Discrepâncias · o exemplo
+
+<div class="grid grid-cols-[4fr_1fr] gap-5 items-start">
+<div>
+
+<Protocolo letra="A" titulo="Comparação entre Discrepâncias" compacto>
+<table>
+<thead><tr><th>Índices / Subtestes</th><th>Pontos Pond. 1</th><th>Pontos Pond. 2</th><th>Diferença</th><th>Valor Crítico</th><th>Dif. Signif. (S/N)</th><th>Freq. Acum.</th></tr></thead>
+<tbody>
+<tr><th>ICV – IOP</th><td><span class="imp">ICV</span> 112</td><td><span class="imp">IOP</span> 92</td><td>20</td><td>11,00</td><td>S</td><td>6,1</td></tr>
+<tr><th>ICV – IMO</th><td><span class="imp">ICV</span> 112</td><td><span class="imp">IMO</span> 102</td><td>10</td><td>11,38</td><td>N</td><td></td></tr>
+<tr><th>ICV – IVP</th><td><span class="imp">ICV</span> 112</td><td><span class="imp">IVP</span> 91</td><td>21</td><td>12,12</td><td>S</td><td>9,7</td></tr>
+<tr><th>IOP – IMO</th><td><span class="imp">IOP</span> 92</td><td><span class="imp">IMO</span> 102</td><td>−10</td><td>11,38</td><td>N</td><td></td></tr>
+<tr><th>IOP – IVP</th><td><span class="imp">IOP</span> 92</td><td><span class="imp">IVP</span> 91</td><td>1</td><td>12,12</td><td>N</td><td></td></tr>
+<tr><th>IMO – IVP</th><td><span class="imp">IMO</span> 102</td><td><span class="imp">IVP</span> 91</td><td>11</td><td>12,46</td><td>N</td><td></td></tr>
+<tr class="soma"><th>Dígitos – Seq. Núm. e Letras</th><td><span class="imp">DG</span> 10</td><td><span class="imp">SNL</span> 11</td><td>−1</td><td>2,83</td><td>N</td><td></td></tr>
+<tr><th>Código – Procurar Símbolos</th><td><span class="imp">CD</span> 9</td><td><span class="imp">PS</span> 8</td><td>1</td><td>3,55</td><td>N</td><td></td></tr>
+<tr><th>Semelhanças – Conc. Figurativos</th><td><span class="imp">SM</span> 12</td><td><span class="imp">CN</span> 8</td><td>4</td><td>3,36</td><td>S</td><td>13,0</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+</div>
+<div>
+
+<Protocolo titulo="Base para Comparação">
+<table>
+<tbody>
+<tr><th>Amostra Geral</th><td>✓</td></tr>
+<tr><th>Nível de Habilidade</th><td></td></tr>
+<tr><th>0,15</th><td></td></tr>
+<tr><th>0,05</th><td>✓</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+</div>
+</div>
+
+<Fonte>Caso-exemplo do Manual (Fig. 19), com normas americanas.</Fonte>
+
+<!--
+Leitura: ICV supera IOP em 20 pontos — acima do valor crítico (11,00), logo é real; e só
+6,1% das crianças têm essa diferença ou maior, nessa direção, logo é rara.
+A frequência acumulada só precisa ser buscada quando a diferença é significativa.
+-->
+
+---
+layout: default
+---
+
+# Facilidades e dificuldades · como
+
+<div class="ds-grid">
+<div>
+
+**1. Escolha a base de comparação**
+
+- **Média geral** dos 10 principais — o padrão
+- **Médias do ICV e do IOP**, cada uma para os seus 3 subtestes — quando ICV × IOP é
+  discrepante, ou um subteste puxa o QI Total
+- IMO e IVP: **só** com a média geral
+
+</div>
+<div>
+
+**2. Calcule e compare**
+
+- Soma ÷ número de subtestes → **média** (quadro D)
+- Ponderado − média → **diferença da média**, com sinal
+- Tabela **B.5** → valor crítico (0,15 ou 0,05)
+- Significativa e **positiva** = **F**; **negativa** = **D**
+- Frequência na B.5: 1%, 2%, 5%, 10% ou 25% — entre dois valores, informe a faixa (10–25%)
+
+</div>
+</div>
+
+<!--
+Exemplo de subteste puxando o QIT: ponderados entre 8 e 11 em nove subtestes e 2 em Procurar
+Símbolos — use as médias de ICV e IOP.
+F = ponto forte relativo (facilidade); D = ponto fraco relativo (dificuldade). "Relativo" à
+própria criança — uma facilidade pode estar abaixo da média da população.
+A B.5 tem uma seção para cada base de comparação: confira se está lendo a certa.
+-->
+
+---
+layout: default
+---
+
+# Facilidades e dificuldades · o exemplo
+
+<div class="grid grid-cols-[2fr_1fr] gap-5 items-start">
+<div>
+
+<Protocolo letra="C" titulo="Determinação das Facilidades e Dificuldades" compacto>
+<table>
+<thead><tr><th>Subtestes</th><th>Pontos Pond.</th><th>Média dos Pontos</th><th>Dif. da Média</th><th>Valor Crítico</th><th>F ou D</th><th>Freq.</th></tr></thead>
+<tbody>
+<tr><th>Cubos</th><td>9</td><td>8,7</td><td>0,3</td><td>2,22</td><td></td><td></td></tr>
+<tr><th>Semelhanças</th><td>12</td><td>12,3</td><td>−0,3</td><td>2,23</td><td></td><td></td></tr>
+<tr><th>Dígitos</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><th>Conceitos Figurativos</th><td>8</td><td>8,7</td><td>−0,7</td><td>2,38</td><td></td><td></td></tr>
+<tr><th>Código</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><th>Vocabulário</th><td>13</td><td>12,3</td><td>0,7</td><td>2,11</td><td></td><td></td></tr>
+<tr><th>Seq. de Núm. e Letras</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><th>Raciocínio Matricial</th><td>9</td><td>8,7</td><td>0,3</td><td>2,09</td><td></td><td></td></tr>
+<tr><th>Compreensão</th><td>12</td><td>12,3</td><td>−0,3</td><td>2,41</td><td></td><td></td></tr>
+<tr><th>Procurar Símbolos</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+</div>
+<div>
+
+<Protocolo letra="D" compacto>
+<table>
+<thead><tr><th></th><th>3 CV</th><th>3 OP</th></tr></thead>
+<tbody>
+<tr><th>Soma</th><td>37</td><td>26</td></tr>
+<tr><th>Nº</th><td><span class="imp">÷3</span></td><td><span class="imp">÷3</span></td></tr>
+<tr class="soma"><th>Média</th><td>12,3</td><td>8,7</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+<Nota titulo="Por que essa base">
+
+ICV × IOP foi discrepante (20 pontos): cada subteste é comparado com a média **do seu
+índice**. Nenhuma diferença passa do valor crítico — sem F nem D.
+
+</Nota>
+
+</div>
+</div>
+
+<Fonte>Caso-exemplo do Manual (Fig. 19), com normas americanas.</Fonte>
+
+<!--
+Com a base "médias ICV e IOP", os subtestes de IMO e IVP ficam em branco — eles só podem ser
+comparados com a média geral.
+Quadro D: CV = Compreensão Verbal; OP = Organização Perceptual. Na média geral, a conta seria
+soma dos 10 ÷ 10.
+-->
+
+---
+layout: default
+---
+
+# Escores de processo · como
+
+| subteste | escores de processo | bruto → ponderado | comparação |
+|---|---|---|---|
+| **Cubos** | CUSB — sem bônus de tempo | Tabela A.8 | CB × CUSB |
+| **Dígitos** | DIOD · DIOI — ordem direta e inversa | Tabela A.8 | DIOD × DIOI |
+| | UDIOD · UDIOI — a maior sequência acertada | fica em **bruto** · freq. na B.7 | UDIOD × UDIOI (B.8) |
+| **Cancelamento** | CAA · CAE — aleatório e estruturado | Tabela A.8 | CAA × CAE |
+
+<Nota titulo="Não entram em índice nenhum · mesmo roteiro das discrepâncias">
+
+Diferença → valor crítico (**B.9**) → Sim/Não → frequência acumulada (**B.10**).
+
+</Nota>
+
+<!--
+CUSB = Cubos sem bônus de tempo. DIOD/DIOI = Dígitos ordem direta/inversa.
+UDIOD/UDIOI = sequência maior (a maior quantidade de dígitos lembrada) na ordem direta/inversa.
+CAA/CAE = Cancelamento aleatório/estruturado.
+Como calcular cada bruto está nas orientações de pontuação de cada subteste (Parte 5).
+A.8 tem uma página por faixa de 4 meses de idade.
+-->
+
+---
+layout: default
+---
+
+# Escores de processo · o exemplo
+
+<div class="grid grid-cols-[1fr_1.4fr] gap-5 items-start">
+<div>
+
+<Protocolo letra="E" titulo="Conversão do Total de Brutos em Ponderados" compacto>
+<table>
+<thead><tr><th>Escores de Processo</th><th>Brutos</th><th>Pond.</th></tr></thead>
+<tbody>
+<tr><th>Cubos sem Tempo de Bônus</th><td>32</td><td>9</td></tr>
+<tr><th>Dígitos Ordem Direta</th><td>9</td><td>11</td></tr>
+<tr><th>Dígitos Ordem Inversa</th><td>7</td><td>10</td></tr>
+<tr><th>Cancelamento Aleatório</th><td>32</td><td>8</td></tr>
+<tr><th>Cancelamento Estruturado</th><td>41</td><td>10</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+</div>
+<div>
+
+<Protocolo letra="F" titulo="Conversão dos Brutos em Frequência Acumulada" compacto>
+<table>
+<thead><tr><th>Escores de Processo</th><th>Brutos</th><th>Freq. Acum.</th></tr></thead>
+<tbody>
+<tr><th>Seq. Maior de Dígitos Ordem Direta (UDIOD)</th><td>6</td><td>65,0</td></tr>
+<tr><th>Seq. Maior de Dígitos Ordem Inversa (UDIOI)</th><td>4</td><td>72,0</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+<Protocolo letra="G" titulo="Comparação entre Discrepâncias" compacto>
+<table>
+<thead><tr><th>Escores</th><th>Brutos 1</th><th>Brutos 2</th><th>Diferença</th><th>Freq. Acum.</th></tr></thead>
+<tbody>
+<tr><th>UDIOD – UDIOI</th><td>6</td><td>4</td><td>2</td><td>57,0</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+</div>
+</div>
+
+<Protocolo letra="H" titulo="Comparação entre Discrepâncias · nível de processo" compacto>
+<table>
+<thead><tr><th>Subtestes / Escores de Processo</th><th>Pond. 1</th><th>Pond. 2</th><th>Diferença</th><th>Valor Crítico</th><th>Signif. (S/N)</th><th>Freq. Acum.</th></tr></thead>
+<tbody>
+<tr><th>Cubos – Cubos sem Tempo de Bônus</th><td><span class="imp">CB</span> 9</td><td><span class="imp">CUSB</span> 9</td><td>0</td><td>3,26</td><td>N</td><td></td></tr>
+<tr><th>Dígitos Ordem Direta – Ordem Inversa</th><td><span class="imp">DIOD</span> 11</td><td><span class="imp">DIOI</span> 10</td><td>1</td><td>3,62</td><td>N</td><td></td></tr>
+<tr><th>Cancelamento Aleatório – Estruturado</th><td><span class="imp">CAA</span> 8</td><td><span class="imp">CAE</span> 10</td><td>−2</td><td>4,40</td><td>N</td><td></td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+<Fonte>Caso-exemplo do Manual (Fig. 19), com normas americanas · nível de significância 0,05.</Fonte>
+
+<!--
+UDIOD 6 com frequência 65,0: 65% das crianças da idade lembraram 6 dígitos ou mais na ordem
+direta — desempenho comum.
+Nenhuma das três diferenças de processo passou do valor crítico.
 -->
 
 ---

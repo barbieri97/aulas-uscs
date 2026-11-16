@@ -311,9 +311,11 @@ layout: default
 <Protocolo letra="D" titulo="Conversão da Soma dos Pontos Ponderados em Ponto Composto">
 <table>
 <thead><tr><th>Escala</th><th>Soma</th><th>Composto</th><th>Percentil</th></tr></thead>
+<tbody>
 <tr><th>Compreensão Verbal</th><td>37</td><td class="bloq">ICV 112</td><td>79</td></tr>
 <tr><th>Organização Perceptual</th><td>26</td><td class="bloq">IOP 92</td><td>30</td></tr>
 <tr class="soma"><th>QI Total</th><td>101</td><td class="bloq">QIT 101</td><td>53</td></tr>
+</tbody>
 </table>
 </Protocolo>
 
