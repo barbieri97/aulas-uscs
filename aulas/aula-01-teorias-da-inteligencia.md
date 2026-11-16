@@ -4799,6 +4799,515 @@ Nenhuma das três diferenças de processo passou do valor crítico.
 -->
 
 ---
+layout: secao
+numero: "07"
+kicker: Parte 7
+title: <span class="ds-em">Interpretação</span>
+note: Do QI Total ao perfil da criança — lendo o protocolo à luz do CHC.
+---
+
+---
+layout: default
+---
+
+# Duas páginas, duas perguntas
+
+<Grade :cols="2">
+<Cartao rotulo="1ª página · nomotética" titulo="Onde ela está entre as outras?">
+
+QIT, índices e ponderados contra a **amostra normativa** da mesma idade: acima, na média ou
+abaixo do esperado.
+
+</Cartao>
+<Cartao rotulo="Página de Análise · idiográfica" titulo="Onde ela está em relação a si mesma?" destaque>
+
+Discrepâncias, facilidades e dificuldades: as **distâncias entre as habilidades** da própria
+criança.
+
+</Cartao>
+</Grade>
+
+<Nota titulo="De cima para baixo — e de volta">
+
+Comece pelo QIT e desça até os subtestes; depois suba de novo, conferindo se os detalhes
+confirmam o geral.
+
+</Nota>
+
+<Fonte>Pessotto (WISC-IV), pp. 29–30.</Fonte>
+
+<!--
+Nomotético: compara o indivíduo com uma norma, um grupo. Idiográfico: compara o indivíduo com
+ele mesmo.
+Nem sempre começar pelo QIT é o melhor caminho — a ida e volta entre as duas páginas é o que
+dá a compreensão global do caso.
+-->
+
+---
+layout: default
+---
+
+# Cinco passos para compreender o caso
+
+<LinhaDoTempo :itens="[
+  { quando: '1', o_que: 'Compreender o construto', desc: 'qual referencial guia a leitura — aqui, o CHC' },
+  { quando: '2', o_que: 'Compreender o construto pela ferramenta', desc: 'o que cada subteste e cada índice exigem' },
+  { quando: '3', o_que: 'Integrar os resultados de forma dinâmica', desc: 'as duas páginas do protocolo, de cima para baixo e de volta' },
+  { quando: '4', o_que: 'Relatar as interpretações ligadas à queixa', desc: 'o laudo responde à pergunta que trouxe a criança' },
+  { quando: '5', o_que: 'Propor intervenções', desc: 'a partir das evidências — dificuldades e potencialidades' },
+]" />
+
+<Fonte>Pessotto (WISC-IV), p. 26 — a partir de Weiss, Finn e da prática clínica.</Fonte>
+
+<!--
+O WISC-IV fornece dados; quem os interpreta é um referencial teórico que, a priori, independe
+do instrumento. Outros modelos servem, desde que coerentes com a proposta da escala.
+-->
+
+---
+layout: default
+---
+
+# Lendo as métricas
+
+<div class="grid grid-cols-[3fr_2fr] gap-6 items-start">
+<div class="ds-compacta">
+
+| ponto composto | classificação | % esperado |
+|---|---|---|
+| 130 ou mais | Muito superior | 2,2 |
+| 120–129 | Superior | 6,7 |
+| 110–119 | Média superior | 16,1 |
+| **90–109** | **Média** | **50,0** |
+| 80–89 | Média inferior | 16,1 |
+| 70–79 | Limítrofe | 6,7 |
+| 69 ou menos | Extremamente baixo | 2,2 |
+
+</div>
+<div>
+
+<Numero valor="100 ± 15" rotulo="índices e QIT" detalhe="média ± 1 DP: de 85 a 115" />
+
+<Numero valor="10 ± 3" rotulo="subtestes" detalhe="média ± 1 DP: de 7 a 13" />
+
+<Nota titulo="Informe a faixa">
+
+Composto **com o intervalo de confiança**: "ICV 112 (105–118)".
+
+</Nota>
+
+</div>
+</div>
+
+<Fonte>Faixas descritivas das escalas Wechsler (WISC-IV). Confira a nomenclatura no manual brasileiro.</Fonte>
+
+<!--
+O percentual esperado é o da curva normal com média 100 e DP 15.
+A classificação descreve o ponto composto, não a criança: um laudo diz "desempenho na faixa
+média", não "criança média".
+-->
+
+---
+layout: default
+---
+
+# Compreensão Verbal (ICV)
+
+<div class="ds-grid">
+<div>
+
+<Termo palavra="ICV · Gc" origem="Pessotto, p. 27">
+
+**Inteligência cristalizada**: a extensão e a profundidade dos conhecimentos adquiridos numa
+cultura e a sua aplicação no cotidiano — o raciocínio que se formou investindo em
+**aprendizagem e linguagem**.
+
+</Termo>
+
+</div>
+<div>
+
+| subteste | capacidades CHC |
+|---|---|
+| Semelhanças | Gc — a verbal que mais pede **Gf** |
+| Vocabulário | Gc |
+| Compreensão | Gc |
+| (Informação) | Gc · Gkn |
+| (Raciocínio com Palavras) | Gc · Gkn · Gf |
+
+</div>
+</div>
+
+<Fonte>Pessotto & Bartholomeu, pp. 22–23.</Fonte>
+
+<!--
+Gc = inteligência cristalizada. Gkn = conhecimento de domínio específico. Gf = inteligência
+fluida (Parte 2).
+Horn (1991): Gc representa as capacidades exigidas para resolver a maioria dos problemas
+complexos do dia a dia com base em experiência e conhecimento.
+-->
+
+---
+layout: default
+---
+
+# Organização Perceptual (IOP)
+
+<div class="ds-grid">
+<div>
+
+<Termo palavra="IOP · Gf + Gv" origem="Pessotto, p. 28">
+
+**Gf**: raciocinar em situações novas, que não se resolvem no automático — relacionar ideias,
+induzir conceitos, reorganizar informação, sobretudo **não verbal**. **Gv**: gerar,
+armazenar, recuperar e transformar **estímulos visuais**.
+
+</Termo>
+
+</div>
+<div>
+
+| subteste | capacidades CHC |
+|---|---|
+| Cubos | Gv · Gp · Gps |
+| Conceitos Figurativos | Gv · Gf |
+| Raciocínio Matricial | Gf · Gv |
+| (Completar Figuras) | Gf · Gv |
+
+</div>
+</div>
+
+<Fonte>Pessotto & Bartholomeu, pp. 22–23; McGrew (2009).</Fonte>
+
+<!--
+Gf = inteligência fluida. Gv = processamento visual. Gp = habilidade psicomotora.
+Gps = velocidade psicomotora.
+Cubos com tempo envolve coordenação e rapidez motora — por isso o escore de processo CUSB.
+-->
+
+---
+layout: default
+---
+
+# Memória Operacional (IMO)
+
+<div class="ds-grid">
+<div>
+
+<Termo palavra="IMO · memória de trabalho" origem="Pessotto, pp. 28–29">
+
+O mecanismo de **armazenamento temporário e processamento** da informação: abre o espaço em
+que a tarefa é explorada até a solução. Considerada a **chave da cognição** e base do
+raciocínio.
+
+</Termo>
+
+</div>
+<div>
+
+| subteste | capacidades CHC |
+|---|---|
+| Dígitos | Gsm · Gf |
+| Sequência de Números e Letras | Gsm · Gf |
+| (Aritmética) | Gsm (memória de trabalho) · Gf |
+
+<Nota titulo="O modelo de Baddeley">
+
+Alça fonológica, esboço visuoespacial, retentor episódico e **executivo central**.
+
+</Nota>
+
+</div>
+</div>
+
+<!--
+Gsm = memória de curto prazo; a memória de trabalho é uma das suas capacidades específicas.
+Baddeley (2000): a alça fonológica guarda o que é som e fala; o esboço visuoespacial, o que é
+visual; o retentor episódico integra os dois e os liga à memória de longo prazo; o executivo
+central comanda o sistema.
+-->
+
+---
+layout: default
+---
+
+# Velocidade de Processamento (IVP)
+
+<div class="ds-grid">
+<div>
+
+<Termo palavra="IVP · Gs" origem="Pessotto, p. 29">
+
+A capacidade de realizar tarefas **rapidamente e sem erros**. Quanto mais rápido se processa,
+mais cedo se **libera a memória de trabalho** para a informação seguinte.
+
+</Termo>
+
+</div>
+<div>
+
+| subteste | capacidades CHC |
+|---|---|
+| Código | Gs · Gt · Gv · Gp |
+| Procurar Símbolos | Gs · Gt · Gv · Gp |
+| (Cancelamento) | Gs · Gt · Gv · Gp |
+
+<Nota titulo="IMO e IVP andam juntos">
+
+Para Pessotto, são a parte "**mecânica**" que sustenta a Gf.
+
+</Nota>
+
+</div>
+</div>
+
+<Fonte>Pessotto & Bartholomeu, pp. 22–23; Rose, Feldman & Jankowski (2009).</Fonte>
+
+<!--
+Gs = velocidade de processamento (velocidade cognitiva geral). Gt = tempo de reação e decisão.
+Gv = processamento visual. Gp = habilidade psicomotora.
+Os três subtestes do IVP pedem lápis e papel: dificuldade motora fina rebaixa o índice sem
+que a velocidade cognitiva esteja comprometida — vale observar a aplicação.
+-->
+
+---
+layout: default
+---
+
+# Quando o índice não é homogêneo
+
+<Grade :cols="2">
+<Cartao rotulo="exemplo" titulo="ICV médio, Semelhanças baixo">
+
+Vocabulário e Compreensão altos, Semelhanças baixo. Os três medem Gc — mas Semelhanças exige
+**mais abstração (Gf)**. O índice esconde essa diferença.
+
+</Cartao>
+<Cartao rotulo="o que fazer" titulo="Desça aos subtestes" destaque>
+
+Interprete os subtestes um a um e confira com **IMO e IVP** se há um padrão de dificuldade
+com processamento **abstrato**.
+
+</Cartao>
+</Grade>
+
+<Nota tipo="alerta" titulo="DG × SNL discrepantes">
+
+O IMO tem só dois subtestes: se eles divergem significativamente, **não use o índice** como
+base da interpretação.
+
+</Nota>
+
+<Fonte>Pessotto (WISC-IV), pp. 33 e 41.</Fonte>
+
+---
+layout: default
+---
+
+# Padrões entre índices
+
+<Grade :cols="2">
+<Cartao rotulo="IMO e IVP abaixo · ICV e IOP na média" titulo="Prognóstico mais reservado">
+
+IMO e IVP sustentam a **Gf** — o potencial para aprender. Sem intervenção, a tendência é que
+**ICV e IOP também caiam** com o tempo.
+
+</Cartao>
+<Cartao rotulo="IMO e IVP na média · ICV abaixo" titulo="Prognóstico mais favorável" destaque>
+
+Sugere um **déficit de aprendizagem** por alguma contingência (a investigar). Os processos
+de base estão preservados para construir a **Gc**.
+
+</Cartao>
+</Grade>
+
+<Nota titulo="Leitura de hipótese, não de diagnóstico">
+
+Esses padrões orientam o que investigar — a confirmação vem da história, da escola e de outros
+instrumentos.
+
+</Nota>
+
+<Fonte>Pessotto (WISC-IV), p. 33.</Fonte>
+
+<!--
+"Parte mecânica de Gf" é a expressão do autor: memória de trabalho e velocidade são a
+infraestrutura em que o raciocínio fluido acontece.
+-->
+
+---
+layout: default
+---
+
+# Discrepância: estatística × clínica
+
+<Grade :cols="2">
+<Cartao rotulo="valor crítico" titulo="É real?">
+
+A diferença passa do erro de medida — **significância estatística**. Responde se ela existe,
+não se ela importa.
+
+</Cartao>
+<Cartao rotulo="frequência acumulada" titulo="É rara?" destaque>
+
+Quantas crianças da amostra têm diferença igual ou maior. **Abaixo de 15%** (índices e
+processo) ou de **10%** (facilidades): relevância **clínica**.
+
+</Cartao>
+</Grade>
+
+| caso | diferença | freq. acumulada | leitura |
+|---|---|---|---|
+| 7 anos · IOP < IMO | −22 | **5,3%** | rara: um jeito peculiar de processar — foco da intervenção |
+| IOP 110 × IVP 95 | 8 (signif.) | **19,1%** | comum: real, mas não explica a queixa |
+
+<Fonte>Pessotto (WISC-IV), p. 35.</Fonte>
+
+<!--
+Uma diferença pode ser estatisticamente significativa e clinicamente banal: muitas crianças da
+amostra normativa têm uma igual. Intervir nela tem pouco impacto.
+-->
+
+---
+layout: default
+---
+
+# Os três pares de subtestes
+
+<Grade :cols="3">
+<Cartao rotulo="Dígitos × SNL" titulo="O IMO se sustenta?">
+
+Diferença significativa: o índice está **enviesado**. Interprete os subtestes e, se puder,
+aplique **Aritmética**.
+
+</Cartao>
+<Cartao rotulo="Código × Procurar Símbolos" titulo="O IVP se sustenta?">
+
+Mesma lógica. **Cancelamento** ajuda a decidir qual dos dois representa a velocidade da
+criança.
+
+</Cartao>
+<Cartao rotulo="Semelhanças × Conceitos Fig." titulo="Gc × Gf" destaque>
+
+Mesma tarefa — achar o que há em comum —, com **palavras** ou com **figuras**: a criança se
+beneficia da **mediação verbal**?
+
+</Cartao>
+</Grade>
+
+<Fonte>Pessotto (WISC-IV), p. 34.</Fonte>
+
+<!--
+SNL = Sequência de Números e Letras.
+No caso-exemplo do Manual, SM 12 × CN 8 (diferença 4, frequência 13%): a criança vai melhor
+quando o conteúdo é verbal.
+-->
+
+---
+layout: default
+---
+
+# Escores de processo na leitura
+
+| comparação | o que separa | leitura |
+|---|---|---|
+| **CB × CUSB** | o tempo | CUSB alto e CB baixo: monta certo, mas devagar — **motor** antes de cognitivo |
+| **DIOD × DIOI** | reter × manipular | o comum é ir melhor na direta; diferença de **5 pontos ou mais** é clinicamente relevante |
+| **CAA × CAE** | a estrutura da folha | melhor no estruturado: **beneficia-se de organização visual** — use isso na intervenção |
+| **UDIOD × UDIOI** | a consistência | acerta uma tentativa de cada item e falha na outra: retém, mas **não sustenta** — investigar atenção, audição, motivação |
+
+<Fonte>Pessotto (WISC-IV), pp. 37–41.</Fonte>
+
+<!--
+CUSB = Cubos sem bônus de tempo. DIOD/DIOI = Dígitos ordem direta/inversa.
+CAA/CAE = Cancelamento aleatório/estruturado. UDIOD/UDIOI = a maior sequência de dígitos.
+Ordem inversa melhor que a direta é atípico; há estudos com crianças com dificuldade de
+processamento auditivo central (Holdnack & Weiss, 2016; Maerlender et al., 2004). Interprete
+com cautela.
+Melhor desempenho no aleatório que no estruturado é raro e pode indicar dificuldade de
+comportamento organizado.
+-->
+
+---
+layout: default
+---
+
+# Do protocolo ao laudo
+
+<div class="ds-grid">
+<div>
+
+<Citacao autor="Schwean et al. (2016), citado por Pessotto">
+
+Laudos devem descrever pessoas, e não testes.
+
+</Citacao>
+
+</div>
+<div>
+
+- **Não existe "laudo do WISC-IV"**: a avaliação é um processo com várias técnicas e
+  instrumentos
+- O laudo **responde à queixa** que trouxe a criança
+- Escreva para **quem vai usar**: a linguagem muda com o destinatário
+- Organize um **mapa interpretativo**: todos os indicadores, agrupados pelo que respondem
+
+</div>
+</div>
+
+<Fonte>Pessotto (WISC-IV), pp. 41–43; Gregory (2000).</Fonte>
+
+<!--
+Gregory (2000): duas perguntas guiam o laudo — quem vai usar estas informações na intervenção?
+que tipo de relato terá impacto positivo na vida da criança?
+Pessotto se apoia na Resolução CFP 07/2003; os documentos psicológicos hoje são regidos pela
+Resolução CFP 06/2019, que a substituiu.
+Mapa interpretativo: dispor visualmente todos os indicadores da avaliação e agrupar os que
+respondem à demanda — por habilidade e característica da criança, não por teste.
+-->
+
+---
+layout: default
+---
+
+# Do perfil à intervenção
+
+<Grade :cols="3">
+<Cartao rotulo="ponto de apoio" titulo="As potencialidades">
+
+O protocolo mostra também o que **está preservado** — é por onde a intervenção começa.
+Facilidade em Vocabulário? Comece pela **mediação verbal**.
+
+</Cartao>
+<Cartao rotulo="exemplo" titulo="IMO abaixo da média">
+
+**Rotinas**, aplicativos de lembrete, **pistas visuais** à mão — e, com o tempo, a própria
+criança gerenciando as estratégias.
+
+</Cartao>
+<Cartao rotulo="diagnóstico diferencial" titulo="Dislexia" destaque>
+
+Ler e escrever exigem manter informação ativa: espera-se **ICV e IMO rebaixados** — o maior
+efeito no IMO — e o QIT junto.
+
+</Cartao>
+</Grade>
+
+<Nota>
+
+Observe também **como** a criança responde: pede repetição? As dicas e o inquérito ajudam?
+Isso também vira estratégia.
+
+</Nota>
+
+<Fonte>Pessotto (WISC-IV), pp. 43–45; Weiss et al. (2016).</Fonte>
+
+<!--
+O WISC-IV não tem tarefa de leitura e escrita, mas a dislexia aparece nele pelos processos
+que essas tarefas exigem (Gathercole et al., 1997; Swanson & Howell, 2001).
+-->
+
+---
 layout: default
 ---
 

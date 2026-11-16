@@ -143,7 +143,7 @@ Ficam em `aulas/components/` e são **auto-importados**: basta escrever a tag no
 
 `ds-kicker` (a pílula de contorno laranja da capa do modelo) `ds-lead` `ds-muted` `ds-em`
 (laranja no claro, degradê no escuro) `ds-em-2` `ds-grad` (texto em degradê) `ds-fino`
-(Poppins Thin) `ds-small` `ds-grid` `ds-stack` `ds-rule`.
+(Poppins Thin) `ds-small` `ds-compacta` (tabela de linhas baixas) `ds-grid` `ds-stack` `ds-rule`.
 O UnoCSS do Slidev também está ligado (`text-sm`, `mt-4`, `grid`…) — use-o para ajuste
 pontual, e as classes `ds-*` para o que tem significado editorial.
 
