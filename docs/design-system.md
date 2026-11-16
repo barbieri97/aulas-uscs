@@ -135,6 +135,8 @@ Ficam em `aulas/components/` e são **auto-importados**: basta escrever a tag no
 | `<Pessoa>` | quem é essa gente que a aula cita |
 | `<LinhaDoTempo>` | sequência com marcos — história ou processo |
 | `<Fala>` + `<Acao>` | roteiro de aplicação: o que o aplicador **diz** (literal, com `quando` opcional) e o que ele **faz** |
+| `<Protocolo>` | um quadro do protocolo de registro recriado (`letra`, `titulo`, `compacto`): `<th>` é o impresso, `<td>` o manuscrito, `td.bloq` a célula sombreada, `tr.soma` a linha de totais |
+| `<PerfilGrafico>` | o gráfico de perfil do protocolo do WISC: `tipo` = `ponderados` (1–19, por grupo) ou `compostos` (40–160) |
 | `<Fonte>` | o crédito no pé do slide — em letra branca, sobre a faixa azul |
 
 ## Utilitários

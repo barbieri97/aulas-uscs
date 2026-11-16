@@ -186,6 +186,19 @@ export const componentes = {
   Fonte: {
     atributos: {},
   },
+  Protocolo: {
+    atributos: {
+      letra: texto,
+      titulo: texto,
+      compacto: 'booleano',
+    },
+  },
+  PerfilGrafico: {
+    atributos: {
+      tipo: { opcoes: ['ponderados', 'compostos'] },
+      itens: { tipo: 'lista', bind: true, obrigatorio: true },
+    },
+  },
   Fala: {
     atributos: {
       quando: texto,
