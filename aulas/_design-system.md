@@ -15,7 +15,7 @@ Este é o catálogo do design system: a versão renderizada do que docs/design-s
 descreve por escrito. Toda vez que você criar um layout ou componente novo em aulas/,
 acrescente um slide aqui — é o que mantém o catálogo confiável.
 
-A aula aula-01-teorias-da-inteligencia.md usa as mesmas peças num conteúdo de verdade.
+A aula aula-01-teorias-da-inteligencia.md usa estas peças num conteúdo de verdade.
 -->
 
 ---
@@ -250,6 +250,32 @@ A citação de dentro do slide. Para uma frase ocupando a tela inteira, use o la
 layout: default
 ---
 
+# `<Acao>` e `<Fala>`
+
+<Acao>
+
+Coloque o material diante da criança e aponte o primeiro quadro.
+
+</Acao>
+
+<Fala>
+
+Esta é a fala do aplicador, **palavra por palavra**, como está no manual.
+
+</Fala>
+
+<Fala quando="se a criança errar">
+
+O atributo `quando` diz em que situação a fala entra.
+
+</Fala>
+
+<!-- Situação: o roteiro de aplicação de um teste — alterne o que se faz e o que se diz, na ordem do manual. -->
+
+---
+layout: default
+---
+
 # `<Pessoa>` e `<LinhaDoTempo>`
 
 <div class="ds-grid">
@@ -272,6 +298,41 @@ Sem `foto`, entra um monograma com a inicial.
 
 </div>
 </div>
+
+---
+layout: default
+---
+
+# `<Protocolo>` e `<PerfilGrafico>`
+
+<div class="ds-grid">
+<div>
+
+<Protocolo letra="D" titulo="Conversão da Soma dos Pontos Ponderados em Ponto Composto">
+<table>
+<thead><tr><th>Escala</th><th>Soma</th><th>Composto</th><th>Percentil</th></tr></thead>
+<tbody>
+<tr><th>Compreensão Verbal</th><td>37</td><td class="bloq">ICV 112</td><td>79</td></tr>
+<tr><th>Organização Perceptual</th><td>26</td><td class="bloq">IOP 92</td><td>30</td></tr>
+<tr class="soma"><th>QI Total</th><td>101</td><td class="bloq">QIT 101</td><td>53</td></tr>
+</tbody>
+</table>
+</Protocolo>
+
+<Fonte><code>th</code> = impresso (azul) · <code>td</code> = manuscrito (laranja) · <code>td.bloq</code> = célula sombreada.</Fonte>
+
+</div>
+<div>
+
+<PerfilGrafico tipo="compostos" :itens="[
+  { sigla: 'ICV', valor: 112 }, { sigla: 'IOP', valor: 92 }, { sigla: 'IMO', valor: 102 },
+  { sigla: 'IVP', valor: 91 }, { sigla: 'QIT', valor: 101 },
+]" />
+
+</div>
+</div>
+
+<!-- Situação: recriar um quadro do Protocolo de Registro com a estrutura do impresso. O <PerfilGrafico> também tem tipo="ponderados" (1–19, por grupo). -->
 
 ---
 layout: secao

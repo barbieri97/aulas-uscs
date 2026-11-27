@@ -60,18 +60,29 @@ const arquivo = asset(props.imagem)
   order: 2;
 }
 
+/* A linha da grade é limitada à altura útil do slide (o padding de baixo já reserva a
+   faixa azul). A figura ocupa essa altura e a imagem encolhe até caber nela. Não use `vh`
+   aqui: ele mede a janela do navegador, e não o slide, e uma foto em retrato
+   desceria até a faixa. */
+.ds-figura {
+  grid-template-rows: minmax(0, 1fr);
+}
+
 .figura {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--ds-space-3);
   margin: 0;
   min-width: 0;
-  max-height: 100%;
+  min-height: 0;
+  height: 100%;
 }
 
 .figura img {
+  flex: 0 1 auto;
   width: 100%;
-  max-height: 50vh;
+  min-height: 0;
   border-radius: var(--ds-radius);
 }
 

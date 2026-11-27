@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Poppins, system-ui, sans-serif">
+  <title>Teoria do investimento: a inteligência fluida (Gf) cresce cedo e declina na vida adulta; ela é investida na inteligência cristalizada (Gc), que continua crescendo e se mantém até tarde</title>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#152342"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- eixos -->
+  <line x1="60" y1="330" x2="575" y2="330" stroke="#152342" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="60" y1="330" x2="60" y2="30" stroke="#152342" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="40" y="180" text-anchor="middle" font-size="13" fill="#152342" transform="rotate(-90 40 180)">desempenho</text>
+  <g font-size="13" fill="#152342" text-anchor="middle">
+    <text x="105" y="354">infância</text>
+    <text x="250" y="354">adulto jovem</text>
+    <text x="400" y="354">meia-idade</text>
+    <text x="530" y="354">velhice</text>
+  </g>
+  <text x="575" y="382" text-anchor="end" font-size="13" font-weight="700" fill="#152342">idade</text>
+
+  <!-- Gc -->
+  <path d="M62,318 C150,250 240,150 350,118 S500,96 562,100" fill="none" stroke="#152342" stroke-width="5" stroke-linecap="round"/>
+  <!-- Gf -->
+  <path d="M62,312 C120,170 190,82 255,80 S430,190 562,262" fill="none" stroke="#EF7D00" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="230" y="64" font-size="20" font-weight="700" fill="#EF7D00">Gf</text>
+  <text x="290" y="74" font-size="12" fill="#152342">potencial de aprendizagem</text>
+  <text x="565" y="88" text-anchor="end" font-size="20" font-weight="700" fill="#152342">Gc</text>
+  <text x="565" y="128" text-anchor="end" font-size="12" fill="#152342">o que foi aprendido</text>
+
+  <!-- investimento -->
+  <path d="M108,212 Q110,236 132,244" fill="none" stroke="#152342" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#seta)"/>
+  <text x="172" y="292" font-size="14" font-weight="700" fill="#152342">investimento</text>
+  <text x="172" y="310" font-size="12" fill="#152342">experiência · escola · cultura</text>
+</svg>

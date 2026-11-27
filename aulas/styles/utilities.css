@@ -72,6 +72,14 @@
   font-weight: var(--ds-peso-fino);
 }
 
+/* Tabela de linhas baixas, para quando ela tem 6+ linhas e desceria até a faixa azul.
+   Envolve a tabela markdown: <div class="ds-compacta"> … </div> */
+.slidev-layout .ds-compacta th,
+.slidev-layout .ds-compacta td {
+  padding-top: var(--ds-space-1);
+  padding-bottom: var(--ds-space-1);
+}
+
 /* Texto pequeno de rodapé: fonte, crédito, observação. */
 .ds-small {
   color: var(--ds-muted);
